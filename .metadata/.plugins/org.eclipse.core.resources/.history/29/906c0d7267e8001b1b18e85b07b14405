@@ -1,0 +1,37 @@
+package Regression_Tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.*;
+import org.openqa.selenium.chrome.*;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseClass_Test {
+
+	WebDriver driver;
+	
+	@BeforeSuite
+	public void SetUp()
+	{
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+	}
+	
+	@Test
+	public void OpenApplication()
+	{
+		driver.get("http://ec2-44-230-141-105.us-west-2.compute.amazonaws.com/myportal/");
+	}
+	
+	@AfterSuite
+	public void Destroy()
+	{
+		driver.quit();
+	}
+	
+	
+}
