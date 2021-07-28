@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-RegressionTests" class="navigator-link ">
-                    <span>C:\Users\Bhatt\eclipse-workspace\Selenium_RCC\ramana_automationTests\testng.xml</span>
+                    <span>C:\Users\Bhatt\Downloads\ramana_automationTests (2)\ramana_automationTests\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionTests" class="hide-methods passed suite-RegressionTests"> (hide)</a> <!-- hide-methods passed suite-RegressionTests -->
+                      <a href="#" panel-name="suite-RegressionTests" class="show-methods passed suite-RegressionTests"> (show)</a> <!-- show-methods passed suite-RegressionTests -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionTests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Tests" class="method navigator-link" hash-for-method="Branch_Management_Search_Student">Branch_Management_Search_Student</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Tests" class="method navigator-link" hash-for-method="verify_Login_Funtionality">verify_Login_Funtionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionTests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -105,19 +124,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionTests" class="panel RegressionTests">
+          <div class="suite-RegressionTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Regression_Tests.Admin_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Branch_Management_Search_Student">
+                  </a> <!-- Branch_Management_Search_Student -->
+                  <span class="method-name">Branch_Management_Search_Student</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Login_Funtionality">
+                  </a> <!-- verify_Login_Funtionality -->
+                  <span class="method-name">verify_Login_Funtionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTests-class-passed -->
         </div> <!-- panel RegressionTests -->
         <div panel-name="test-xml-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Bhatt\eclipse-workspace\Selenium_RCC\ramana_automationTests\testng.xml</span>
+            <span class="header-content">C:\Users\Bhatt\Downloads\ramana_automationTests (2)\ramana_automationTests\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;RegressionTests&quot;&gt;
+&lt;suite name=&quot;RegressionTests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;sample&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;coaching_center_base.BaseClass&quot;/&gt;
+      &lt;class name=&quot;Regression_Tests.Admin_Tests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- sample --&gt;
 &lt;/suite&gt; &lt;!-- RegressionTests --&gt;
@@ -157,12 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Branch_Management_Search_Student')
+data.setCell(0, 2, 'Regression_Tests.Admin_Tests')
+data.setCell(0, 3, 17796);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_Login_Funtionality')
+data.setCell(1, 2, 'Regression_Tests.Admin_Tests')
+data.setCell(1, 3, 7956);
 window.suiteTableData['RegressionTests']= { tableData: data, tableDiv: 'times-div-RegressionTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-RegressionTests">
               </div> <!-- times-div-RegressionTests -->
             </div> <!-- times-div -->
@@ -173,6 +222,30 @@ return data;
             <span class="header-content">Reporter output for RegressionTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Branch_Management_Search_Student</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Password Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Login Button is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Forgot ID Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Forgot Password Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Welcome message label is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_Login_Funtionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Password Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Login Button is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Forgot ID Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Forgot Password Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Welcome message label is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionTests" class="panel">
@@ -188,19 +261,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">coaching_center_base.BaseClass</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">SetUp</span>
+              <div class="chronological-class-name">Regression_Tests.Admin_Tests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_Login_Funtionality</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">OpenApplication</span>
-                <span class="method-start">3200 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-suite after">
-                <span class="method-name">Destroy</span>
-                <span class="method-start">6254 ms</span>
-              </div> <!-- configuration-suite after -->
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_Tests.verify_Login_Funtionali...)</span>
+                <span class="method-start">7958 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Branch_Management_Search_Student</span>
+                <span class="method-start">8714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=Branch_Management_Search_Student status=SUCCESS method=Admin_Tests.Branch_Managemen...)</span>
+                <span class="method-start">26512 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">writeToReport</span>
+                <span class="method-start">27292 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,33 +1,48 @@
 package coaching_center_base;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.*;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass {
-
-	WebDriver driver;
+public class BaseClass extends FrameworkMethods{
+	static FrameworkMethods configFileReader = null;
+	public static WebDriver driver;
+	private static WebDriverWait wait;
+	final String propertyFilePath = "resource//base.properties";
 	
-	@BeforeSuite
-	public void SetUp()
+	
+	public static void SetUp() throws IOException
 	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
 	
-	@BeforeTest
-	public void OpenApplication()
+	public static void LaunchApplication() throws IOException
 	{
-		driver.get("http://ec2-44-230-141-105.us-west-2.compute.amazonaws.com/myportal/");
+		driver.manage().window().maximize();
+		driver.get(FrameworkMethods.getCustomProperty("dev_url"));
 	}
 	
-	@AfterSuite
-	public void Destroy()
+	public static void Destroy()
 	{
 		driver.quit();
 	}
 	
+	protected void waitForElementToAppear(WebElement element) {
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	protected void waitForElementToDisappear(WebElement element) {
+		wait.until(ExpectedConditions.invisibilityOf(element));
+	}
+
+	protected void waitForTextToDisappear(By locator, String text) {
+		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
+	}
 	
 }

@@ -1,25 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[Pass]Username Textbox is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Password Textbox is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Login Button is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Forgot ID Link is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Forgot Password Link is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Welcome message label is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Username Textbox is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Password Textbox is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Login Button is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Forgot ID Link is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Forgot Password Link is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Welcome message label is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Username Textbox is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Username Textbox is Present on screen]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-07-20T15:50:03 IST" name="RegressionTests" finished-at="2021-07-20T15:50:06 IST" duration-ms="3032">
+  <suite started-at="2021-07-28T14:03:48 IST" name="RegressionTests" finished-at="2021-07-28T14:04:16 IST" duration-ms="27831">
     <groups>
     </groups>
-    <test started-at="2021-07-20T15:50:03 IST" name="sample" finished-at="2021-07-20T15:50:06 IST" duration-ms="3032">
-      <class name="coaching_center_base.BaseClass">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:coaching_center_base.BaseClass@3fb1549b]" started-at="2021-07-20T15:49:59 IST" name="SetUp" finished-at="2021-07-20T15:50:03 IST" duration-ms="3194" status="PASS">
+    <test started-at="2021-07-28T14:03:48 IST" name="sample" finished-at="2021-07-28T14:04:16 IST" duration-ms="27831">
+      <class name="Regression_Tests.Admin_Tests">
+        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:03:48 IST" name="verify_Login_Funtionality" finished-at="2021-07-28T14:03:56 IST" duration-ms="7956" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Username Textbox is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Password Textbox is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Login Button is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Forgot ID Link is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Forgot Password Link is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Welcome message label is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Funtionality -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:03:56 IST" name="getResult" finished-at="2021-07-28T14:03:57 IST" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_Tests@618425b5] output=[Pass]Username Textbox is Present on screen]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="OpenApplication()[pri:0, instance:coaching_center_base.BaseClass@3fb1549b]" started-at="2021-07-20T15:50:03 IST" name="OpenApplication" finished-at="2021-07-20T15:50:06 IST" duration-ms="3018" status="PASS">
+        </test-method> <!-- getResult -->
+        <test-method signature="Branch_Management_Search_Student()[pri:2, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:03:57 IST" name="Branch_Management_Search_Student" finished-at="2021-07-28T14:04:15 IST" duration-ms="17796" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Username Textbox is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Password Textbox is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Login Button is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Forgot ID Link is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Forgot Password Link is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Welcome message label is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Username Textbox is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Username Textbox is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Branch_Management_Search_Student -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:04:15 IST" name="getResult" finished-at="2021-07-28T14:04:15 IST" duration-ms="778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Branch_Management_Search_Student status=SUCCESS method=Admin_Tests.Branch_Management_Search_Student()[pri:2, instance:Regression_Tests.Admin_Tests@618425b5] output=[Pass]Username Textbox is Present on screen]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenApplication -->
-        <test-method is-config="true" signature="Destroy()[pri:0, instance:coaching_center_base.BaseClass@3fb1549b]" started-at="2021-07-20T15:50:06 IST" name="Destroy" finished-at="2021-07-20T15:50:07 IST" duration-ms="1597" status="PASS">
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:04:15 IST" name="writeToReport" finished-at="2021-07-28T14:04:16 IST" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Destroy -->
-      </class> <!-- coaching_center_base.BaseClass -->
+        </test-method> <!-- writeToReport -->
+      </class> <!-- Regression_Tests.Admin_Tests -->
     </test> <!-- sample -->
   </suite> <!-- RegressionTests -->
 </testng-results>
