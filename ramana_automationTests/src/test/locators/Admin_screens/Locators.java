@@ -21,7 +21,12 @@ public interface Locators {
 			static String FIRSTNAME_XPATH="//input[@name='searchForm.stuFirstName']";
 			static String BTN_SEARCH_XPATH="//button[@id='btnSubmit']";
 			static String LASTNAME_XPATH="//input[@name='stuLastName']";
-			
+			static String BTN_VIEW_DETAILS_XPATH="//button[text()='View Details']";
+			static String TXT_STUDENT_NAME_XPATH="(//table[@id='resultTable']//td[1])[1]]";
+			static String TXT_GRADE_XPATH="(//table[@id='resultTable']//td[2])[1]";
+			static String TXT_PARENT_NAME_XPATH="(//table[@id='resultTable']//td[3])[1]";
+			static String TXT_ZIPCODE_XPATH="(//table[@id='resultTable']//td[4])[1]";
+			static String TXT_SCHOOL_XPATH="(//table[@id='resultTable']//td[5])[1]";
 		}
 	
 }

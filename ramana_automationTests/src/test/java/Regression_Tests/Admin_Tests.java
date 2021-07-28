@@ -26,33 +26,33 @@ public class Admin_Tests {
 	  {
 		loginPage login=new loginPage();
 	  	homePage home= new homePage();
-	  
 	  	login.verifyLoginpage_Login();
 	  	home.verifyHomepage(); 
-	 
 	  	FrameworkMethods.logger = FrameworkMethods.extent.createTest("verify_Login_Funtionality","This test is to verify login page elements and then login to site as admin");
 	  	FrameworkMethods.logger.log(Status.PASS, MarkupHelper.createLabel("Test Case Passed is - verify Login Funtionality", ExtentColor.GREEN));
 	  }
 	  catch(Exception e)
-	  {}
-	 
+	  {}	 
   }
-  
+
   @Test(priority=2)
   public void Branch_Management_Search_Student() throws Exception {
-	    loginPage login=new loginPage();
+	  try {
 	  	homePage home= new homePage();
-	  	branchManagementPage branchPage=new branchManagementPage();
-	  	
-	  	login.verifyLoginpage_Login();
+	  	branchManagementPage branchPage=new branchManagementPage();	
 	  	home.verifyHomepage(); 
 	  	branchPage.searchStudentwithFirstName();
+	  	branchPage.verifySearchResult();
 	  	branchPage.searchStudentwithLastName();
+	  	branchPage.verifySearchResult();
 	  	FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
 	  	FrameworkMethods.logger.log(Status.PASS, MarkupHelper.createLabel("Test Case Passed is - Branch_Management_Search_Student", ExtentColor.GREEN));
+	  }
+	  catch(Exception e) {  
+	  }
   }
  
-  
+ 
   
   @AfterTest
   public void writeToReport()
