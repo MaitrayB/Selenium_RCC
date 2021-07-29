@@ -100,11 +100,13 @@ public class branchManagementPage extends BaseClass implements BranchmanagementL
 		getStudent_last_name().sendKeys(FrameworkMethods.getCustomProperty("student_Last__name"));
 		getBtn_search_student().click();
 	}
-	public void verifySearchResult() throws IOException {
+	public void verifySearchResult() throws IOException, InterruptedException {
 		Assert.assertEquals(getStudent_first_name().getText(),FrameworkMethods.getCustomProperty("student"));
 		Assert.assertEquals(getGrade().getText(), FrameworkMethods.getCustomProperty("grade"));
 		Assert.assertEquals(getParentName().getText(),FrameworkMethods.getCustomProperty("parent_name"));
 		Assert.assertEquals(getZidecode(),FrameworkMethods.getCustomProperty("zip_code"));
 		Assert.assertEquals(getSchool_name(),FrameworkMethods.getCustomProperty("school_name"));	
+		Thread.sleep(5000);
+
 	}
 }

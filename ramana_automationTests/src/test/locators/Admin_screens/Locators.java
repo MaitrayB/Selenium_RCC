@@ -15,8 +15,9 @@ public interface Locators {
 		
 		public interface Menus{
 			static String MENU_SEARCH_STUDENT_XPATH="//span[@id='searchStudent']";
-
+			static String MENU_REGISTRATION_XPATH="//span[contains(.,'New Registrations')]";
 		}
+		
 		public interface BranchmanagementLocators{
 			static String FIRSTNAME_XPATH="//input[@name='searchForm.stuFirstName']";
 			static String BTN_SEARCH_XPATH="//button[@id='btnSubmit']";
@@ -28,5 +29,12 @@ public interface Locators {
 			static String TXT_ZIPCODE_XPATH="(//table[@id='resultTable']//td[4])[1]";
 			static String TXT_SCHOOL_XPATH="(//table[@id='resultTable']//td[5])[1]";
 		}
-	
+		
+		public interface NewRegistrationLocators{
+			static String BTN_SEARCH_XPATH="//button[@id='btnSubmit']";	
+			static String ACCORDIAN_STUDENT_REGISTRATION_XPATH="(//div[@id='headingThree'])[1]";
+			static String ACCORDIAN_STUDENT_XPATH="//div[@id='headingYet']";
+			static String ACCORDIAN_NEW_PARENT_XPATH="//div[@id='headingFour']";	
+			static String ACCORDIAN_NEW_STUDENT_XPATH="(//div[@id='headingThree'])[2]";
+		}
 }
