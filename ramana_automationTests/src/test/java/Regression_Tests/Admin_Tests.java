@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.ITestResult;
 
-import Admin_pages.branchManagementPage;
+import Admin_pages.searchStudentPage;
 import Admin_pages.homePage;
 import Admin_pages.loginPage;
 import Admin_pages.registrationPage;
@@ -26,6 +26,7 @@ public class Admin_Tests {
 		try {
 			loginPage login = new loginPage();
 			homePage home = new homePage();
+			login.doLogin();
 			login.verifyLoginpage_Login();
 			home.verifyHomepage();
 			FrameworkMethods.logger = FrameworkMethods.extent.createTest("verify_Login_Funtionality",
@@ -39,11 +40,12 @@ public class Admin_Tests {
 	@Test(priority = 2)
 	public void Branch_Management_Search_Student() throws Exception {
 		try {
-			branchManagementPage branchPage = new branchManagementPage();
+			searchStudentPage branchPage = new searchStudentPage();
 			branchPage.searchStudentwithFirstName();
 			branchPage.verifySearchResult();
 			branchPage.searchStudentwithLastName();
 			branchPage.verifySearchResult();
+			branchPage.verifyViewDetails();
 			FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
 			FrameworkMethods.logger.log(Status.PASS, MarkupHelper
 					.createLabel("Test Case Passed is - Branch_Management_Search_Student", ExtentColor.GREEN));
@@ -53,6 +55,19 @@ public class Admin_Tests {
 
 	@Test(priority = 3)
 	public void New_Registraton_Page_Verification() throws Exception {
+		try {
+		registrationPage register = new registrationPage();
+		register.navigateToRegistrationPage();
+		register.verifyNewRegistrationPage();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));}
+		catch (Exception e) {
+		}
+	}
+
+	@Test(priority = 4)
+	public void New_() throws Exception {
 		try {
 		registrationPage register = new registrationPage();
 		register.navigateToRegistrationPage();

@@ -11,6 +11,7 @@ public interface Locators {
 		public interface HomePageLocators{
 			static String HOME_WELCOME_XPATH = "//li[contains(.,'Welcome')]";
 			static String HOME_PENDING_APPROVAL_NOTIFICATION_XPATH="//div[@id='headingHome']//h4";
+		
 		}
 		
 		public interface Menus{
@@ -28,7 +29,17 @@ public interface Locators {
 			static String TXT_PARENT_NAME_XPATH="(//table[@id='resultTable']//td[3])[1]";
 			static String TXT_ZIPCODE_XPATH="(//table[@id='resultTable']//td[4])[1]";
 			static String TXT_SCHOOL_XPATH="(//table[@id='resultTable']//td[5])[1]";
+			static String BTN_VIEW_DETAIL_XPATH="//button[text()='View Details']";
+			static String POPUP_STUDENT_DETAILS_XPATH="//h4[text()='Student Details']";
+			static String TAB_PARENT_DETAILS_XPATH="//div[@id='headingOneM']";
+			static String BTN_ARROW_COLLAPS_XPATH="(//a[@class='collapsed'])[1]";
+			static String TAB_STUDENT_DETAILS_XPATH="(//a[@class='collapsed'])[2]";
+			static String TAB_STUDENT_ENROLL_XPATH="(//a[@class='collapsed'])[3]";
+			static String TAB_UPDATE_BRANCH_XPATH="(//a[@class='collapsed'])[4]";
+			static String BTN_CLOSE_XPATH="//button[@id='btnCloseSearch']";
+	
 		}
+		
 		
 		public interface NewRegistrationLocators{
 			static String BTN_SEARCH_XPATH="//button[@id='btnSubmit']";	

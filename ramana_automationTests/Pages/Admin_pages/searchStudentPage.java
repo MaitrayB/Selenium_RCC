@@ -13,8 +13,8 @@ import Admin_screens.Locators.Menus;
 import coaching_center_base.BaseClass;
 import coaching_center_base.FrameworkMethods;
 
-public class branchManagementPage extends BaseClass implements BranchmanagementLocators, Menus {
-	public branchManagementPage() {
+public class searchStudentPage extends BaseClass implements BranchmanagementLocators, Menus {
+	public searchStudentPage() {
 		// TODO Auto-generated constructor stub
 		PageFactory.initElements(BaseClass.driver, this);
 	}
@@ -47,7 +47,55 @@ public class branchManagementPage extends BaseClass implements BranchmanagementL
 	@FindBy(how = How.XPATH, using = TXT_SCHOOL_XPATH)
 	private WebElement school_name;
 	
+	@FindBy(how = How.XPATH, using = BTN_VIEW_DETAIL_XPATH)
+	private WebElement view_details_button;
 	
+	@FindBy(how = How.XPATH, using = TAB_PARENT_DETAILS_XPATH)
+	private WebElement tab_parent_details;
+	
+	@FindBy(how = How.XPATH, using = TAB_STUDENT_ENROLL_XPATH)
+	private WebElement tab_student_enroll_details;
+	
+	@FindBy(how = How.XPATH, using = TAB_STUDENT_DETAILS_XPATH)
+	private WebElement tab_student_details;
+	
+	@FindBy(how = How.XPATH, using = BTN_ARROW_COLLAPS_XPATH)
+	private WebElement btn_Collaps_arrow;
+	
+	@FindBy(how = How.XPATH, using = TAB_UPDATE_BRANCH_XPATH)
+	private WebElement tab_update_branch_details;
+	
+	@FindBy(how = How.XPATH, using = BTN_CLOSE_XPATH)
+	private WebElement btn_close;
+
+	public WebElement getTab_student_details() {
+		return tab_student_details;
+	}
+
+	public WebElement getBtn_Collaps_arrow() {
+		return btn_Collaps_arrow;
+	}
+
+	public WebElement getView_details_button() {
+		return view_details_button;
+	}
+
+	public WebElement getTab_parent_details() {
+		return tab_parent_details;
+	}
+
+	public WebElement getTab_student_enroll_details() {
+		return tab_student_enroll_details;
+	}
+
+	public WebElement getTab_update_branch_details() {
+		return tab_update_branch_details;
+	}
+
+	public WebElement getBtn_close() {
+		return btn_close;
+	}
+
 	public WebElement getStudent_name() {
 		return student_name;
 	}
@@ -108,5 +156,15 @@ public class branchManagementPage extends BaseClass implements BranchmanagementL
 		Assert.assertEquals(getSchool_name(),FrameworkMethods.getCustomProperty("school_name"));	
 		Thread.sleep(5000);
 
+	}
+	
+	public void verifyViewDetails() throws Exception {
+		getView_details_button().click();
+		verifyElement(getTab_parent_details(), "Parent Details Tab");
+		getBtn_Collaps_arrow().click();
+		verifyElement(getTab_student_details(), "student Details Tab");
+		verifyElement(getTab_student_enroll_details(), "student Enrollment Detail Tab");
+		verifyElement(getTab_update_branch_details(), "Update Branch Details Tab");
+		getBtn_close().click();
 	}
 }

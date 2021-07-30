@@ -1,4 +1,5 @@
 package Admin_pages;
+
 import coaching_center_base.BaseClass;
 
 import java.io.IOException;
@@ -17,24 +18,26 @@ public class loginPage extends BaseClass implements LoginPageLocators {
 
 	@FindBy(how = How.XPATH, using = LOGIN_PASSWORD_XPATH)
 	private WebElement password_textbox;
-	
+
 	@FindBy(how = How.XPATH, using = LOGIN_BUTTON_XPATH)
 	private WebElement login_button;
-	
+
 	@FindBy(how = How.XPATH, using = LOGIN_FORGOT_PASSWORD_XPATH)
 	private WebElement forgot_password_links;
-	
+
 	@FindBy(how = How.XPATH, using = LOGIN_FORGOTID_XPATH)
 	private WebElement forgot_ID_links;
-	
-	
+
 	public loginPage() throws IOException {
-		 
-		BaseClass.SetUp();  
-		BaseClass.LaunchApplication();
-		
+
 		PageFactory.initElements(BaseClass.driver, this);
 		// TODO Auto-generated constructor stub
+	}
+
+	public void doLogin() throws IOException {
+		BaseClass.SetUp();
+		BaseClass.LaunchApplication();
+
 	}
 
 	public WebElement getLogin_button() {
