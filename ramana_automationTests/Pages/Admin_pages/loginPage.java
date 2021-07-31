@@ -61,6 +61,7 @@ public class loginPage extends BaseClass implements LoginPageLocators {
 	}
 
 	public void verifyLoginpage_Login() throws Exception {
+		waitForPageLoad();
 		verifyElement(getEmail_textbox(), "Username Textbox");
 		verifyElement(getPassword_textbox(), "Password Textbox");
 		verifyElement(getLogin_button(), "Login Button");

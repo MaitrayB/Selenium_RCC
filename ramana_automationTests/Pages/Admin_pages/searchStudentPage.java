@@ -139,11 +139,14 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	public WebElement getBtn_reset() {
 		return btn_reset;
 	}
-
-	public void searchStudentwithFirstName() throws Exception {
-		waitForElementToAppear(getMenu_search_student());
+	public void navigateToSearchPage() throws InterruptedException {
 		getMenu_search_student().click();
-		Thread.sleep(3000);
+		waitForPageLoad();
+	}
+	
+	public void searchStudentwithFirstName() throws Exception {
+	
+		
 		verifyElement(getMenu_search_student(), "Username Textbox");
 		getStudent_first_name().sendKeys(FrameworkMethods.getCustomProperty("student_name"));
 		getBtn_search_student().click();
@@ -158,6 +161,7 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	public void searchStudentwithLastName() throws Exception {
 		getStudent_last_name().sendKeys(FrameworkMethods.getCustomProperty("student_Last__name"));
 		getBtn_search_student().click();
+		waitForPageLoad();
 	}
 	
 	public void verifySearchResult() throws Exception {
@@ -173,8 +177,8 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	}
 	
 	public void verifyViewDetails() throws Exception {
-		waitForElementToAppear(getView_details_button());
 		getView_details_button().click();
+		waitForPageLoad();
 		verifyElement(getTab_parent_details(), "Parent Details Tab");
 		getBtn_Collaps_arrow().click();
 		verifyElement(getTab_student_details(), "student Details Tab");

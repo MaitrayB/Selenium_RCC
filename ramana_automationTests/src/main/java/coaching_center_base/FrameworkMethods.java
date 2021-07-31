@@ -113,4 +113,9 @@ public class FrameworkMethods {
 		// Copy file at destination
 		FileUtils.copyFile(SrcFile, DestFile);
 	}
+	
+	
+	public static void waitForPageLoad() throws InterruptedException {
+		Thread.sleep(8000);
+	}
 }

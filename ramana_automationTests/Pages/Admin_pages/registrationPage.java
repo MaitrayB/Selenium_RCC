@@ -16,6 +16,9 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 	@FindBy(how = How.XPATH, using =ACCORDIAN_STUDENT_REGISTRATION_XPATH )
 	private WebElement student_registration_tab;
 	
+	@FindBy(how = How.XPATH, using =ARROW_XPATH )
+	private WebElement arrow;
+	
 	@FindBy(how = How.XPATH, using =ACCORDIAN_STUDENT_XPATH )
 	private WebElement student_tab;
 	
@@ -28,6 +31,12 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 	public registrationPage() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
+
+	
+	public WebElement getArrow() {
+		return arrow;
+	}
+
 
 	public WebElement getNew_registrationmenu() {
 		return new_registrationmenu;
@@ -50,13 +59,14 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 	}
 	
 	public void navigateToRegistrationPage() throws Exception {
-		Thread.sleep(10000);
 		verifyElement(getNew_registrationmenu(), "Student registartion menu");
 		getNew_registrationmenu().click();
 	}
 	
 	public void verifyNewRegistrationPage() throws Exception {
+		waitForPageLoad();
 		verifyElement(getStudent_registration_tab(), "Student registartion tab");
+		getArrow().click();
 		verifyElement(getStudent_tab(), "Student registration tab");
 		verifyElement(getParent_tab(), "New Parent tab");
 		verifyElement(getNew_student_tab(), "New Student tab");

@@ -23,9 +23,10 @@ public class BaseClass extends FrameworkMethods{
 		driver.manage().window().maximize();
 	}
 	
-	public static void LaunchApplication() throws IOException
+	public static void LaunchApplication() throws IOException, InterruptedException
 	{
 		driver.get(FrameworkMethods.getCustomProperty("dev_url"));
+		waitForPageLoad();
 	}
 	
 	public static void Destroy()

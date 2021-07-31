@@ -33,26 +33,24 @@ public class Admin_Tests {
 
 	@Test(priority = 1)
 	public void verify_Login_Funtionality() throws Exception {
-		try {
 			loginPage login = new loginPage();
 			homePage home = new homePage();
 			BaseClass.LaunchApplication();
-			login.doLogin();
 			login.verifyLoginpage_Login();
+			login.doLogin();
 			home.verifyHomepage();
 			FrameworkMethods.logger = FrameworkMethods.extent.createTest("verify_Login_Funtionality",
 					"This test is to verify login page elements and then login to site as admin");
 			FrameworkMethods.logger.log(Status.PASS,
 					MarkupHelper.createLabel("Test Case Passed is - verify Login Funtionality", ExtentColor.GREEN));
-		} catch (Exception e) {
 		}
-	}
 
 
 	@Test(priority = 2)
 	public void verify_Search_Student_functionality() throws Exception {
-		try {
+		
 			searchStudentPage branchPage = new searchStudentPage();
+			branchPage.navigateToSearchPage();
 			branchPage.searchStudentwithFirstName();
 			branchPage.ResetSearch();
 			branchPage.searchStudentwithLastName();
@@ -60,24 +58,23 @@ public class Admin_Tests {
 			FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
 			FrameworkMethods.logger.log(Status.PASS, MarkupHelper
 					.createLabel("Test Case Passed is - Branch_Management_Search_Student", ExtentColor.GREEN));
-		} catch (Exception e) {
-		}
+		
 	}
 
 	@Test(priority = 3)
 	public void New_Registraton_Page_Verification() throws Exception {
-		try {
+		
 		registrationPage register = new registrationPage();
 		register.navigateToRegistrationPage();
 		register.verifyNewRegistrationPage();
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
 		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));}
-		catch (Exception e) {
-		}
+				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));
+		homePage homePage=new homePage();
+		homePage.getLogout();
+
+		
 	}
-
-
 	@AfterTest public void writeToReport() { FrameworkMethods.extent.flush(); }
 	 
 	@AfterMethod
@@ -94,8 +91,6 @@ public class Admin_Tests {
 					MarkupHelper.createLabel(result.getName() + " SKIPPED ", ExtentColor.ORANGE));
 			FrameworkMethods.logger.skip(result.getThrowable());
 		}
-		homePage homePage=new homePage();
-		homePage.getLogout();
 	}
 	
 

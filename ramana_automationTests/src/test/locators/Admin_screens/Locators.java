@@ -48,5 +48,6 @@ public interface Locators {
 			static String ACCORDIAN_STUDENT_XPATH="//div[@id='headingYet']";
 			static String ACCORDIAN_NEW_PARENT_XPATH="//div[@id='headingFour']";	
 			static String ACCORDIAN_NEW_STUDENT_XPATH="(//div[@id='headingThree'])[2]";
+			static String ARROW_XPATH="(//div[@id='headingThree'])[1]//span[contains(@class,'head-arrow')]";
 		}
 }
