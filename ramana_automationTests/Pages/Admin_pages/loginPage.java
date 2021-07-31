@@ -33,11 +33,11 @@ public class loginPage extends BaseClass implements LoginPageLocators {
 		PageFactory.initElements(BaseClass.driver, this);
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	public void doLogin() throws IOException {
-		BaseClass.SetUp();
-		BaseClass.LaunchApplication();
-
+		getEmail_textbox().sendKeys(FrameworkMethods.getCustomProperty("admin_username"));
+		getPassword_textbox().sendKeys(FrameworkMethods.getCustomProperty("admin_password"));
+		getLogin_button().click();
 	}
 
 	public WebElement getLogin_button() {
@@ -66,8 +66,5 @@ public class loginPage extends BaseClass implements LoginPageLocators {
 		verifyElement(getLogin_button(), "Login Button");
 		verifyElement(getForgot_ID_links(), "Forgot ID Link");
 		verifyElement(getForgot_password_links(), "Forgot Password Link");
-		getEmail_textbox().sendKeys(FrameworkMethods.getCustomProperty("admin_username"));
-		getPassword_textbox().sendKeys(FrameworkMethods.getCustomProperty("admin_password"));
-		getLogin_button().click();
 	}
 }

@@ -25,8 +25,6 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 	@FindBy(how = How.XPATH, using =ACCORDIAN_NEW_STUDENT_XPATH )
 	private WebElement new_student_tab;
 	
-	
-
 	public registrationPage() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}

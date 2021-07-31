@@ -3,8 +3,12 @@ package Regression_Tests;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
+
 import org.testng.ITestResult;
 
 import Admin_pages.searchStudentPage;
@@ -20,12 +24,19 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import coaching_center_base.BaseClass;
 
 public class Admin_Tests {
+	
+	@BeforeSuite
+	public void set_up_application() throws IOException
+	{
+		BaseClass.SetUp();
+	}
 
 	@Test(priority = 1)
 	public void verify_Login_Funtionality() throws Exception {
 		try {
 			loginPage login = new loginPage();
 			homePage home = new homePage();
+			BaseClass.LaunchApplication();
 			login.doLogin();
 			login.verifyLoginpage_Login();
 			home.verifyHomepage();
@@ -37,14 +48,14 @@ public class Admin_Tests {
 		}
 	}
 
+
 	@Test(priority = 2)
-	public void Branch_Management_Search_Student() throws Exception {
+	public void verify_Search_Student_functionality() throws Exception {
 		try {
 			searchStudentPage branchPage = new searchStudentPage();
 			branchPage.searchStudentwithFirstName();
-			branchPage.verifySearchResult();
+			branchPage.ResetSearch();
 			branchPage.searchStudentwithLastName();
-			branchPage.verifySearchResult();
 			branchPage.verifyViewDetails();
 			FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
 			FrameworkMethods.logger.log(Status.PASS, MarkupHelper
@@ -66,24 +77,11 @@ public class Admin_Tests {
 		}
 	}
 
-	@Test(priority = 4)
-	public void New_() throws Exception {
-		try {
-		registrationPage register = new registrationPage();
-		register.navigateToRegistrationPage();
-		register.verifyNewRegistrationPage();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
-		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));}
-		catch (Exception e) {
-		}
-	}
 
-	
 	@AfterTest public void writeToReport() { FrameworkMethods.extent.flush(); }
 	 
 	@AfterMethod
-	public void getResult(ITestResult result) {
+	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			FrameworkMethods.logger.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
@@ -96,7 +94,9 @@ public class Admin_Tests {
 					MarkupHelper.createLabel(result.getName() + " SKIPPED ", ExtentColor.ORANGE));
 			FrameworkMethods.logger.skip(result.getThrowable());
 		}
-		BaseClass.Destroy();
+		homePage homePage=new homePage();
+		homePage.getLogout();
 	}
+	
 
 }

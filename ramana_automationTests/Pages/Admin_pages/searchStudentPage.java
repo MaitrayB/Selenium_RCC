@@ -19,7 +19,6 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 		PageFactory.initElements(BaseClass.driver, this);
 	}
 
-
 	@FindBy(how = How.XPATH, using = MENU_SEARCH_STUDENT_XPATH)
 	private WebElement menu_search_student;
 	
@@ -67,6 +66,9 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	
 	@FindBy(how = How.XPATH, using = BTN_CLOSE_XPATH)
 	private WebElement btn_close;
+
+	@FindBy(how = How.XPATH, using = BTN_RESET_XPATH)
+	private WebElement btn_reset;
 
 	public WebElement getTab_student_details() {
 		return tab_student_details;
@@ -132,8 +134,14 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	public WebElement getStudent_last_name() {
 		return student_last_name;
 	}
+	
+
+	public WebElement getBtn_reset() {
+		return btn_reset;
+	}
 
 	public void searchStudentwithFirstName() throws Exception {
+		waitForElementToAppear(getMenu_search_student());
 		getMenu_search_student().click();
 		Thread.sleep(3000);
 		verifyElement(getMenu_search_student(), "Username Textbox");
@@ -141,24 +149,31 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 		getBtn_search_student().click();
 	}
 	
+	
+	public void ResetSearch() {
+		getBtn_reset().click();
+
+	}
+			
 	public void searchStudentwithLastName() throws Exception {
-		getMenu_search_student().click();
-		Thread.sleep(3000);
-		verifyElement(getMenu_search_student(), "Username Textbox");
 		getStudent_last_name().sendKeys(FrameworkMethods.getCustomProperty("student_Last__name"));
 		getBtn_search_student().click();
 	}
-	public void verifySearchResult() throws IOException, InterruptedException {
-		Assert.assertEquals(getStudent_first_name().getText(),FrameworkMethods.getCustomProperty("student"));
+	
+	public void verifySearchResult() throws Exception {
+		waitForElementToAppear(getStudent_name());
+		verifyElement(getStudent_name(), "Username Textbox");
+		Assert.assertEquals(getStudent_name().getText(),FrameworkMethods.getCustomProperty("student"));
+		waitForElementToAppear(getGrade());
+		verifyElement(getGrade(), "Grade");
 		Assert.assertEquals(getGrade().getText(), FrameworkMethods.getCustomProperty("grade"));
 		Assert.assertEquals(getParentName().getText(),FrameworkMethods.getCustomProperty("parent_name"));
 		Assert.assertEquals(getZidecode(),FrameworkMethods.getCustomProperty("zip_code"));
 		Assert.assertEquals(getSchool_name(),FrameworkMethods.getCustomProperty("school_name"));	
-		Thread.sleep(5000);
-
 	}
 	
 	public void verifyViewDetails() throws Exception {
+		waitForElementToAppear(getView_details_button());
 		getView_details_button().click();
 		verifyElement(getTab_parent_details(), "Parent Details Tab");
 		getBtn_Collaps_arrow().click();

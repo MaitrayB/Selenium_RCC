@@ -16,11 +16,20 @@ public class homePage extends BaseClass implements HomePageLocators,Menus {
 	@FindBy(how = How.XPATH, using = HOME_WELCOME_XPATH)
 	private WebElement welcome_label;
 	
+	@FindBy(how = How.XPATH, using = LOGOUT_XPATH)
+	private WebElement logout;
+	
 	
 	public homePage() throws IOException {
 		PageFactory.initElements(BaseClass.driver, this);
 		// TODO Auto-generated constructor stub
 	}
+
+	
+	public WebElement getLogout() {
+		return logout;
+	}
+
 
 	public WebElement getWelcome_label() {
 		return welcome_label;
@@ -30,4 +39,7 @@ public class homePage extends BaseClass implements HomePageLocators,Menus {
 		verifyElement(getWelcome_label(), "Welcome message label");
 	}
 
+	public void doLogout() {
+		getLogout().click();
+	}
 }

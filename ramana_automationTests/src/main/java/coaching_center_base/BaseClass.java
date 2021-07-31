@@ -20,11 +20,11 @@ public class BaseClass extends FrameworkMethods{
 	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 	
 	public static void LaunchApplication() throws IOException
 	{
-		driver.manage().window().maximize();
 		driver.get(FrameworkMethods.getCustomProperty("dev_url"));
 	}
 	

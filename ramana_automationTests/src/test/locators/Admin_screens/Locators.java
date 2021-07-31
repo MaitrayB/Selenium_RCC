@@ -11,7 +11,7 @@ public interface Locators {
 		public interface HomePageLocators{
 			static String HOME_WELCOME_XPATH = "//li[contains(.,'Welcome')]";
 			static String HOME_PENDING_APPROVAL_NOTIFICATION_XPATH="//div[@id='headingHome']//h4";
-		
+			static String LOGOUT_XPATH="//b[text()='Logout']";
 		}
 		
 		public interface Menus{
@@ -37,6 +37,7 @@ public interface Locators {
 			static String TAB_STUDENT_ENROLL_XPATH="(//a[@class='collapsed'])[3]";
 			static String TAB_UPDATE_BRANCH_XPATH="(//a[@class='collapsed'])[4]";
 			static String BTN_CLOSE_XPATH="//button[@id='btnCloseSearch']";
+			static String BTN_RESET_XPATH="//button[@id='btnReset']";
 	
 		}
 		
