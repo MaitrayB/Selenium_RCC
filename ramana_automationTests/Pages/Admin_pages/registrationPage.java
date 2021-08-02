@@ -31,12 +31,10 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 	public registrationPage() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
-
 	
 	public WebElement getArrow() {
 		return arrow;
 	}
-
 
 	public WebElement getNew_registrationmenu() {
 		return new_registrationmenu;
@@ -71,7 +69,4 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 		verifyElement(getParent_tab(), "New Parent tab");
 		verifyElement(getNew_student_tab(), "New Student tab");
 	}
-	
-	
-	
 }

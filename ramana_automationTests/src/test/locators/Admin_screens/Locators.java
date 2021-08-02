@@ -17,6 +17,8 @@ public interface Locators {
 		public interface Menus{
 			static String MENU_SEARCH_STUDENT_XPATH="//span[@id='searchStudent']";
 			static String MENU_REGISTRATION_XPATH="//span[contains(.,'New Registrations')]";
+			static String MENU_STUDENT_MANAGEMENT_XPATH="//li[@id='branch_student_mgnt_id']";
+
 		}
 		
 		public interface BranchmanagementLocators{
@@ -41,7 +43,6 @@ public interface Locators {
 	
 		}
 		
-		
 		public interface NewRegistrationLocators{
 			static String BTN_SEARCH_XPATH="//button[@id='btnSubmit']";	
 			static String ACCORDIAN_STUDENT_REGISTRATION_XPATH="(//div[@id='headingThree'])[1]";
@@ -49,5 +50,15 @@ public interface Locators {
 			static String ACCORDIAN_NEW_PARENT_XPATH="//div[@id='headingFour']";	
 			static String ACCORDIAN_NEW_STUDENT_XPATH="(//div[@id='headingThree'])[2]";
 			static String ARROW_XPATH="(//div[@id='headingThree'])[1]//span[contains(@class,'head-arrow')]";
+		}
+		
+		public interface StudentManagementLocator{
+			static String LABEL_STUDENT_PAGE_TITLE_XPATH="//div[@id='studentBranchmngmntDiv']//span[contains(text(),'Student')]";
+			static String SEARCH_STUDENT_NAME_XPATH="//input[@id='nameSearch']";
+			static String SEARCH_RESULT_XPATH="//div[@id='heading10']//a";
+			static String BTN_DISCONTINUED_XPATH="(//button[contains(text(),'Discontinue')])[1]";
+			static String BTN_HOLDCLASS_XPATH="(//button[contains(text(),'Hold Class')])[1]";
+			static String BTN_VIEW_SCHEDULE_XPATH="//button[@title='View Details']";
+			static String BTN_CONVERSATION_XPATH="//button[@title='Conversations']";
 		}
 }
