@@ -1,4 +1,4 @@
-package Regression_Tests;
+	package Regression_Tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
@@ -12,6 +12,7 @@ import java.io.IOException;
 import org.testng.ITestResult;
 
 import Admin_pages.searchStudentPage;
+import Admin_pages.studentManagePage;
 import Admin_pages.homePage;
 import Admin_pages.loginPage;
 import Admin_pages.registrationPage;
@@ -70,11 +71,19 @@ public class Admin_Tests {
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));
-		homePage homePage=new homePage();
-		homePage.getLogout();
-
-		
+		/*homePage homePage=new homePage();
+		homePage.getLogout();*/
 	}
+	
+	@Test(priority = 3)
+	public void verify_student_management_functionality() throws Exception {
+		studentManagePage student=new studentManagePage();
+		student.navigatToStudentManagement();
+		student.verifyStudentLabel();
+		student.verifyStudentDetails();
+	}
+	
+
 	@AfterTest public void writeToReport() { FrameworkMethods.extent.flush(); }
 	 
 	@AfterMethod
@@ -93,5 +102,4 @@ public class Admin_Tests {
 		}
 	}
 	
-
 }

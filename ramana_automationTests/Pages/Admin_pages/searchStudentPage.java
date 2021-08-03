@@ -145,8 +145,6 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	}
 	
 	public void searchStudentwithFirstName() throws Exception {
-	
-		
 		verifyElement(getMenu_search_student(), "Username Textbox");
 		getStudent_first_name().sendKeys(FrameworkMethods.getCustomProperty("student_name"));
 		getBtn_search_student().click();
@@ -155,7 +153,6 @@ public class searchStudentPage extends BaseClass implements BranchmanagementLoca
 	
 	public void ResetSearch() {
 		getBtn_reset().click();
-
 	}
 			
 	public void searchStudentwithLastName() throws Exception {
