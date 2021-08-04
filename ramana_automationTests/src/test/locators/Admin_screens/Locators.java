@@ -60,5 +60,6 @@ public interface Locators {
 			static String BTN_HOLDCLASS_XPATH="(//button[contains(text(),'Hold Class')])[1]";
 			static String BTN_VIEW_SCHEDULE_XPATH="//button[@title='View Details']";
 			static String BTN_CONVERSATION_XPATH="//button[@title='Conversations']";
+			
 		}
 }

@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,21 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-RegressionTests">
+            <a href="#" panel-name="suite-RegressionTests" class="navigator-link">
               <span class="suite-name border-passed">RegressionTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-RegressionTests">
-                    <span>F:\Automation Projets\RC_Automation\Selenium_RCC\ramana_automationTests\testng.xml</span>
+                  <a href="#" panel-name="test-xml-RegressionTests" class="navigator-link ">
+                    <span>D:\Up\Novatesoft Ramana\Selenium_RCC\ramana_automationTests\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-RegressionTests">
+                  <a href="#" panel-name="testlist-RegressionTests" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-RegressionTests">
+                  <a href="#" panel-name="group-RegressionTests" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-RegressionTests">
+                  <a href="#" panel-name="times-RegressionTests" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-RegressionTests">
+                  <a href="#" panel-name="reporter-RegressionTests" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-RegressionTests">
+                  <a href="#" panel-name="ignored-methods-RegressionTests" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-RegressionTests">
+                  <a href="#" panel-name="chronological-RegressionTests" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,18 +103,23 @@
                     </span>
                     <div class="method-list-content passed suite-RegressionTests">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Tests" hash-for-method="Branch_Management_Search_Student">Branch_Management_Search_Student</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="New_Registraton_Page_Verification">New_Registraton_Page_Verification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Tests" hash-for-method="New_Registraton_Page_Verification">New_Registraton_Page_Verification</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="verify_Login_Funtionality">verify_Login_Funtionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Tests" hash-for-method="verify_Login_Funtionality">verify_Login_Funtionality</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="verify_Search_Student_functionality">verify_Search_Student_functionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="verify_student_management_functionality">verify_student_management_functionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RegressionTests -->
@@ -130,16 +137,9 @@
           <div class="suite-RegressionTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Regression_Tests.Admin_Tests</span>
+              <span class="class-name">Regression_Tests.Admin_BranchManagement_Tests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Branch_Management_Search_Student">
-                  </a> <!-- Branch_Management_Search_Student -->
-                  <span class="method-name">Branch_Management_Search_Student</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="New_Registraton_Page_Verification">
@@ -154,21 +154,35 @@
                   <span class="method-name">verify_Login_Funtionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Search_Student_functionality">
+                  </a> <!-- verify_Search_Student_functionality -->
+                  <span class="method-name">verify_Search_Student_functionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_student_management_functionality">
+                  </a> <!-- verify_student_management_functionality -->
+                  <span class="method-name">verify_student_management_functionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-RegressionTests-class-passed -->
         </div> <!-- panel RegressionTests -->
         <div panel-name="test-xml-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Automation Projets\RC_Automation\Selenium_RCC\ramana_automationTests\testng.xml</span>
+            <span class="header-content">D:\Up\Novatesoft Ramana\Selenium_RCC\ramana_automationTests\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RegressionTests&quot;&gt;
-  &lt;test name=&quot;sample&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionTests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;sample&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Regression_Tests.Admin_Tests&quot;/&gt;
+      &lt;class name=&quot;Regression_Tests.Admin_BranchManagement_Tests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- sample --&gt;
 &lt;/suite&gt; &lt;!-- RegressionTests --&gt;
@@ -208,19 +222,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_Login_Funtionality')
-data.setCell(0, 2, 'Regression_Tests.Admin_Tests')
-data.setCell(0, 3, 73230);
+data.setCell(0, 1, 'verify_student_management_functionality')
+data.setCell(0, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(0, 3, 27821);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'New_Registraton_Page_Verification')
-data.setCell(1, 2, 'Regression_Tests.Admin_Tests')
-data.setCell(1, 3, 10575);
+data.setCell(1, 1, 'verify_Search_Student_functionality')
+data.setCell(1, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(1, 3, 25734);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Branch_Management_Search_Student')
-data.setCell(2, 2, 'Regression_Tests.Admin_Tests')
-data.setCell(2, 3, 1360);
+data.setCell(2, 1, 'verify_Login_Funtionality')
+data.setCell(2, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(2, 3, 23719);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'New_Registraton_Page_Verification')
+data.setCell(3, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(3, 3, 9129);
 window.suiteTableData['RegressionTests']= { tableData: data, tableDiv: 'times-div-RegressionTests'}
 return data;
 }
@@ -237,6 +255,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_Search_Student_functionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Parent Details Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]student Details Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]student Enrollment Detail Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Update Branch Details Tab is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">New_Registraton_Page_Verification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Student registartion menu is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Student registartion tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Student registration tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]New Parent tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]New Student tab is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">verify_Login_Funtionality</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
@@ -245,6 +283,20 @@ return data;
                 <span class="reporter-method-output">[Pass]Forgot ID Link is Present on screen</span>
                 <span class="reporter-method-output">[Pass]Forgot Password Link is Present on screen</span>
                 <span class="reporter-method-output">[Pass]Welcome message label is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_student_management_functionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Search Result is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Button Disconnection is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Conversation Button is Present on screen</span>
+                <span class="reporter-method-output">[Pass]button Hold is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Button view schedule is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Parent Details Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]student Details Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]student Enrollment Detail Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Update Branch Details Tab is Present on screen</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -262,38 +314,51 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Regression_Tests.Admin_Tests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Regression_Tests.Admin_BranchManagement_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">set_up_application</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verify_Login_Funtionality</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">3932 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_Tests.verify_Login_Funtionali...)</span>
-                <span class="method-start">73231 ms</span>
+                <span class="method-name">getResult([TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify...)</span>
+                <span class="method-start">27655 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Branch_Management_Search_Student</span>
-                <span class="method-start">123096 ms</span>
+                <span class="method-name">verify_Search_Student_functionality</span>
+                <span class="method-start">27665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Branch_Management_Search_Student status=SUCCESS method=Admin_Tests.Branch_Managemen...)</span>
-                <span class="method-start">124457 ms</span>
+                <span class="method-name">getResult([TestResult name=verify_Search_Student_functionality status=SUCCESS method=Admin_BranchManagement_Te...)</span>
+                <span class="method-start">53401 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">New_Registraton_Page_Verification</span>
-                <span class="method-start">124458 ms</span>
+                <span class="method-start">53403 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=New_Registraton_Page_Verification status=SUCCESS method=Admin_Tests.New_Registraton...)</span>
-                <span class="method-start">135034 ms</span>
+                <span class="method-name">getResult([TestResult name=New_Registraton_Page_Verification status=SUCCESS method=Admin_BranchManagement_Test...)</span>
+                <span class="method-start">62534 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verify_student_management_functionality</span>
+                <span class="method-start">62535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verify_student_management_functionality status=SUCCESS method=Admin_BranchManagemen...)</span>
+                <span class="method-start">90361 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">writeToReport</span>
-                <span class="method-start">135035 ms</span>
+                <span class="method-start">90365 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

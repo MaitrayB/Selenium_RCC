@@ -24,7 +24,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import coaching_center_base.BaseClass;
 
-public class Admin_Tests {
+public class Admin_BranchManagement_Tests {
 	
 	@BeforeSuite
 	public void set_up_application() throws IOException
@@ -56,7 +56,7 @@ public class Admin_Tests {
 			branchPage.ResetSearch();
 			branchPage.searchStudentwithLastName();
 			branchPage.verifyViewDetails();
-			FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
+			FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Search_Student_Functionality");
 			FrameworkMethods.logger.log(Status.PASS, MarkupHelper
 					.createLabel("Test Case Passed is - Branch_Management_Search_Student", ExtentColor.GREEN));
 		
@@ -68,19 +68,22 @@ public class Admin_Tests {
 		registrationPage register = new registrationPage();
 		register.navigateToRegistrationPage();
 		register.verifyNewRegistrationPage();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Branch_Management_Search_Student");
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_New_Registrations_Page");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));
 		/*homePage homePage=new homePage();
 		homePage.getLogout();*/
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void verify_student_management_functionality() throws Exception {
 		studentManagePage student=new studentManagePage();
 		student.navigatToStudentManagement();
 		student.verifyStudentLabel();
 		student.verifyStudentDetails();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Student_Management_Page");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - Student Management Page", ExtentColor.GREEN));
 	}
 	
 

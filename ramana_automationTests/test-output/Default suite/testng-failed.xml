@@ -5,7 +5,10 @@
     <classes>
       <class name="Regression_Tests.Admin_Tests">
         <methods>
-          <include name="verifyLoginFuntionality1"/>
+          <include name="verify_student_management_functionality"/>
+          <include name="getResult"/>
+          <include name="set_up_application"/>
+          <include name="writeToReport"/>
         </methods>
       </class> <!-- Regression_Tests.Admin_Tests -->
     </classes>

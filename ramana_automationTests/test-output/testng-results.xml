@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -23,33 +23,70 @@
       <![CDATA[[Pass]Username Textbox is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Password Textbox is Present on screen]]>
+      <![CDATA[[Pass]Parent Details Tab is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Login Button is Present on screen]]>
+      <![CDATA[[Pass]student Details Tab is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Forgot ID Link is Present on screen]]>
+      <![CDATA[[Pass]student Enrollment Detail Tab is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Forgot Password Link is Present on screen]]>
+      <![CDATA[[Pass]Update Branch Details Tab is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Welcome message label is Present on screen]]>
+      <![CDATA[[Pass]Student registartion menu is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Username Textbox is Present on screen]]>
+      <![CDATA[[Pass]Student registartion tab is Present on screen]]>
     </line>
     <line>
-      <![CDATA[[Pass]Username Textbox is Present on screen]]>
+      <![CDATA[[Pass]Student registration tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]New Parent tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]New Student tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Search Result is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Button Disconnection is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Conversation Button is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]button Hold is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Button view schedule is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Parent Details Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]student Details Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]student Enrollment Detail Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Update Branch Details Tab is Present on screen]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-07-28T14:03:48 IST" name="RegressionTests" finished-at="2021-07-28T14:04:16 IST" duration-ms="27831">
+  <suite started-at="2021-08-04T14:27:23 IST" name="RegressionTests" finished-at="2021-08-04T14:28:50 IST" duration-ms="87472">
     <groups>
     </groups>
-    <test started-at="2021-07-28T14:03:48 IST" name="sample" finished-at="2021-07-28T14:04:16 IST" duration-ms="27831">
-      <class name="Regression_Tests.Admin_Tests">
-        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:03:48 IST" name="verify_Login_Funtionality" finished-at="2021-07-28T14:03:56 IST" duration-ms="7956" status="PASS">
+    <test started-at="2021-08-04T14:27:23 IST" name="sample" finished-at="2021-08-04T14:28:50 IST" duration-ms="87472">
+      <class name="Regression_Tests.Admin_BranchManagement_Tests">
+        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:27:19 IST" name="set_up_application" finished-at="2021-08-04T14:27:23 IST" duration-ms="3854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_up_application -->
+        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:27:23 IST" name="verify_Login_Funtionality" finished-at="2021-08-04T14:27:47 IST" duration-ms="23719" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -71,61 +108,124 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_Login_Funtionality -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:03:56 IST" name="getResult" finished-at="2021-07-28T14:03:57 IST" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:27:47 IST" name="getResult" finished-at="2021-08-04T14:27:47 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_Tests@618425b5] output=[Pass]Username Textbox is Present on screen]]]>
+                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec] output=[Pass]Username Textbox is Present on screen]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Branch_Management_Search_Student()[pri:2, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:03:57 IST" name="Branch_Management_Search_Student" finished-at="2021-07-28T14:04:15 IST" duration-ms="17796" status="PASS">
+        <test-method signature="verify_Search_Student_functionality()[pri:2, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:27:47 IST" name="verify_Search_Student_functionality" finished-at="2021-08-04T14:28:12 IST" duration-ms="25734" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[[Pass]Username Textbox is Present on screen]]>
             </line>
             <line>
-              <![CDATA[[Pass]Password Textbox is Present on screen]]>
+              <![CDATA[[Pass]Parent Details Tab is Present on screen]]>
             </line>
             <line>
-              <![CDATA[[Pass]Login Button is Present on screen]]>
+              <![CDATA[[Pass]student Details Tab is Present on screen]]>
             </line>
             <line>
-              <![CDATA[[Pass]Forgot ID Link is Present on screen]]>
+              <![CDATA[[Pass]student Enrollment Detail Tab is Present on screen]]>
             </line>
             <line>
-              <![CDATA[[Pass]Forgot Password Link is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]Welcome message label is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]Username Textbox is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]Username Textbox is Present on screen]]>
+              <![CDATA[[Pass]Update Branch Details Tab is Present on screen]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Branch_Management_Search_Student -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:04:15 IST" name="getResult" finished-at="2021-07-28T14:04:15 IST" duration-ms="778" status="PASS">
+        </test-method> <!-- verify_Search_Student_functionality -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:28:12 IST" name="getResult" finished-at="2021-08-04T14:28:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Branch_Management_Search_Student status=SUCCESS method=Admin_Tests.Branch_Management_Search_Student()[pri:2, instance:Regression_Tests.Admin_Tests@618425b5] output=[Pass]Username Textbox is Present on screen]]]>
+                <![CDATA[[TestResult name=verify_Search_Student_functionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Search_Student_functionality()[pri:2, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec] output=[Pass]Username Textbox is Present on screen]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_Tests@618425b5]" started-at="2021-07-28T14:04:15 IST" name="writeToReport" finished-at="2021-07-28T14:04:16 IST" duration-ms="502" status="PASS">
+        <test-method signature="New_Registraton_Page_Verification()[pri:3, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:28:12 IST" name="New_Registraton_Page_Verification" finished-at="2021-08-04T14:28:22 IST" duration-ms="9129" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Student registartion menu is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Student registartion tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Student registration tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]New Parent tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]New Student tab is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- New_Registraton_Page_Verification -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:28:22 IST" name="getResult" finished-at="2021-08-04T14:28:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=New_Registraton_Page_Verification status=SUCCESS method=Admin_BranchManagement_Tests.New_Registraton_Page_Verification()[pri:3, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec] output=[Pass]Student registartion menu is Present on screen]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verify_student_management_functionality()[pri:4, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:28:22 IST" name="verify_student_management_functionality" finished-at="2021-08-04T14:28:49 IST" duration-ms="27821" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Search Result is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Button Disconnection is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Conversation Button is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]button Hold is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Button view schedule is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Parent Details Tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]student Details Tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]student Enrollment Detail Tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Update Branch Details Tab is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_student_management_functionality -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:28:49 IST" name="getResult" finished-at="2021-08-04T14:28:49 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_student_management_functionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_student_management_functionality()[pri:4, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec] output=[Pass]Search Result is Present on screen]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@306e95ec]" started-at="2021-08-04T14:28:49 IST" name="writeToReport" finished-at="2021-08-04T14:28:50 IST" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeToReport -->
-      </class> <!-- Regression_Tests.Admin_Tests -->
+      </class> <!-- Regression_Tests.Admin_BranchManagement_Tests -->
     </test> <!-- sample -->
   </suite> <!-- RegressionTests -->
 </testng-results>

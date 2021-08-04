@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionTests]">
-  <test name="sample">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="sample(failed)">
     <classes>
-      <class name="Regression_Tests.Admin_Tests"/>
+      <class name="Regression_Tests.Admin_BranchManagement_Tests">
+        <methods>
+          <include name="set_up_application"/>
+          <include name="writeToReport"/>
+          <include name="getResult"/>
+          <include name="verify_student_management_functionality"/>
+        </methods>
+      </class> <!-- Regression_Tests.Admin_BranchManagement_Tests -->
     </classes>
-  </test> <!-- sample -->
+  </test> <!-- sample(failed) -->
 </suite> <!-- Failed suite [RegressionTests] -->

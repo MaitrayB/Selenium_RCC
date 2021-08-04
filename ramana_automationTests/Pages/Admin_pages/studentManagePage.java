@@ -140,13 +140,14 @@ public class studentManagePage extends BaseClass implements StudentManagementLoc
 	
 	public void verifyStudentDetails() throws Exception
 	{
-		waitForPageLoad();
 		getBtn_viewschedule_result().click();
+		waitForPageLoad();
 		verifyElement(getTab_parent_details(), "Parent Details Tab");
 		getBtn_Collaps_arrow().click();
 		verifyElement(getTab_student_details(), "student Details Tab");
 		verifyElement(getTab_student_enroll_details(), "student Enrollment Detail Tab");
 		verifyElement(getTab_update_branch_details(), "Update Branch Details Tab");
+		waitForTime(2000);
 		getBtn_close().click();
 	}
 }

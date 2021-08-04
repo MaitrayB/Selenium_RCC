@@ -5,7 +5,7 @@
  
   <test name="sample">
     <classes>
-      <class name="Regression_Tests.Admin_Tests"/>
+      <class name="Regression_Tests.Admin_BranchManagement_Tests"/>
     </classes>
   </test>
 </suite>
