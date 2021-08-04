@@ -1,19 +1,17 @@
 package Admin_pages;
 
-import java.io.IOException;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import Admin_screens.Locators.BranchmanagementLocators;
 import Admin_screens.Locators.Menus;
+import Admin_screens.Locators.SearchStudentPageLocator;
 import coaching_center_base.BaseClass;
 import coaching_center_base.FrameworkMethods;
 
-public class searchStudentPage extends BaseClass implements BranchmanagementLocators, Menus {
+public class searchStudentPage extends BaseClass implements SearchStudentPageLocator, Menus {
 	public searchStudentPage() {
 		// TODO Auto-generated constructor stub
 		PageFactory.initElements(BaseClass.driver, this);

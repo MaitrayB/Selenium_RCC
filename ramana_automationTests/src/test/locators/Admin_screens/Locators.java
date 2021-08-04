@@ -18,10 +18,12 @@ public interface Locators {
 			static String MENU_SEARCH_STUDENT_XPATH="//span[@id='searchStudent']";
 			static String MENU_REGISTRATION_XPATH="//span[contains(.,'New Registrations')]";
 			static String MENU_STUDENT_MANAGEMENT_XPATH="//li[@id='branch_student_mgnt_id']";
+			static String MENU_STUDENT_PEROSPECT_XPATH="//li[@id='student_prospects']";
+			
 
 		}
 		
-		public interface BranchmanagementLocators{
+		public interface SearchStudentPageLocator{
 			static String FIRSTNAME_XPATH="//input[@name='searchForm.stuFirstName']";
 			static String BTN_SEARCH_XPATH="//button[@id='btnSubmit']";
 			static String LASTNAME_XPATH="//input[@name='stuLastName']";
@@ -62,4 +64,19 @@ public interface Locators {
 			static String BTN_CONVERSATION_XPATH="//button[@title='Conversations']";
 			
 		}
+		
+		public interface StudentProspectLocators{
+			static String SAT_PROSPECTS_LOC="(//h4[@class='panel-title'])[1]";
+			static String SAT_PROSPECT_ARROW_XPATH="(//h4[@class='panel-title']//span[contains(@class,'glyphicon')])[1]";
+			static String DUKE_PROSPECT_XPATH="(//h4[@class='panel-title'])[2]";
+			static String BTN_VIEWDETAILS_XPATH="(//button[@title='View Details'])[1]";
+			static String BTN_CONVERSATION_XPATH="(//button[@title='Conversations'])[1]";
+			static String TAB_PARENT_DETAILS_XPATH="//div[@id='headingOneM']";
+			static String TAB_STUDENT_XPATH="//div[@id='headingFourM']";
+			static String TAB_ENROLL_XPATH="//div[@id='headingThree']";
+			static String TAB_UPDATE_BRANCH_XPATH="//div[@id='headingThree']";
+			static String BTN_CLOSE_XPATH="//button[@id='btnCloseSearch']";
+		
+		}
+		
 }

@@ -5,12 +5,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import Admin_screens.Locators.BranchmanagementLocators;
+import Admin_screens.Locators.SearchStudentPageLocator;
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.StudentManagementLocator;
 import coaching_center_base.BaseClass;
 
-public class studentManagePage extends BaseClass implements StudentManagementLocator, Menus, BranchmanagementLocators {
+public class studentManagePage extends BaseClass implements StudentManagementLocator, Menus, SearchStudentPageLocator {
 
 	@FindBy(how = How.XPATH, using = LABEL_STUDENT_PAGE_TITLE_XPATH)
 	private WebElement lbl_student_page_title ;
