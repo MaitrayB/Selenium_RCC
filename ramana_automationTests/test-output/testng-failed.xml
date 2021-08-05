@@ -6,4 +6,16 @@
       <class name="Regression_Tests.Admin_BranchManagement_Tests"/>
     </classes>
   </test> <!-- sample -->
+  <test name="sample(failed)">
+    <classes>
+      <class name="Regression_Tests.Admin_BranchManagement_Tests">
+        <methods>
+          <include name="verify_student_prospect_page"/>
+          <include name="set_up_application"/>
+          <include name="getResult"/>
+          <include name="writeToReport"/>
+        </methods>
+      </class> <!-- Regression_Tests.Admin_BranchManagement_Tests -->
+    </classes>
+  </test> <!-- sample(failed) -->
 </suite> <!-- Failed suite [RegressionTests] -->

@@ -13,6 +13,7 @@ import org.testng.ITestResult;
 
 import Admin_pages.searchStudentPage;
 import Admin_pages.studentManagePage;
+import Admin_pages.studentProspectsPage;
 import Admin_pages.homePage;
 import Admin_pages.loginPage;
 import Admin_pages.registrationPage;
@@ -71,8 +72,8 @@ public class Admin_BranchManagement_Tests {
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_New_Registrations_Page");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));
-		/*homePage homePage=new homePage();
-		homePage.getLogout();*/
+		homePage homePage=new homePage();
+		homePage.getLogout();
 	}
 	
 	@Test(priority = 4)
@@ -86,7 +87,16 @@ public class Admin_BranchManagement_Tests {
 				MarkupHelper.createLabel("Test Case Passed is - Student Management Page", ExtentColor.GREEN));
 	}
 	
+	@Test(priority = 5)
+	public void verify_student_prospect_page() throws Exception
+	{
+		studentProspectsPage studentProspect=new studentProspectsPage();
+		studentProspect.navigateToStudentProspectPage();
+		studentProspect.verifyStudentProspectPage();
+		studentProspect.verifyConversationFunctionality();
+	}
 
+	
 	@AfterTest public void writeToReport() { FrameworkMethods.extent.flush(); }
 	 
 	@AfterMethod

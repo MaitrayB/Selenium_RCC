@@ -18,7 +18,7 @@ public interface Locators {
 			static String MENU_SEARCH_STUDENT_XPATH="//span[@id='searchStudent']";
 			static String MENU_REGISTRATION_XPATH="//span[contains(.,'New Registrations')]";
 			static String MENU_STUDENT_MANAGEMENT_XPATH="//li[@id='branch_student_mgnt_id']";
-			static String MENU_STUDENT_PEROSPECT_XPATH="//li[@id='student_prospects']";
+			static String MENU_STUDENT_PEROSPECT_XPATH="//span[contains(.,'Student Prospects')]";
 			
 
 		}
@@ -76,7 +76,10 @@ public interface Locators {
 			static String TAB_ENROLL_XPATH="//div[@id='headingThree']";
 			static String TAB_UPDATE_BRANCH_XPATH="//div[@id='headingThree']";
 			static String BTN_CLOSE_XPATH="//button[@id='btnCloseSearch']";
-		
+			static String TXT_MSG_XPATH="//textarea";
+			static String BTN_SUBMIT_XPATH="//button[@id='btnConversation']";
+			static String MESSAGE_XPATH="(//strong)[1]";
+			static String BTN_CLOSE_POP_UP_XPATH="(//button[@class='close'])[1]";
 		}
 		
 }

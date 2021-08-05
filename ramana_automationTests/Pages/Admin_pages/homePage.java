@@ -24,12 +24,10 @@ public class homePage extends BaseClass implements HomePageLocators,Menus {
 		PageFactory.initElements(BaseClass.driver, this);
 		// TODO Auto-generated constructor stub
 	}
-
 	
 	public WebElement getLogout() {
 		return logout;
 	}
-
 
 	public WebElement getWelcome_label() {
 		return welcome_label;

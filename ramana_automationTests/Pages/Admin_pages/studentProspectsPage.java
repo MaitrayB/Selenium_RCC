@@ -1,5 +1,8 @@
 package Admin_pages;
 
+import java.io.IOException;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -7,6 +10,7 @@ import org.openqa.selenium.support.How;
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.StudentProspectLocators;
 import coaching_center_base.BaseClass;
+import coaching_center_base.FrameworkMethods;
 
 public class studentProspectsPage extends BaseClass implements StudentProspectLocators,Menus{
 	@FindBy(how = How.XPATH, using = MENU_STUDENT_PEROSPECT_XPATH)
@@ -36,9 +40,20 @@ public class studentProspectsPage extends BaseClass implements StudentProspectLo
 	@FindBy(how = How.XPATH, using = BTN_CLOSE_XPATH)
 	private WebElement btn_close;
 	
-
 	@FindBy(how = How.XPATH, using = TAB_STUDENT_XPATH)
 	private WebElement tab_student;
+	
+	@FindBy(how = How.XPATH, using = TXT_MSG_XPATH)
+	private WebElement txt_enter_msg;
+	
+	@FindBy(how = How.XPATH, using = MESSAGE_XPATH)
+	private WebElement read_msg;
+	
+	@FindBy(how = How.XPATH, using = BTN_SUBMIT_XPATH)
+	private WebElement btn_submit;
+	
+	@FindBy(how = How.XPATH, using = BTN_CLOSE_POP_UP_XPATH)
+	private WebElement btn_popup_close;
 	
 	
 	public WebElement getTab_student() {
@@ -81,15 +96,31 @@ public class studentProspectsPage extends BaseClass implements StudentProspectLo
 		return btn_conversation;
 	}
 	
-	
+	public WebElement getTxt_enter_msg() {
+		return txt_enter_msg;
+	}
+
+	public WebElement getRead_msg() {
+		return read_msg;
+	}
+
+	public WebElement getBtn_submit() {
+		return btn_submit;
+	}
+
+	public WebElement getBtn_popup_close() {
+		return btn_popup_close;
+	}
+
 	public void navigateToStudentProspectPage() throws InterruptedException {
-		getMenu_student_Prospect().click();
 		waitForPageLoad();
+		getMenu_student_Prospect().click();
+		/*JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", getMenu_student_Prospect());*/
 	}
 	
-	public void verifyProspectPage() throws Exception {
+	public void verifyStudentProspectPage() throws Exception {
 		verifyElement(getSat_prospect(), "Sat Prospect Details");
-		verifyElement(getDuke_prospect(), "Duke Prospect Details");
 		verifyElement(getBtn_viewDetail(), "Button View Detail");
 		verifyElement(getBtn_conversation(), "View Conversation Detail");
 		getBtn_viewDetail().click();
@@ -98,6 +129,19 @@ public class studentProspectsPage extends BaseClass implements StudentProspectLo
 		verifyElement(getTab_studentEnrollDetails(), "Parent Details Tab");
 		verifyElement(getTab_updateBranch(), "Update Branch Details Tab");
 		getBtn_close().click();
+		getSat_prospect().click();
+		verifyElement(getDuke_prospect(), "Duke Prospect Details");
 		
 	}
+	
+	public void verifyConversationFunctionality() throws InterruptedException, IOException
+	{	
+		
+		getBtn_conversation().click();
+		waitForPageLoad();
+		getTxt_enter_msg().sendKeys(FrameworkMethods.getCustomProperty("message"));
+		getBtn_submit().click();
+		getRead_msg().getText().equals(FrameworkMethods.getCustomProperty("message"));
+	}
+	
 }
