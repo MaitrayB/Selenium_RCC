@@ -19,7 +19,7 @@ public interface Locators {
 			static String MENU_REGISTRATION_XPATH="//span[contains(.,'New Registrations')]";
 			static String MENU_STUDENT_MANAGEMENT_XPATH="//li[@id='branch_student_mgnt_id']";
 			static String MENU_STUDENT_PEROSPECT_XPATH="//span[contains(.,'Student Prospects')]";
-			
+			static String MENU_TEACHER_STUDENT_XPATH="//span[contains(.,'Teacher Student Mapping')]";
 
 		}
 		
@@ -80,6 +80,18 @@ public interface Locators {
 			static String BTN_SUBMIT_XPATH="//button[@id='btnConversation']";
 			static String MESSAGE_XPATH="(//strong)[1]";
 			static String BTN_CLOSE_POP_UP_XPATH="(//button[@class='close'])[1]";
+		}
+		
+		public interface TeacherStudentMappingPageLocators{
+			static String DRP_STUDENT_XPATH="//select[@id='StudentId']";
+			static String DRP_STUDENT_ENROLLMENT_XPATH="//select[@id='StudentEnrollId']";
+			static String DRP_SELECT_TEACHER_XPATH="//select[@id='teacherIds']";
+			static String OPTION_TEACHER_XPATH="//select[@id='teacherIds']//option[2]";
+			static String OPTION_STUDENT_ENROLLMENT_XPATH="//select[@id='StudentEnrollId']//option[2]";
+			static String OPTION_SELECT_STUDENT_XPATH="//select[@id='StudentId']//option[2]";
+			static String BTN_SEARCH_XPATH="//button[@id='btnSaveAssign']";
+			static String BTN_RESET_XPATH="//button[@id='btnResetAssign']";
+			static String SUCCESS_MSG_XPATH="//div[@id='success-alert_parent']";
 		}
 		
 }

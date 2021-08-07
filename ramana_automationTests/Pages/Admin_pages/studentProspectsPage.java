@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.StudentProspectLocators;
@@ -55,7 +56,13 @@ public class studentProspectsPage extends BaseClass implements StudentProspectLo
 	@FindBy(how = How.XPATH, using = BTN_CLOSE_POP_UP_XPATH)
 	private WebElement btn_popup_close;
 	
+
 	
+	public studentProspectsPage() {
+		PageFactory.initElements(BaseClass.driver, this);
+		// TODO Auto-generated constructor stub
+	}
+
 	public WebElement getTab_student() {
 		return tab_student;
 	}
@@ -115,33 +122,37 @@ public class studentProspectsPage extends BaseClass implements StudentProspectLo
 	public void navigateToStudentProspectPage() throws InterruptedException {
 		waitForPageLoad();
 		getMenu_student_Prospect().click();
-		/*JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", getMenu_student_Prospect());*/
 	}
 	
 	public void verifyStudentProspectPage() throws Exception {
+		waitForPageLoad();
 		verifyElement(getSat_prospect(), "Sat Prospect Details");
+		waitForPageLoad();
 		verifyElement(getBtn_viewDetail(), "Button View Detail");
 		verifyElement(getBtn_conversation(), "View Conversation Detail");
 		getBtn_viewDetail().click();
-		verifyElement(getTab_student(),"Student Tab");
+		waitForPageLoad();
 		verifyElement(getTab_parentDetails(), "Parent Details Tab");
+		verifyElement(getTab_student(),"Student Tab");
 		verifyElement(getTab_studentEnrollDetails(), "Parent Details Tab");
 		verifyElement(getTab_updateBranch(), "Update Branch Details Tab");
 		getBtn_close().click();
-		getSat_prospect().click();
-		verifyElement(getDuke_prospect(), "Duke Prospect Details");
-		
 	}
 	
 	public void verifyConversationFunctionality() throws InterruptedException, IOException
-	{	
-		
+	{		
 		getBtn_conversation().click();
 		waitForPageLoad();
 		getTxt_enter_msg().sendKeys(FrameworkMethods.getCustomProperty("message"));
 		getBtn_submit().click();
 		getRead_msg().getText().equals(FrameworkMethods.getCustomProperty("message"));
+		getBtn_popup_close().click();
+		waitForPageLoad();
+	}
+	
+	public void verifySecondTab() throws Exception {
+		getSat_prospect().click();
+		verifyElement(getDuke_prospect(), "Duke Prospect Details");
 	}
 	
 }
