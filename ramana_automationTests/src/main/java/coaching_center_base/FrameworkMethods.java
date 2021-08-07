@@ -118,7 +118,10 @@ public class FrameworkMethods {
 	public static void waitForPageLoad() throws InterruptedException {
 		Thread.sleep(8000);
 	}
-	public static void waitForTime(int timeinms) throws InterruptedException {
-		Thread.sleep(timeinms);
+	public static void waitForMinTime() throws InterruptedException {
+		Thread.sleep(2000);
+	}
+	public static void waitForMaxTime() throws InterruptedException {
+		Thread.sleep(5000);
 	}
 }

@@ -1,9 +1,12 @@
 package Admin_pages;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.TeacherStudentMappingPageLocators;
@@ -106,14 +109,17 @@ public class teacherStudentMappingPage extends BaseClass implements Menus, Teach
 
 	// Method to verify student teacher mapping functionality
 	public void verifyStudentTeacherMappingFunctionality() throws Exception {
-		getDrp_student_name().click();
-		getSelectStudentDetail_detail().click();
-		getSelectTeacher_detail().click();
-		getDrp_studentenrollment_detail().click();
-		waitForTime(5000);
-		getSelectStudentEnrollment_detail().click();
-		//waitForElementToAppear(getSuccess_msg());
-		verifyElement(getSuccess_msg(), "Success Message");
+		Select studentName=new Select(getDrp_student_name());
+		studentName.selectByIndex(1);
+		waitForMinTime();
+		Select enrollmentDetail= new Select(getDrp_studentenrollment_detail());
+		enrollmentDetail.selectByIndex(1);
+		Select teacherDetail= new Select(getDrp_selectTeacher_detail());
+		teacherDetail.selectByIndex(1);	
+		waitForMinTime();
+		getBtn_search().click();
+		waitForMinTime();
+		assertTrue(getSuccess_msg().isDisplayed());
 		
 	}
 

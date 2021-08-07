@@ -147,7 +147,7 @@ public class studentManagePage extends BaseClass implements StudentManagementLoc
 		verifyElement(getTab_student_details(), "student Details Tab");
 		verifyElement(getTab_student_enroll_details(), "student Enrollment Detail Tab");
 		verifyElement(getTab_update_branch_details(), "Update Branch Details Tab");
-		waitForTime(2000);
+		waitForMinTime();
 		getBtn_close().click(); 
 	}
 }

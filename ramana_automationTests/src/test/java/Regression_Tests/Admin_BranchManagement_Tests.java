@@ -47,53 +47,49 @@ public class Admin_BranchManagement_Tests {
 				MarkupHelper.createLabel("Test Case Passed is - verify Login Funtionality", ExtentColor.GREEN));
 	}
 
-	@Test(priority = 2)
-	public void verify_Search_Student_functionality() throws Exception {
-
-		searchStudentPage branchPage = new searchStudentPage();
-		branchPage.navigateToSearchPage();
-		branchPage.searchStudentwithFirstName();
-		branchPage.ResetSearch();
-		branchPage.searchStudentwithLastName();
-		branchPage.verifyViewDetails();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Search_Student_Functionality");
-		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - Branch_Management_Search_Student", ExtentColor.GREEN));
-
-	}
-
-	@Test(priority = 3)
-	public void New_Registraton_Page_Verification() throws Exception {
-
-		registrationPage register = new registrationPage();
-		register.navigateToRegistrationPage();
-		register.verifyNewRegistrationPage();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_New_Registrations_Page");
-		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));
-		homePage homePage = new homePage();
-		homePage.getLogout();
-	}
-
-	@Test(priority = 4)
-	public void verify_student_management_functionality() throws Exception {
-		studentManagePage student = new studentManagePage();
-		student.navigatToStudentManagement();
-		student.verifyStudentLabel();
-		student.verifyStudentDetails();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Student_Management_Page");
-		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - Student Management Page", ExtentColor.GREEN));
-	}
-
-	@Test(priority = 5)
-	public void verify_student_prospect_page() throws Exception {
-		studentProspectsPage studentProspect = new studentProspectsPage();
-		studentProspect.navigateToStudentProspectPage();
-		studentProspect.verifyStudentProspectPage();
-		studentProspect.verifyConversationFunctionality();
-		studentProspect.verifySecondTab();
-	}
+	
+	  @Test(priority = 2) public void verify_Search_Student_functionality() throws
+	  Exception {
+	  
+	  searchStudentPage branchPage = new searchStudentPage();
+	  branchPage.navigateToSearchPage(); branchPage.searchStudentwithFirstName();
+	  branchPage.ResetSearch(); branchPage.searchStudentwithLastName();
+	  branchPage.verifyViewDetails(); FrameworkMethods.logger =
+	  FrameworkMethods.extent.createTest("Verify_Search_Student_Functionality");
+	  FrameworkMethods.logger.log(Status.PASS, MarkupHelper.
+	  createLabel("Test Case Passed is - Branch_Management_Search_Student",
+	  ExtentColor.GREEN));
+	  
+	  }
+	  
+	  @Test(priority = 3) public void New_Registraton_Page_Verification() throws
+	  Exception {
+	  
+	  registrationPage register = new registrationPage();
+	  register.navigateToRegistrationPage(); register.verifyNewRegistrationPage();
+	  FrameworkMethods.logger =
+	  FrameworkMethods.extent.createTest("Verify_New_Registrations_Page");
+	  FrameworkMethods.logger.log(Status.PASS,
+	  MarkupHelper.createLabel("Test Case Passed is - Registration Page",
+	  ExtentColor.GREEN)); homePage homePage = new homePage();
+	  homePage.getLogout(); }
+	  
+	  @Test(priority = 4) public void verify_student_management_functionality()
+	  throws Exception { studentManagePage student = new studentManagePage();
+	  student.navigatToStudentManagement(); student.verifyStudentLabel();
+	  student.verifyStudentDetails(); FrameworkMethods.logger =
+	  FrameworkMethods.extent.createTest("Verify_Student_Management_Page");
+	  FrameworkMethods.logger.log(Status.PASS,
+	  MarkupHelper.createLabel("Test Case Passed is - Student Management Page",
+	  ExtentColor.GREEN)); }
+	  
+	  @Test(priority = 5) public void verify_student_prospect_page() throws
+	  Exception { studentProspectsPage studentProspect = new
+	  studentProspectsPage(); studentProspect.navigateToStudentProspectPage();
+	  studentProspect.verifyStudentProspectPage();
+	  studentProspect.verifyConversationFunctionality();
+	  studentProspect.verifySecondTab(); }
+	 
 
 	@Test(priority = 6)
 	public void verify_student_teacher_mapping_page() throws Exception {

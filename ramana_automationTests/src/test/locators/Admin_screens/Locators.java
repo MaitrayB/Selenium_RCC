@@ -20,7 +20,7 @@ public interface Locators {
 			static String MENU_STUDENT_MANAGEMENT_XPATH="//li[@id='branch_student_mgnt_id']";
 			static String MENU_STUDENT_PEROSPECT_XPATH="//span[contains(.,'Student Prospects')]";
 			static String MENU_TEACHER_STUDENT_XPATH="//span[contains(.,'Teacher Student Mapping')]";
-
+			static String MENU_ADD_REMOVEBRANCHES_XPATH="//span[contains(.,'Add/Remove Branches')]";
 		}
 		
 		public interface SearchStudentPageLocator{
@@ -91,7 +91,12 @@ public interface Locators {
 			static String OPTION_SELECT_STUDENT_XPATH="//select[@id='StudentId']//option[2]";
 			static String BTN_SEARCH_XPATH="//button[@id='btnSaveAssign']";
 			static String BTN_RESET_XPATH="//button[@id='btnResetAssign']";
-			static String SUCCESS_MSG_XPATH="//div[@id='success-alert_parent']";
+			static String SUCCESS_MSG_XPATH="//div[@id='success-alert_parent' and contains(.,'saved successfully')]";
+		}
+		
+		public interface AddRemoveBranchesPageLocators{
+			static String EAST_BRANCH_XPATH="//td[contains(.,'East')]";
+			//static String 
 		}
 		
 }
