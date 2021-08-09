@@ -96,7 +96,17 @@ public interface Locators {
 		
 		public interface AddRemoveBranchesPageLocators{
 			static String EAST_BRANCH_XPATH="//td[contains(.,'East')]";
-			//static String 
+			static String BTN_VIEW_DETAIL_XPATH="(//button[@title='View Details'])[3]";
+			static String BTN_EDIT_DETAIL_XPATH="(//button[@title='Edit Details'])[3]";
+			static String TITLE_EAST_BRANCH_XPATH="//b[contains(.,'East Branch')]";
+			static String BRANCH_NAME_XPATH="//input[@id='branchName']";
+			static String BTN_SAVE_BRNACH_DETAIL_XPATH="//button[contains(.,'Save')]";
+			static String BTN_MSG_SAVE_XPATH="//button[contains(.,'Saved')]";
+			static String BTN_CLOSE_XPATH="//button[text()='Close']";
+			static String TAB_BRANCH_MANAGEMENT_XPATH="//span[contains(.,'Branch Management')]";
+			static String BTN_CREATE_BRANCH_XPATH="//button[contains(.,'Create new branch')]";
+			static String TAB_BRANCH_ZIP_XPATH="//a[contains(.,'ZIP Code')]";
+			
 		}
 		
 }
