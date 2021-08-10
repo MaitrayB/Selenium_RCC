@@ -154,7 +154,7 @@ public class searchStudentPage extends BaseClass implements SearchStudentPageLoc
 	}
 			
 	public void searchStudentwithLastName() throws Exception {
-		getStudent_last_name().sendKeys();
+		getStudent_last_name().sendKeys(FrameworkMethods.getCustomProperty("student_Last__name"));
 		getBtn_search_student().click();
 		waitForPageLoad();
 	}

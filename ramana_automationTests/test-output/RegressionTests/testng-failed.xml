@@ -6,9 +6,9 @@
       <class name="Regression_Tests.Admin_BranchManagement_Tests">
         <methods>
           <include name="set_up_application"/>
-          <include name="verify_student_teacher_mapping_page"/>
           <include name="writeToReport"/>
           <include name="getResult"/>
+          <include name="verify_Search_Student_functionality"/>
         </methods>
       </class> <!-- Regression_Tests.Admin_BranchManagement_Tests -->
     </classes>
