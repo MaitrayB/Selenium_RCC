@@ -47,6 +47,9 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 
 	@FindBy(how = How.XPATH, using = MENU_ADD_REMOVEBRANCHES_XPATH)
 	private WebElement menu_add_remove_branches;
+	
+	@FindBy(how = How.XPATH, using = UPDATED_NAME_XPATH)
+	private WebElement updated_name;
 
 	public WebElement getEast_branch() {
 		return east_branch;
@@ -54,6 +57,10 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 
 	public WebElement getBtn_view_detail() {
 		return btn_view_detail;
+	}
+	
+	public WebElement getUpdated_name() {
+		return updated_name;
 	}
 
 	public WebElement getBtn_edit_detail() {
@@ -108,6 +115,7 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 		waitForPageLoad();
 	}
 	
+	//methods
 	public void verifyAddRemovBrachePage() throws Exception {
 		verifyElement(getBtn_create_branch(), "Create Branch Button");
 		verifyElement(getTab_branch_management(), "Bracnh Management Page");
@@ -117,16 +125,32 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 	
 	public void editBranchDetail() throws Exception {
 		getBtn_edit_detail().click();
+		waitForMaxTime();
 		verifyElement(getTitle_east_branch(),"East Branch Title");
-		getBranch_name().sendKeys("");
+		getBranch_name().clear();
 		getBranch_name().sendKeys(FrameworkMethods.getCustomProperty("updated_branch_name"));
 		getBtn_save_branch_detail().click();
 		waitForMinTime();
-		verifyElement(getBtn_msg_save(), "uccess Message");
-		getBtn_edit_detail().click();
-		getBranch_name().sendKeys(FrameworkMethods.getCustomProperty("branch_name"));
+		verifyElement(getBtn_msg_save(), "Success Message");
 		getBtn_close_save().click();
+		waitForMaxTime();
+		getUpdated_name().getText().equals(FrameworkMethods.getCustomProperty("updated_branch_name"));
 	}
 	
 	
+	public void resetBranchDetails()throws Exception  {
+		waitForMaxTime();
+		getBtn_edit_detail().click();
+		waitForMaxTime();
+		getBranch_name().clear();
+		getBranch_name().sendKeys(FrameworkMethods.getCustomProperty("branch_name"));
+		getBtn_save_branch_detail().click();
+		waitForMinTime();
+		verifyElement(getBtn_msg_save(), "Success Message");
+		waitForMaxTime();
+		getBtn_close_save().click();
+		waitForMaxTime();
+		getUpdated_name().getText().equals(FrameworkMethods.getCustomProperty("branch_name"));
+	}
+
 }

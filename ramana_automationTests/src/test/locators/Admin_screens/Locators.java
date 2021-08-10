@@ -106,7 +106,8 @@ public interface Locators {
 			static String TAB_BRANCH_MANAGEMENT_XPATH="//span[contains(.,'Branch Management')]";
 			static String BTN_CREATE_BRANCH_XPATH="//button[contains(.,'Create new branch')]";
 			static String TAB_BRANCH_ZIP_XPATH="//a[contains(.,'ZIP Code')]";
-			
+			static String UPDATED_NAME_XPATH="(//tr[3]//td)[2]";
+		
 		}
 		
 }
