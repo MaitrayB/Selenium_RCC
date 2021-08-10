@@ -115,6 +115,7 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 		waitForPageLoad();
 	}
 	
+	//methods
 	public void verifyAddRemovBrachePage() throws Exception {
 		verifyElement(getBtn_create_branch(), "Create Branch Button");
 		verifyElement(getTab_branch_management(), "Bracnh Management Page");
