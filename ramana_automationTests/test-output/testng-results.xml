@@ -19,32 +19,17 @@
     <line>
       <![CDATA[[Pass]Welcome message label is Present on screen]]>
     </line>
-    <line>
-      <![CDATA[[Pass]Username Textbox is Present on screen]]>
-    </line>
-    <line>
-      <![CDATA[[Pass]Parent Details Tab is Present on screen]]>
-    </line>
-    <line>
-      <![CDATA[[Pass]student Details Tab is Present on screen]]>
-    </line>
-    <line>
-      <![CDATA[[Pass]student Enrollment Detail Tab is Present on screen]]>
-    </line>
-    <line>
-      <![CDATA[[Pass]Update Branch Details Tab is Present on screen]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-08-10T21:11:57 IST" name="RegressionTests" finished-at="2021-08-10T21:12:47 IST" duration-ms="50274">
+  <suite started-at="2021-08-12T20:41:03 IST" name="RegressionTests" finished-at="2021-08-12T20:41:41 IST" duration-ms="37783">
     <groups>
     </groups>
-    <test started-at="2021-08-10T21:11:57 IST" name="sample" finished-at="2021-08-10T21:12:47 IST" duration-ms="50274">
+    <test started-at="2021-08-12T20:41:03 IST" name="sample" finished-at="2021-08-12T20:41:41 IST" duration-ms="37783">
       <class name="Regression_Tests.Admin_BranchManagement_Tests">
-        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-10T21:11:53 IST" name="set_up_application" finished-at="2021-08-10T21:11:57 IST" duration-ms="3690" status="PASS">
+        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-12T20:41:00 IST" name="set_up_application" finished-at="2021-08-12T20:41:03 IST" duration-ms="3496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up_application -->
-        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-10T21:11:57 IST" name="verify_Login_Funtionality" finished-at="2021-08-10T21:12:21 IST" duration-ms="23919" status="PASS">
+        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-12T20:41:03 IST" name="verify_Login_Funtionality" finished-at="2021-08-12T20:41:27 IST" duration-ms="23783" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -66,7 +51,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_Login_Funtionality -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-10T21:12:21 IST" name="getResult" finished-at="2021-08-10T21:12:21 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-12T20:41:27 IST" name="getResult" finished-at="2021-08-12T20:41:27 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,37 +62,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="verify_Search_Student_functionality()[pri:2, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-10T21:12:21 IST" name="verify_Search_Student_functionality" finished-at="2021-08-10T21:12:46 IST" duration-ms="25565" status="PASS">
+        <test-method signature="verify_Add_update_enquiry_page()[pri:8, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-12T20:41:27 IST" name="verify_Add_update_enquiry_page" finished-at="2021-08-12T20:41:40 IST" duration-ms="12870" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[[Pass]Username Textbox is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]Parent Details Tab is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]student Details Tab is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]student Enrollment Detail Tab is Present on screen]]>
-            </line>
-            <line>
-              <![CDATA[[Pass]Update Branch Details Tab is Present on screen]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- verify_Search_Student_functionality -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-10T21:12:46 IST" name="getResult" finished-at="2021-08-10T21:12:46 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verify_Add_update_enquiry_page -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-12T20:41:40 IST" name="getResult" finished-at="2021-08-12T20:41:40 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Search_Student_functionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Search_Student_functionality()[pri:2, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3] output=[Pass]Username Textbox is Present on screen]]]>
+                <![CDATA[[TestResult name=verify_Add_update_enquiry_page status=SUCCESS method=Admin_BranchManagement_Tests.verify_Add_update_enquiry_page()[pri:8, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-10T21:12:46 IST" name="writeToReport" finished-at="2021-08-10T21:12:47 IST" duration-ms="694" status="PASS">
+        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@74751b3]" started-at="2021-08-12T20:41:40 IST" name="writeToReport" finished-at="2021-08-12T20:41:41 IST" duration-ms="1028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeToReport -->

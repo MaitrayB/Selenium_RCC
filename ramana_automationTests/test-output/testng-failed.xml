@@ -8,7 +8,7 @@
           <include name="set_up_application"/>
           <include name="writeToReport"/>
           <include name="getResult"/>
-          <include name="verify_Search_Student_functionality"/>
+          <include name="verify_Add_update_enquiry_page"/>
         </methods>
       </class> <!-- Regression_Tests.Admin_BranchManagement_Tests -->
     </classes>

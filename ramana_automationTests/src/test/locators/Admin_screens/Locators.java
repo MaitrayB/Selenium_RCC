@@ -21,6 +21,7 @@ public interface Locators {
 			static String MENU_STUDENT_PEROSPECT_XPATH="//span[contains(.,'Student Prospects')]";
 			static String MENU_TEACHER_STUDENT_XPATH="//span[contains(.,'Teacher Student Mapping')]";
 			static String MENU_ADD_REMOVEBRANCHES_XPATH="//span[contains(.,'Add/Remove Branches')]";
+			static String MENU_ENQUIRY_XPATH="//span[contains(.,'Enquiries')]";
 		}
 		
 		public interface SearchStudentPageLocator{
@@ -63,6 +64,7 @@ public interface Locators {
 			static String BTN_VIEW_SCHEDULE_XPATH="//button[@title='View Details']";
 			static String BTN_CONVERSATION_XPATH="//button[@title='Conversations']";
 			
+			
 		}
 		
 		public interface StudentProspectLocators{
@@ -103,11 +105,28 @@ public interface Locators {
 			static String BTN_SAVE_BRNACH_DETAIL_XPATH="//button[contains(.,'Save')]";
 			static String BTN_MSG_SAVE_XPATH="//button[contains(.,'Saved')]";
 			static String BTN_CLOSE_XPATH="//button[text()='Close']";
-			static String TAB_BRANCH_MANAGEMENT_XPATH="//span[contains(.,'Branch Management')]";
+			static String TAB_BRANCH_MANAGEMENT_XPATH="";
 			static String BTN_CREATE_BRANCH_XPATH="//button[contains(.,'Create new branch')]";
 			static String TAB_BRANCH_ZIP_XPATH="//a[contains(.,'ZIP Code')]";
 			static String UPDATED_NAME_XPATH="(//tr[3]//td)[2]";
+		}
 		
+		public interface EnquiriesPageLocators{
+			static String FIRSTNAME_XPATH="//input[@id='parentFirstName']";
+			static String LASTNAME_XPATH="//input[@name='enquiryForm.parentLastName']";
+			static String MOBILE_NUMBER_XPATH="//input[@name='enquiryForm.parentPhoneNumber']";
+			static String PARENT_EMAIL_XPATH="//input[@name='enquiryForm.parentEmailId']";
+			static String STUDENT_FIRSTNAME_XPATH="//input[@name='enquiryForm.studentFirstName']";
+			static String STUDENT_LASTNAME_XPATH="//input[@name='enquiryForm.studentLastName']";
+			static String MESSAGE_XPATH="//textarea[@id='message']";
+			static String INTRESTED_PROGRAM_XPATH="//select[@id='interested_Program']";
+			static String BTN_RESET_XPATH="(//button[@id='btnReset'])[1]";
+			static String BTN_ADDUPDATE_XPATH="(//button[@id='btnSubmit'])[1]";
+			static String TAB_ADD_ENQUIRY_XPATH="//div[@id='headingThree']";
+			static String TAB_SEARCH_ENQUIRY_XPATH="//div[@id='headingFour']";
+			static String SEARCH_LAST_NAME_XPATH="(//input)[10]";
+			static String BTN_SEARCH="//button[@id='btnSearchId']";
+			
 		}
 		
 }
