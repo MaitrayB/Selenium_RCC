@@ -46,4 +46,6 @@ public class BaseClass extends FrameworkMethods{
 		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
 	}
 	
+	
+	
 }

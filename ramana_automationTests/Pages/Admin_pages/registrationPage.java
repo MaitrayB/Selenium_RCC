@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.NewRegistrationLocators;
 import coaching_center_base.BaseClass;

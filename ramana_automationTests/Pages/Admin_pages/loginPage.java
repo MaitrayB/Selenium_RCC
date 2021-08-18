@@ -68,4 +68,13 @@ public class loginPage extends BaseClass implements LoginPageLocators {
 		verifyElement(getForgot_ID_links(), "Forgot ID Link");
 		verifyElement(getForgot_password_links(), "Forgot Password Link");
 	}
+	
+	public void IsUserOnLoginPage() throws IOException {
+		String currentURL=driver.getCurrentUrl();
+		if(currentURL.contentEquals("http://ec2-44-230-141-105.us-west-2.compute.amazonaws.com/myportal/")) {
+			getEmail_textbox().sendKeys(FrameworkMethods.getCustomProperty("student_email"));
+			getPassword_textbox().sendKeys(FrameworkMethods.getCustomProperty("student_password"));
+			getLogin_button().click();
+		}
+	}
 }
