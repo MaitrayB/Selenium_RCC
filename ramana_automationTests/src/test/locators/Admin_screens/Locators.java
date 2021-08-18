@@ -22,6 +22,8 @@ public interface Locators {
 			static String MENU_TEACHER_STUDENT_XPATH="//span[contains(.,'Teacher Student Mapping')]";
 			static String MENU_ADD_REMOVEBRANCHES_XPATH="//span[contains(.,'Add/Remove Branches')]";
 			static String MENU_ENQUIRY_XPATH="//span[contains(.,'Enquiries')]";
+			static String MENU_REFERAL_MANAGEMENT_XPATH="//span[contains(.,'Referral Management')]";
+			static String MENU_STUDENT_PHOTO_APPROVAL_XPATH="//span[contains(.,'Photo')]";
 		}
 		
 		public interface SearchStudentPageLocator{
@@ -105,7 +107,7 @@ public interface Locators {
 			static String BTN_SAVE_BRNACH_DETAIL_XPATH="//button[contains(.,'Save')]";
 			static String BTN_MSG_SAVE_XPATH="//button[contains(.,'Saved')]";
 			static String BTN_CLOSE_XPATH="//button[text()='Close']";
-			static String TAB_BRANCH_MANAGEMENT_XPATH="";
+			static String TAB_BRANCH_MANAGEMENT_XPATH="//div[@id='headingOne']";
 			static String BTN_CREATE_BRANCH_XPATH="//button[contains(.,'Create new branch')]";
 			static String TAB_BRANCH_ZIP_XPATH="//a[contains(.,'ZIP Code')]";
 			static String UPDATED_NAME_XPATH="(//tr[3]//td)[2]";
@@ -126,7 +128,33 @@ public interface Locators {
 			static String TAB_SEARCH_ENQUIRY_XPATH="//div[@id='headingFour']";
 			static String SEARCH_LAST_NAME_XPATH="(//input)[10]";
 			static String BTN_SEARCH="//button[@id='btnSearchId']";
-			
+			static String LAST_NAME_XPATH="(//tr[1]/td)[3]";	
 		}
 		
+		public interface ReferalManagementLocators{
+			static String TAB_REFERALL_REWARD_XPATH="//div[@id='heading10']//a";
+			static String TAB_REFERAL_ACTIVITY_XPATH="//div[@id='heading11']//a";
+			static String FIELD_REFERRER_NAME_XPATH="(//div[@id='resultDiv']//th[contains(.,'Referrer Name')])[1]";
+			static String FIELD_REFERRER_EMAIL_XPATH="(//div[@id='resultDiv']//th[contains(.,'Referrer Email Id')])[1]";
+			static String FIELD_CUSTOMER_NAME_XPATH="(//div[@id='resultDiv']//th[contains(.,'New Customer Name')])[1]";
+			static String FIELD_CUSTOMER_EMAIL_XPATH="(//div[@id='resultDiv']//th[contains(.,'New Customer Email Id')])[1]";
+			static String FIELD_APPROVE_DATE_XPATH="(//div[@id='resultDiv']//th[contains(.,'Approval Date')])[1]";
+			static String FIELD_REWARD_DATE_XPATH="(//div[@id='resultDiv']//th[contains(.,'Reward Date')])[1]";
+			static String FIELD_ACTION_STATUS_XPATH="(//div[@id='resultDiv']//th[contains(.,'Action/Status')])[1]";
+			static String FIELD_REFERRER_ACTIVITY_NAME_XPATH="(//div[@id='resultDiv']//th[contains(.,'Referrer Name')])[2]";
+			static String FIELD_REFERRER_ACTIVITY_EMAIL_XPATH="(//div[@id='resultDiv']//th[contains(.,'Referrer Email Id')])[2]";
+			static String FIELD_CUSTOMER_ACTIVITY_NAME_XPATH="(//div[@id='resultDiv']//th[contains(.,'New Customer Name')])[2]";
+			static String FIELD_CUSTOMER_ACTIVITY_EMAIL_XPATH="(//div[@id='resultDiv']//th[contains(.,'New Customer Email Id')])[2]";
+			static String FIELD_APPROVE_ACTIVITY_DATE_XPATH="(//div[@id='resultDiv']//th[contains(.,'Redemption Date')])";
+			static String FIELD_ACTION_ACTIVITY_STATUS_XPATH="(//div[@id='resultDiv']//th[contains(.,'Action/Status')])[2]";	
+			static String FIELD_REFERRAL_DATE_XPATH="(//div[@id='resultDiv']//th[contains(.,'Referral date')])[1]";
+		}
+		
+		public interface StudentPhotoApprovalLocators{
+			static String BTN_MANAGE_REQUEST_XPATH="//button[@title='View Details']";
+			static String BTN_APPROVE_REQUEST_XPATH="//button[@title='Approve Request']";
+			static String MSG_NO_REQUEST_AVAILABLE_XPATH="//h5[text()='No Requests Available']";
+			static String TAB_STUDENT_PHOTO_REQ_MANAGEMENT_XPATH="//div[@id='headingOne']";
+		}
+
 }

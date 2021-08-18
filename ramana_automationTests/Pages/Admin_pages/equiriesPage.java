@@ -64,12 +64,18 @@ public class equiriesPage extends BaseClass implements Menus, EnquiriesPageLocat
 
 	@FindBy(how = How.XPATH, using = BTN_SEARCH)
 	private WebElement btn_search;
+	
+	@FindBy(how = How.XPATH, using = BTN_SEARCH)
+	private WebElement last_name;
 
-	
-	
 	public WebElement getSerach_name() {
 		return serach_name;
 	}
+
+	public WebElement getLast_name() {
+		return last_name;
+	}
+
 
 	public WebElement getTab_search_enquiry() {
 		return tab_search_enquiry;
@@ -154,6 +160,9 @@ public class equiriesPage extends BaseClass implements Menus, EnquiriesPageLocat
 		getTab_search_enquiry().click();
 		getSerach_name().sendKeys(FrameworkMethods.getCustomProperty("parent_last_name"));
 		getBtn_search().click();
+		getLast_name().getText().equals(FrameworkMethods.getCustomProperty("student_last_name"));
 	}
+	
+	 
 
 }

@@ -124,6 +124,8 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 	}
 	
 	public void editBranchDetail() throws Exception {
+		waitForMaxTime();
+
 		getBtn_edit_detail().click();
 		waitForMaxTime();
 		verifyElement(getTitle_east_branch(),"East Branch Title");
