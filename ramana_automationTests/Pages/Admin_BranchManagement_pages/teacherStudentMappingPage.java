@@ -1,4 +1,4 @@
-package Admin_pages;
+package Admin_BranchManagement_pages;
 
 import static org.testng.Assert.assertTrue;
 

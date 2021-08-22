@@ -11,22 +11,24 @@ import java.io.IOException;
 
 import org.testng.ITestResult;
 
-import Admin_pages.searchStudentPage;
-import Admin_pages.studentManagePage;
-import Admin_pages.studentProspectsPage;
-import Admin_pages.teacherStudentMappingPage;
-import Admin_pages.addRemoveBranchesPage;
-import Admin_pages.equiriesPage;
-import Admin_pages.homePage;
-import Admin_pages.loginPage;
-import Admin_pages.referralManagementPage;
-import Admin_pages.registrationPage;
 import coaching_center_base.FrameworkMethods;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+
+import Admin_BranchManagement_pages.addRemoveBranchesPage;
+import Admin_BranchManagement_pages.equiriesPage;
+import Admin_BranchManagement_pages.homePage;
+import Admin_BranchManagement_pages.loginPage;
+import Admin_BranchManagement_pages.referralManagementPage;
+import Admin_BranchManagement_pages.registrationPage;
+import Admin_BranchManagement_pages.searchStudentPage;
+import Admin_BranchManagement_pages.studentManagePage;
+import Admin_BranchManagement_pages.studentPhotoApprovalPage;
+import Admin_BranchManagement_pages.studentProspectsPage;
+import Admin_BranchManagement_pages.teacherStudentMappingPage;
 import coaching_center_base.BaseClass;
 
 public class Admin_BranchManagement_Tests {
@@ -136,15 +138,41 @@ public class Admin_BranchManagement_Tests {
 				MarkupHelper.createLabel("Test Case Passed is - Enqiury Page", ExtentColor.GREEN));
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void verify_referral_activity_page() throws Exception {
 		referralManagementPage referralPage=new referralManagementPage();
 		referralPage.navigateToReferralManagementPage();
 		referralPage.verifyReferralRewardManagement();
 		referralPage.verifyReferralManagement();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Referral_Activity_Page");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - Verifiy Referral Activity page", ExtentColor.GREEN));
 	}	
 	
-	
+	@Test(priority = 10)
+	public void verify_photo_approval_management_page() throws Exception {
+		studentPhotoApprovalPage studentPhotoApproval=new studentPhotoApprovalPage();
+		homePage homepage=new homePage();
+		loginPage  loginpage= new loginPage();
+		homepage.doLogout();
+		loginpage.IsUserOnLoginPage();
+		studentPhotoApproval.navigateToUploadProfilePhoto();
+		studentPhotoApproval.sendPhotoApprovalRequest();
+		homepage.doLogout();
+		loginpage.doLogin();
+		studentPhotoApproval.navigateToStudentPhotoRequestPage();
+		studentPhotoApproval.aprrovePhotoRequest();
+		homepage.doLogout();
+		loginpage.IsUserOnLoginPage();
+		studentPhotoApproval.verifyPhotoAprrovalMessage();
+		homepage.doLogout();
+		loginpage.doLogin();
+
+
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Enquiry_Page");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - Enqiury Page", ExtentColor.GREEN));
+	}		
 	@AfterTest
 	public void writeToReport() {
 		FrameworkMethods.extent.flush();

@@ -1,4 +1,4 @@
-package Admin_pages;
+package Admin_BranchManagement_pages;
 
 import java.io.IOException;
 

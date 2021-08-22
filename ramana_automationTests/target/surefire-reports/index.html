@@ -23,21 +23,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-RegressionTests">
-              <span class="suite-name border-passed">RegressionTests</span>
+            <a href="#" panel-name="suite-RegressionTests" class="navigator-link">
+              <span class="suite-name border-failed">RegressionTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-RegressionTests">
-                    <span>C:\Users\HP\git\Selenium_RCC\ramana_automationTests\testng.xml</span>
+                  <a href="#" panel-name="test-xml-RegressionTests" class="navigator-link ">
+                    <span>D:\Up\Novatesoft Ramana\Selenium_RCC\ramana_automationTests\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-RegressionTests">
+                  <a href="#" panel-name="testlist-RegressionTests" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-RegressionTests">
+                  <a href="#" panel-name="group-RegressionTests" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-RegressionTests">
+                  <a href="#" panel-name="times-RegressionTests" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-RegressionTests">
+                  <a href="#" panel-name="reporter-RegressionTests" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-RegressionTests">
+                  <a href="#" panel-name="ignored-methods-RegressionTests" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-RegressionTests">
+                  <a href="#" panel-name="chronological-RegressionTests" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,7 +90,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionTests" class="hide-methods failed suite-RegressionTests"> (hide)</a> <!-- hide-methods failed suite-RegressionTests -->
+                      <a href="#" panel-name="suite-RegressionTests" class="show-methods failed suite-RegressionTests"> (show)</a> <!-- show-methods failed suite-RegressionTests -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionTests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="verify_Add_update_enquiry_page">verify_Add_update_enquiry_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionTests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionTests" class="hide-methods passed suite-RegressionTests"> (hide)</a> <!-- hide-methods passed suite-RegressionTests -->
+                      <a href="#" panel-name="suite-RegressionTests" class="show-methods passed suite-RegressionTests"> (show)</a> <!-- show-methods passed suite-RegressionTests -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionTests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="verify_Login_Funtionality">verify_Login_Funtionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionTests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -102,19 +130,136 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionTests" class="panel RegressionTests">
+          <div class="suite-RegressionTests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Regression_Tests.Admin_BranchManagement_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Add_update_enquiry_page">
+                  </a> <!-- verify_Add_update_enquiry_page -->
+                  <span class="method-name">verify_Add_update_enquiry_page</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32f16f89c3f364e5db7e33239e0f021a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Admin_BranchManagement_pages.equiriesPage.searchEnquiry(equiriesPage.java:163)
+	at Regression_Tests.Admin_BranchManagement_Tests.verify_Add_update_enquiry_page(Admin_BranchManagement_Tests.java:135)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 30 stack frames<br/> org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32f16f89c3f364e5db7e33239e0f021a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Admin_BranchManagement_pages.equiriesPage.searchEnquiry(equiriesPage.java:163)
+	at Regression_Tests.Admin_BranchManagement_Tests.verify_Add_update_enquiry_page(Admin_BranchManagement_Tests.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br>org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br>com.sun.proxy.$Proxy11.click(Unknown Source)<br>Admin_BranchManagement_pages.equiriesPage.searchEnquiry(equiriesPage.java:163)<br>Regression_Tests.Admin_BranchManagement_Tests.verify_Add_update_enquiry_page(Admin_BranchManagement_Tests.java:135)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTests-class-failed -->
+          <div class="suite-RegressionTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Regression_Tests.Admin_BranchManagement_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Login_Funtionality">
+                  </a> <!-- verify_Login_Funtionality -->
+                  <span class="method-name">verify_Login_Funtionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTests-class-passed -->
         </div> <!-- panel RegressionTests -->
         <div panel-name="test-xml-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\git\Selenium_RCC\ramana_automationTests\testng.xml</span>
+            <span class="header-content">D:\Up\Novatesoft Ramana\Selenium_RCC\ramana_automationTests\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;RegressionTests&quot;&gt;
+&lt;suite name=&quot;RegressionTests&quot; verbose=&quot;0&quot;&gt;
   &lt;test name=&quot;sample&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;coaching_center_base.BaseClass&quot;/&gt;
+      &lt;class name=&quot;Regression_Tests.Admin_BranchManagement_Tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verify_Login_Funtionality&quot;/&gt;
+          &lt;include name=&quot;verify_Add_update_enquiry_page&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Regression_Tests.Admin_BranchManagement_Tests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- sample --&gt;
 &lt;/suite&gt; &lt;!-- RegressionTests --&gt;
@@ -154,11 +299,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verify_Login_Funtionality')
+data.setCell(0, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(0, 3, 22503);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_Add_update_enquiry_page')
+data.setCell(1, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(1, 3, 15174);
 window.suiteTableData['RegressionTests']= { tableData: data, tableDiv: 'times-div-RegressionTests'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-RegressionTests">
               </div> <!-- times-div-RegressionTests -->
             </div> <!-- times-div -->
@@ -169,13 +323,45 @@ return data;
             <span class="header-content">Reporter output for RegressionTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify_Login_Funtionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Password Textbox is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Login Button is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Forgot ID Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Forgot Password Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Welcome message label is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Regression_Tests.Admin_BranchManagement_Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_referral_activity_page</span>
+                <br/>
+                <span class="ignored-method-name">verify_photo_approval_management_page</span>
+                <br/>
+                <span class="ignored-method-name">verify_student_prospect_page</span>
+                <br/>
+                <span class="ignored-method-name">verify_Add_remove_branches_page</span>
+                <br/>
+                <span class="ignored-method-name">verify_student_teacher_mapping_page</span>
+                <br/>
+                <span class="ignored-method-name">verify_Search_Student_functionality</span>
+                <br/>
+                <span class="ignored-method-name">New_Registraton_Page_Verification</span>
+                <br/>
+                <span class="ignored-method-name">verify_student_management_functionality</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-RegressionTests" class="panel">
@@ -184,19 +370,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">coaching_center_base.BaseClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Regression_Tests.Admin_BranchManagement_Tests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">SetUp</span>
+                <span class="method-name">set_up_application</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">OpenApplication</span>
-                <span class="method-start">6198 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-suite after">
-                <span class="method-name">Destroy</span>
-                <span class="method-start">25825 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="test-method">
+                <span class="method-name">verify_Login_Funtionality</span>
+                <span class="method-start">2480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify...)</span>
+                <span class="method-start">24983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_Add_update_enquiry_page</span>
+                <span class="method-start">24984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verify_Add_update_enquiry_page status=FAILURE method=Admin_BranchManagement_Tests.v...)</span>
+                <span class="method-start">40168 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">writeToReport</span>
+                <span class="method-start">40174 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
