@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="RegressionTests" verbose="1" >
- 
-  <test name="sample">
-    <classes>
-      <class name="Regression_Tests.Admin_BranchManagement_Tests">
-      <!-- <methods>
-              <include name="verify_Login_Funtionality" />
-              <include name="verify_referral_activity_page" />
-      </methods> -->
-      </class>
-      <class name="Student_Management_Test"></class>
-    </classes>
-  </test>
+<suite name="RegressionTests" verbose="1">
+
+	<test name="sample">
+		<classes>
+			<class name="Regression_Tests.Admin_BranchManagement_Tests">
+				<methods>
+					<include name="verify_Login_Funtionality" />
+				</methods>
+			</class>
+			<class name="Regression_Tests.Admin_Group_SAT_Test"> </class>
+		</classes>
+	</test>
 </suite>

@@ -6,15 +6,14 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
-import Admin_pages.homePage;
-import Admin_pages.loginPage;
+import Admin_BranchManagement_pages.homePage;
+import Admin_BranchManagement_pages.loginPage;
 import coaching_center_base.BaseClass;
 import coaching_center_base.FrameworkMethods;
 
 public class Student_Management_Test {
 	@Test(priority = 1)
 	public void verify_Login_Funtionality() throws Exception {
-		
 		loginPage login = new loginPage();
 		homePage home = new homePage();
 		BaseClass.LaunchApplication();
@@ -26,7 +25,6 @@ public class Student_Management_Test {
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - verify Login Funtionality", ExtentColor.GREEN));
 	}
-	
-	
+
 
 }

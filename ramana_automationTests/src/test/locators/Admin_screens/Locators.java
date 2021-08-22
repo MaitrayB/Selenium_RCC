@@ -45,7 +45,6 @@ public interface Locators {
 			static String TAB_UPDATE_BRANCH_XPATH="(//a[@class='collapsed'])[4]";
 			static String BTN_CLOSE_XPATH="//button[@id='btnCloseSearch']";
 			static String BTN_RESET_XPATH="//button[@id='btnReset']";
-	
 		}
 		
 		public interface NewRegistrationLocators{
@@ -148,6 +147,7 @@ public interface Locators {
 			static String FIELD_APPROVE_ACTIVITY_DATE_XPATH="(//div[@id='resultDiv']//th[contains(.,'Redemption Date')])";
 			static String FIELD_ACTION_ACTIVITY_STATUS_XPATH="(//div[@id='resultDiv']//th[contains(.,'Action/Status')])[2]";	
 			static String FIELD_REFERRAL_DATE_XPATH="(//div[@id='resultDiv']//th[contains(.,'Referral date')])[1]";
+		
 		}
 		
 		public interface StudentPhotoApprovalLocators{
@@ -156,5 +156,7 @@ public interface Locators {
 			static String MSG_NO_REQUEST_AVAILABLE_XPATH="//h5[text()='No Requests Available']";
 			static String TAB_STUDENT_PHOTO_REQ_MANAGEMENT_XPATH="//div[@id='headingOne']";
 		}
+		
+		
 
 }

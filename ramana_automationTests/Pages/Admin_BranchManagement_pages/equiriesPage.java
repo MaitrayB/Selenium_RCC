@@ -1,4 +1,4 @@
-package Admin_pages;
+package Admin_BranchManagement_pages;
 
 import java.io.IOException;
 
@@ -65,7 +65,7 @@ public class equiriesPage extends BaseClass implements Menus, EnquiriesPageLocat
 	@FindBy(how = How.XPATH, using = BTN_SEARCH)
 	private WebElement btn_search;
 	
-	@FindBy(how = How.XPATH, using = BTN_SEARCH)
+	@FindBy(how = How.XPATH, using = LAST_NAME_XPATH)
 	private WebElement last_name;
 
 	public WebElement getSerach_name() {
@@ -159,8 +159,10 @@ public class equiriesPage extends BaseClass implements Menus, EnquiriesPageLocat
 		waitForMinTime();
 		getTab_search_enquiry().click();
 		getSerach_name().sendKeys(FrameworkMethods.getCustomProperty("parent_last_name"));
+		waitForMinTime();
 		getBtn_search().click();
-		getLast_name().getText().equals(FrameworkMethods.getCustomProperty("student_last_name"));
+		System.out.println(getLast_name().getText());
+		getLast_name().getText().equals(FrameworkMethods.getCustomProperty("parent_last_name"));
 	}
 	
 	 
