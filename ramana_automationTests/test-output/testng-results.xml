@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
+<testng-results ignored="10" total="12" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -19,23 +19,47 @@
     <line>
       <![CDATA[[Pass]Welcome message label is Present on screen]]>
     </line>
+    <line>
+      <![CDATA[[Pass]Student Popup is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[fail]Disable Link is not Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Student Popup is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Active Link is Present on screen]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-08-24T18:21:56 IST" name="RegressionTests" finished-at="2021-08-24T18:23:10 IST" duration-ms="73255">
+  <suite started-at="2021-08-27T19:47:03 IST" name="RegressionTests" finished-at="2021-08-27T19:49:21 IST" duration-ms="138271">
     <groups>
     </groups>
-    <test started-at="2021-08-24T18:21:56 IST" name="sample" finished-at="2021-08-24T18:23:10 IST" duration-ms="73255">
+    <test started-at="2021-08-27T19:47:03 IST" name="sample" finished-at="2021-08-27T19:49:21 IST" duration-ms="138271">
       <class name="Regression_Tests.Admin_Group_SAT_Test">
-        <test-method signature="navigateToManageClass()[pri:1, instance:Regression_Tests.Admin_Group_SAT_Test@2ea41516]" started-at="2021-08-24T18:22:21 IST" name="navigateToManageClass" finished-at="2021-08-24T18:23:08 IST" duration-ms="47443" status="PASS">
+        <test-method signature="verifyActiveInactiveStudetFunc()[pri:2, instance:Regression_Tests.Admin_Group_SAT_Test@3a44431a]" started-at="2021-08-27T19:47:25 IST" name="verifyActiveInactiveStudetFunc" finished-at="2021-08-27T19:49:21 IST" duration-ms="115835" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[Pass]Student Popup is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[fail]Disable Link is not Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Student Popup is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Active Link is Present on screen]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- navigateToManageClass -->
+        </test-method> <!-- verifyActiveInactiveStudetFunc -->
       </class> <!-- Regression_Tests.Admin_Group_SAT_Test -->
       <class name="Regression_Tests.Admin_BranchManagement_Tests">
-        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@5a56cdac]" started-at="2021-08-24T18:21:51 IST" name="set_up_application" finished-at="2021-08-24T18:21:56 IST" duration-ms="4918" status="PASS">
+        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@7c711375]" started-at="2021-08-27T19:47:01 IST" name="set_up_application" finished-at="2021-08-27T19:47:03 IST" duration-ms="2324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up_application -->
-        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@5a56cdac]" started-at="2021-08-24T18:21:56 IST" name="verify_Login_Funtionality" finished-at="2021-08-24T18:22:21 IST" duration-ms="24440" status="PASS">
+        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@7c711375]" started-at="2021-08-27T19:47:03 IST" name="verify_Login_Funtionality" finished-at="2021-08-27T19:47:25 IST" duration-ms="21828" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -57,18 +81,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_Login_Funtionality -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@5a56cdac]" started-at="2021-08-24T18:22:21 IST" name="getResult" finished-at="2021-08-24T18:22:21 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@7c711375]" started-at="2021-08-27T19:47:25 IST" name="getResult" finished-at="2021-08-27T19:47:25 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@5a56cdac] output=[Pass]Username Textbox is Present on screen]]]>
+                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@7c711375] output=[Pass]Username Textbox is Present on screen]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@5a56cdac]" started-at="2021-08-24T18:23:08 IST" name="writeToReport" finished-at="2021-08-24T18:23:10 IST" duration-ms="1269" status="PASS">
+        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@7c711375]" started-at="2021-08-27T19:49:21 IST" name="writeToReport" finished-at="2021-08-27T19:49:21 IST" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeToReport -->

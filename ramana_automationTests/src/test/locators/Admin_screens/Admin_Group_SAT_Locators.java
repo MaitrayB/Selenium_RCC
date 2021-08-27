@@ -25,16 +25,24 @@ public interface Admin_Group_SAT_Locators {
 		static String BTN_DEACTIVE_XPATH = "//tr//td[contains(.,'special Batch')]//..//td//button[text()='Deactivate']";
 		static String MSG_SUCCESS_XPATH = "//div[@id='successDiv4']";
 	}
+	
 	public interface Batch_Detail_Viewer_Locators{
 		static String TAB_MANAGE_BATCH_XPATH="//div[@id='heading4']//h4/a[contains(.,'Manage Batches')]";
 		static String TAB_BATCH_DETAILS_VIEWER_XPATH="//div[@id='headingOne']//h4/a[contains(.,'Batch Details Viewer')]";
-		static String SELECT_SUBPROGRAME_XPATH="(//select[@id='batchId'])[1]";
+		static String SELECT_SUBPROGRAME_XPATH="(//select[@id='subProgramId'])[1]";
+		static String SEELCT_BATCH_XPATH="//select[@id='batchId']";
 		static String EDIT_BUTTON_XPATH="//div[@id='collapseOne']//tr[3]//td[7]//button[2]";
 		static String ACCESS_END_DATE_XPATH="(//input[@id='classDate'])[3]";
 		static String SAVE_BUTTON_XPATH="//div[@id='collapseOne']//tr[3]//td[7]//button[1]";
 		static String VIEW_BUTTON_XPATH="//div[@id='collapseOne']//tr[3]//button[@title='View Details']";
 		static String STUDENT_DETAIL_POPUP_XPATH="//h4[text()='Student Details']";
 		static String LOGIN_AS_STUDENT_XPATH="//button[@name='login_as_student']";
-		
+		static String TAB_STUDENT_PROGRAME_XPATH="//div[@id='heading0']//h4/a[contains(.,'Program')]";
+		static String DRP_SWITCH_ROLL_XPATH="//a[contains(.,'Student')]";
+		static String OPTION_PREVIOUS_ADMIN_XPATH="//a[contains(.,'Previous_administrator')]";
+		static String LINK_PROGRAME_XPATH="//a[contains(@class,'ng-binding ng-scope')]";
+		static String DISABLE_LINK_XPATH="//table[@id='myTable']//span";
+	
 	}
+
 }

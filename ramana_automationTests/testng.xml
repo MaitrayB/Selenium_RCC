@@ -10,7 +10,11 @@
 					<include name="verify_Login_Funtionality" />
 				</methods>
 			</class>
-			<class name="Regression_Tests.Admin_Group_SAT_Test"> </class>
+			<class name="Regression_Tests.Admin_Group_SAT_Test">
+				<methods>
+					<include name="verifyActiveInactiveStudetFunc" />
+				</methods>
+			 </class>
 		</classes>
 	</test>
 </suite>
