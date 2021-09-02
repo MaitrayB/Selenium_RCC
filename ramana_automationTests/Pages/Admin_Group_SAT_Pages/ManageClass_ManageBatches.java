@@ -19,7 +19,7 @@ import Admin_screens.Admin_Group_SAT_Locators.Create_Batch_Page_Locators;
 import coaching_center_base.BaseClass;
 import coaching_center_base.FrameworkMethods;
 
-public class ManageClass_ManageBatches extends BaseClass implements Admin_Group_SAT_Menu, Create_Batch_Page_Locators {
+public class ManageClass_ManageBatches extends SAT_TemplatePage implements Admin_Group_SAT_Menu, Create_Batch_Page_Locators {
 
 	public ManageClass_ManageBatches() {
 		PageFactory.initElements(BaseClass.driver, this);
@@ -147,12 +147,6 @@ public class ManageClass_ManageBatches extends BaseClass implements Admin_Group_
 	}
 
 	public void navigateToManageClass() throws InterruptedException {
-		getMenu_branch_manage_class().click();
-		waitForMinTime();
-		getMenu_gropu_management().click();
-		waitForMinTime();
-		getMenu_sat().click();
-		waitForMinTime();
 		getMenu_manage_class().click();
 		waitForPageLoad();
 	}
@@ -183,6 +177,7 @@ public class ManageClass_ManageBatches extends BaseClass implements Admin_Group_
 		getBtn_close().click();
 		waitForPageLoad();
 	}
+	
 	public void DeactivateBatch() throws InterruptedException
 	{
 		getMenu_manage_class().click();

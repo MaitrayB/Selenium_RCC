@@ -16,7 +16,7 @@ import coaching_center_base.FrameworkMethods;
  * @author Bhatt
  *
  */
-public class ManageClass_BatchDetailViewer extends BaseClass
+public class ManageClass_BatchDetailViewer extends SAT_TemplatePage
 		implements Admin_Group_SAT_Menu, Batch_Detail_Viewer_Locators {
 	@FindBy(how = How.XPATH, using = TAB_MANAGE_BATCH_XPATH)
 	private WebElement tab_manage_batch;
@@ -62,30 +62,27 @@ public class ManageClass_BatchDetailViewer extends BaseClass
 
 	@FindBy(how = How.XPATH, using = MENU_GROUP_MANAGEMENT_XPATH)
 	private WebElement menu_gropu_management;
-	
+
 	@FindBy(how = How.XPATH, using = MENU_MANAGE_CLASS_XPATH)
 	private WebElement menu_manage_class;
-	
+
 	@FindBy(how = How.XPATH, using = SEELCT_BATCH_XPATH)
 	private WebElement drp_select_batch;
 
 	@FindBy(how = How.XPATH, using = MENU_SAT)
 	private WebElement menu_sat;
-	
+
 	@FindBy(how = How.XPATH, using = DISABLE_LINK_XPATH)
 	private WebElement disable_link;
-	
-	
+
 	public ManageClass_BatchDetailViewer() {
 		PageFactory.initElements(BaseClass.driver, this);
 		// TODO Auto-generated constructor stub
 	}
 
-	
 	public WebElement getDisable_link() {
 		return disable_link;
 	}
-
 
 	public WebElement getMenu_sat() {
 		return menu_sat;
@@ -147,7 +144,6 @@ public class ManageClass_BatchDetailViewer extends BaseClass
 		return menu_branch_manage_class;
 	}
 
-	
 	public WebElement getDrp_select_batch() {
 		return drp_select_batch;
 	}
@@ -161,13 +157,7 @@ public class ManageClass_BatchDetailViewer extends BaseClass
 	}
 
 	public void navigateToBatchDeatils() throws InterruptedException {
-		waitForPageLoad();
-		getMenu_branch_manage_class().click();
-		waitForMinTime();
-		getMenu_gropu_management().click();
-		waitForMinTime();
-		getMenu_sat().click();
-		waitForMinTime();
+
 		getMenu_manage_class().click();
 		waitForPageLoad();
 		getTab_manage_batch().click();
@@ -175,12 +165,12 @@ public class ManageClass_BatchDetailViewer extends BaseClass
 		getTab_detail_viewer().click();
 		waitForMinTime();
 	}
-	
+
 	public void inactiveStudent() throws Exception {
-		Select studentName=new Select(getSelect_subprograme());
+		Select studentName = new Select(getSelect_subprograme());
 		studentName.selectByIndex(6);
 		waitForMinTime();
-		Select selectBatch=new Select(getDrp_select_batch());
+		Select selectBatch = new Select(getDrp_select_batch());
 		selectBatch.selectByIndex(1);
 		waitForMinTime();
 		getEdit_button().click();
@@ -188,22 +178,21 @@ public class ManageClass_BatchDetailViewer extends BaseClass
 		getBtn_save().click();
 		getView_button().click();
 		waitForPageLoad();
-		verifyElement(getStudent_detail_popup(),"Student Popup");
+		verifyElement(getStudent_detail_popup(), "Student Popup");
 		getBtn_Loginas_student().click();
 		waitForPageLoad();
 		getTab_student().click();
-		verifyElement(getDisable_link(),"Disable Link");
+		verifyElement(getDisable_link(), "Disable Link");
 		getDrp_switch_roll().click();
 		getOption_previous_admin().click();
 	}
-	
-	public void activeStudent() throws Exception
-	{
+
+	public void activeStudent() throws Exception {
 		waitForPageLoad();
-		Select studentName=new Select(getSelect_subprograme());
+		Select studentName = new Select(getSelect_subprograme());
 		studentName.selectByIndex(6);
 		waitForMinTime();
-		Select selectBatch=new Select(getDrp_select_batch());
+		Select selectBatch = new Select(getDrp_select_batch());
 		selectBatch.selectByIndex(1);
 		waitForMinTime();
 		getEdit_button().click();
@@ -211,14 +200,13 @@ public class ManageClass_BatchDetailViewer extends BaseClass
 		getBtn_save().click();
 		getView_button().click();
 		waitForPageLoad();
-		verifyElement(getStudent_detail_popup(),"Student Popup");
+		verifyElement(getStudent_detail_popup(), "Student Popup");
 		getBtn_Loginas_student().click();
 		waitForPageLoad();
 		getTab_student().click();
-		verifyElement(getLink_programe(),"Active Link");
+		verifyElement(getLink_programe(), "Active Link");
 		getDrp_switch_roll().click();
 		getOption_previous_admin().click();
 	}
-	
 
 }

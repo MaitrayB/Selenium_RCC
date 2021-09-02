@@ -12,7 +12,9 @@
 			</class>
 			<class name="Regression_Tests.Admin_Group_SAT_Test">
 				<methods>
-					<include name="verifyActiveInactiveStudetFunc" />
+				<include name="verifyManageClass" />
+ 				<include name="verifyActiveInactiveStudetFunc" />
+				<include name="verifySudentVideoFunc" />
 				</methods>
 			 </class>
 		</classes>
