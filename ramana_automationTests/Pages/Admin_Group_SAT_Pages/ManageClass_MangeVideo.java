@@ -122,6 +122,9 @@ public class ManageClass_MangeVideo extends SAT_TemplatePage implements Admin_Gr
 	}
 	
 	public void createLink() throws Exception {
+		String entredDate=null;
+		String todayDate=null;
+		Boolean verifiedDate=null;
 		Select subPrograme = new Select(getDrp_select_weekend_sat());
 		subPrograme.selectByIndex(6);
 		waitForMinTime();
@@ -129,9 +132,24 @@ public class ManageClass_MangeVideo extends SAT_TemplatePage implements Admin_Gr
 		selectBatch.selectByIndex(1);
 		waitForMinTime();
 		DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
+		waitForMaxTime();
 		Date date = new Date();
-		String TodayDate = dateFormat.format(date);
-		getTxt_date().sendKeys(TodayDate);
+		waitForMaxTime();
+		todayDate = dateFormat.format(date);
+	    waitForMaxTime();
+		getTxt_date().sendKeys(todayDate);
+		entredDate=getTxt_date().getText();
+		verifiedDate= verifyTodayDate(entredDate);
+	    while(verifiedDate==false)
+	    {
+	    	getTxt_date().clear();
+			todayDate = dateFormat.format(date);
+		    waitForMaxTime();
+			getTxt_date().sendKeys(todayDate);
+			entredDate=getTxt_date().getText();
+			verifiedDate= verifyTodayDate(entredDate);
+	    }
+	
 		waitForMinTime();
 		Select phase=new Select(getDrp_phase());
 		phase.selectByIndex(1);

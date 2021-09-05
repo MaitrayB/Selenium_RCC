@@ -11,7 +11,7 @@ import Admin_BranchManagement_pages.loginPage;
 import coaching_center_base.BaseClass;
 import coaching_center_base.FrameworkMethods;
 
-public class Student_Management_Test {
+public class Student_Tests {
 	@Test(priority = 1)
 	public void verify_Login_Funtionality() throws Exception {
 		loginPage login = new loginPage();

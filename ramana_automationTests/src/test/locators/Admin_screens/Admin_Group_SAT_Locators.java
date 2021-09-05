@@ -45,6 +45,8 @@ public interface Admin_Group_SAT_Locators {
 	}
 
 	public interface Manage_Class_Video_Locators {
+		static String TAB_MANAGE1_BATCH_XPATH = "//div[@id='heading4']//h4/a[contains(.,'Manage Batches')]";
+
 		static String TAB_MANAGE_VIDEO_REQUEST = "//div[@id='headingOneTwo']//h4/a[contains(.,'Video')]";
 		static String DRP_WEEKEND_SAT_XPATH = "(//select[@id='subProgramId'])[2]";
 		static String DRP_BATCH_XPATH = "(//select[@id='batchId'])[2]";
@@ -59,11 +61,12 @@ public interface Admin_Group_SAT_Locators {
 	public interface Student_Progess_Tracker_Locators {
 		static String TAB_STUDENT_PROGRESS_XPATH = "//div[@id='heading12']//h4/a";
 		static String DRP_SUBPROGRAM_XPATH = "//select[@id='subProgramIdProgress']";
-		static String DRP_BATCH_XPATH = "//select[@id='batchIdProgress']";
+		static String DRP_STUBATCH_XPATH = "//select[@id='batchIdProgress']";
 		static String BTN_VIEW_PROGRESS_XPATH = "(//button[@title='View progress'])[1]";
 		static String TAB_CHECK_PROGRESS_XPATH = "//a[@id='btnchkProgress']";
 		static String TAB_VOCABULARY_PROGRESS_XPATH = "//a[@id='btnvocHistory']";
-		static String TAB_MATH_PRATICAL_HISTORY_XPATH = "//a[@id='btnquizHistory']";
+		static String TAB_QUIZE_HISTORY_XPATH = "//a[@id='btnquizHistory']";
+		static String TAB_MATH_PRATICAL_HISTORY_XPATH = "//a[@id='btnpractHistory']";
 		static String BTN_CLOSE_XPATH = "//button[@id='btnClose']";
 		static String POPUP_TITLE_XPATH = "(//h4[@id='myModalLabel'])[2]";
 	}

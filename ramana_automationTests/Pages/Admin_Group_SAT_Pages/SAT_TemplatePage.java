@@ -1,5 +1,9 @@
 package Admin_Group_SAT_Pages;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -53,4 +57,17 @@ public class SAT_TemplatePage extends BaseClass implements Admin_Group_SAT_Menu,
 			navigateToManageClassSAT();
 		}
 	}
+	
+	public Boolean verifyTodayDate(String enteredDate) {
+		DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
+		Date date = new Date();
+		String TodayDate = dateFormat.format(date);
+		if(enteredDate.contains(TodayDate)) {
+			return true;
+		}
+		else {
+			return false;
+		}	
+	}
+	
 }
