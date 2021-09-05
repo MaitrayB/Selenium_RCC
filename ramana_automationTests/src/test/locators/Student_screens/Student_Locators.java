@@ -11,7 +11,6 @@ public interface Student_Locators {
 		static String BTN_UPDATE_XPATH="//button[@id='uploadImage']";
 		static String MSG_PROFILE_APPROVED_XPATH="//h4[text()='Profile Photo is Already Approved']";
 		static String MSG_ADMIN_APPROVED_XPATH="//h4[contains(.,'approved by Admin')]";
-		
 	}
 }
 
