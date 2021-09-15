@@ -124,4 +124,6 @@ public class FrameworkMethods {
 	public static void waitForMaxTime() throws InterruptedException {
 		Thread.sleep(5000);
 	}
+	
+	
 }

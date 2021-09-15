@@ -9,62 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">RegressionTests</th></tr>
-<tr><td><a href="#t0">sample</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">311,403</td><td></td><td></td></tr>
+<tr><td><a href="#t0">sample</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">78,158</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">sample &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Regression_Tests.Admin_Group_SAT_Test</td><td><a href="#m0">verifyStudentProgressTracker</a></td><td rowspan="1">1630770775170</td><td rowspan="1">14163</td></tr><tr class="failedeven"><td><a href="#m1">verifySudentVideoFunc</a></td><td rowspan="1">1630770653415</td><td rowspan="1">121739</td></tr><tr><th colspan="4">sample &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Regression_Tests.Admin_BranchManagement_Tests</td><td><a href="#m2">verify_Login_Funtionality</a></td><td rowspan="1">1630770478864</td><td rowspan="1">24021</td></tr><tr class="passedodd"><td rowspan="2">Regression_Tests.Admin_Group_SAT_Test</td><td><a href="#m3">verifyActiveInactiveStudetFunc</a></td><td rowspan="1">1630770552615</td><td rowspan="1">100799</td></tr><tr class="passedodd"><td><a href="#m4">verifyManageClass</a></td><td rowspan="1">1630770502898</td><td rowspan="1">49710</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">sample &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Regression_Tests.Admin_BranchManagement_Tests</td><td><a href="#m0">verify_Login_Funtionality</a></td><td rowspan="1">1631638515222</td><td rowspan="1">23846</td></tr><tr class="passedodd"><td rowspan="1">Regression_Tests.Admin_Group_SAT_Test</td><td><a href="#m1">verifyBatchAndStudentMapping</a></td><td rowspan="1">1631638539080</td><td rowspan="1">53357</td></tr></tbody>
 </table>
-<h2>sample</h2><h3 id="m0">Regression_Tests.Admin_Group_SAT_Test#verifyStudentProgressTracker</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=92.0.4515.159)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3018661830c0e0b10b5c0982076e140b
-*** Element info: {Using=xpath, value=//span[contains(.,&apos;Branch Management&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at Admin_Group_SAT_Pages.SAT_TemplatePage.navigateToManageClassSAT(SAT_TemplatePage.java:47)
-	at Regression_Tests.Admin_Group_SAT_Test.verifyStudentProgressTracker(Admin_Group_SAT_Test.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Regression_Tests.Admin_Group_SAT_Test#verifySudentVideoFunc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=92.0.4515.159)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3018661830c0e0b10b5c0982076e140b
-*** Element info: {Using=xpath, value=//div[@id=&apos;collapseOne2&apos;]//input[@id=&apos;classDate&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at Admin_Group_SAT_Pages.ManageClass_MangeVideo.createLink(ManageClass_MangeVideo.java:148)
-	at Regression_Tests.Admin_Group_SAT_Test.verifySudentVideoFunc(Admin_Group_SAT_Test.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Regression_Tests.Admin_BranchManagement_Tests#verify_Login_Funtionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Username Textbox is Present on screen<br/>[Pass]Password Textbox is Present on screen<br/>[Pass]Login Button is Present on screen<br/>[Pass]Forgot ID Link is Present on screen<br/>[Pass]Forgot Password Link is Present on screen<br/>[Pass]Welcome message label is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Regression_Tests.Admin_Group_SAT_Test#verifyActiveInactiveStudetFunc</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Student Popup is Present on screen<br/>[Pass]Disable Link is Present on screen<br/>[Pass]Student Popup is Present on screen<br/>[Pass]Active Link is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Regression_Tests.Admin_Group_SAT_Test#verifyManageClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>sample</h2><h3 id="m0">Regression_Tests.Admin_BranchManagement_Tests#verify_Login_Funtionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Username Textbox is Present on screen<br/>[Pass]Password Textbox is Present on screen<br/>[Pass]Login Button is Present on screen<br/>[Pass]Forgot ID Link is Present on screen<br/>[Pass]Forgot Password Link is Present on screen<br/>[Pass]Welcome message label is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Regression_Tests.Admin_Group_SAT_Test#verifyBatchAndStudentMapping</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Sucess Message is Present on screen<br/>[Pass]Sucess Message is Present on screen<br/>[Pass]Sucess Message is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

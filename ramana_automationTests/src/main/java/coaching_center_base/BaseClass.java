@@ -2,6 +2,7 @@ package coaching_center_base;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.*;
@@ -46,6 +47,8 @@ public class BaseClass extends FrameworkMethods{
 		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
 	}
 	
-	
-	
+	public static void scrollDown() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)", "");
+	}
 }
