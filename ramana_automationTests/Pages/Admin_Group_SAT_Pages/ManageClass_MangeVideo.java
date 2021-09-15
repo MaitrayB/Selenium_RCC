@@ -122,9 +122,7 @@ public class ManageClass_MangeVideo extends SAT_TemplatePage implements Admin_Gr
 	}
 	
 	public void createLink() throws Exception {
-		String entredDate=null;
 		String todayDate=null;
-		Boolean verifiedDate=null;
 		Select subPrograme = new Select(getDrp_select_weekend_sat());
 		subPrograme.selectByIndex(6);
 		waitForMinTime();
@@ -137,19 +135,9 @@ public class ManageClass_MangeVideo extends SAT_TemplatePage implements Admin_Gr
 		waitForMaxTime();
 		todayDate = dateFormat.format(date);
 	    waitForMaxTime();
+	    getTxt_date().clear();
+	    waitForMinTime();
 		getTxt_date().sendKeys(todayDate);
-		entredDate=getTxt_date().getText();
-		verifiedDate= verifyTodayDate(entredDate);
-	    while(verifiedDate==false)
-	    {
-	    	getTxt_date().clear();
-			todayDate = dateFormat.format(date);
-		    waitForMaxTime();
-			getTxt_date().sendKeys(todayDate);
-			entredDate=getTxt_date().getText();
-			verifiedDate= verifyTodayDate(entredDate);
-	    }
-	
 		waitForMinTime();
 		Select phase=new Select(getDrp_phase());
 		phase.selectByIndex(1);
@@ -159,6 +147,7 @@ public class ManageClass_MangeVideo extends SAT_TemplatePage implements Admin_Gr
 		getBtn_add_video().click();
 		waitForPageLoad();
 	}
+	
 	public void deleteAddedVideo() throws InterruptedException {
 		getBtn_delete().click();
 		waitForPageLoad();

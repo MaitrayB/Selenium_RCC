@@ -71,4 +71,46 @@ public interface Admin_Group_SAT_Locators {
 		static String POPUP_TITLE_XPATH = "(//h4[@id='myModalLabel'])[2]";
 	}
 	
+	public interface Student_Batch_Schedule_Locators{
+		static String TAB_MANAGE2_BATCH_XPATH = "//div[@id='heading4']//h4/a[contains(.,'Manage Batches')]";
+		static String TAB_SAT_BATCH_TEST_SCHEDULE_XPATH="//div[@id='heading8']//h4/a";
+		static String DRP_SAT_BATCH_XPATH="(//form[@id='saveTestScheduleForm']//select)[1]";
+		static String DRP_ACTIVITY_TYPE_XPATH="(//form[@id='saveTestScheduleForm']//select)[2]";
+		static String ACTIVITY_DATE_XPATH="//input[@id='testDate']";
+		static String DRP_TEXT_BOOK_XPATH="(//form[@id='saveTestScheduleForm']//select)[3]";
+		static String DRP_TEST_XPATH="(//form[@id='saveTestScheduleForm']//select)[4]";
+		static String BTN_TESTSCHEDULE_XPATH="//button[@id='submitBtn']";
+		static String MSG_SUCCESS_XPATH="//div[@id='succDiv11']";
+		static String BTN_REMOVE_XPATH="(//div[@class='table-responsive'])[1]//tr[1]//td[7]//a//span";
+	}
+	
+	public interface Batch_Mapping_Locators{
+		static String TAB_MANAGE3_BATCH_XPATH = "//div[@id='heading4']//h4/a[contains(.,'Manage Batches')]";
+		static String TAB_BATCH_AND_STUDENT_MAPPING_XPATH = "//div[@id='heading2']//a";
+		static String TAB_BATCH_AND_TEACHER_MAPPING_XPATH="//div[@id='heading3']//a";
+		static String TAB_BATCH_AND_TEXTBOOK_MAPPING_XPATH="//div[@id='heading5']//a";
+		//Batch and Student Mapping
+		static String DRP_SELECT_STUDENT_XPATH="//select[@id='studentEnrollId']";
+		static String DRP_SELECT_BATCH_XPATH="//select[@id='assignBatchId']";
+		static String BTN_SAVE_XPATH="//button[@id='btnSaveAssign']";
+		static String SUCCESS_MESSAGE_XPATH="//div[@id='successDiv']";
+		
+		//Batch and teacher Mapping
+		static String DRP_TEACHER_SELECT_BATCH_XPATH="//select[@id='tBatchId']";
+		static String DRP_TEACHER_XPATH="//select[@id='teacherIds']";
+		static String BTN_SAVE_BATCH_TEACHER_XPATH="//button[@id='btnSaveBTAssign']";
+		static String BT_SUCCESS_MESSAGE_XPATH="//div[@id='successDiv3']";
+
+		
+		
+		//Batch and Textbook Mapping
+		static String DRP_SELECT_TEXTBOOK_BATCH__XPATH="//select[@id='textbookBatchId']";
+		static String DRP_TEXTBOOK_XPATH="//select[@id='teacherIds']";
+		static String BTN_SAVE_BOOK_XPATH="//button[@id='btnSaveBatchTextbook']";
+		static String TB_SUCCESS_MESSAGE_XPATH="//div[@id='successDiv5']";
+
+		
+		
+	}
+	
 }

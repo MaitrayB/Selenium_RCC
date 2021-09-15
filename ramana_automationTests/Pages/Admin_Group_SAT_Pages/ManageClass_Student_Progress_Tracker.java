@@ -112,15 +112,19 @@ public class ManageClass_Student_Progress_Tracker extends SAT_TemplatePage
 		selectBatch.selectByIndex(1);
 		waitForMinTime();
 		getBtn_view_progress().click();
+		waitForMinTime();
 		verifyElement(getPopup_title(), "Baby Progress Title");
 		verifyElement(getTab_vocabulary_progress(), "Vocabulary Progress Tab");
 		verifyElement(getTab_student_progress(), "Student Progress Tab");
 		verifyElement(getTab_math_practice(), "Math Hostory Tab");
 		verifyElement(getTab_quiz_history(), "Quize Hostory Tab");
+		waitForMinTime();
 		getTab_vocabulary_progress().click();
+		waitForMinTime();
 		getTab_quiz_history().click();
+		waitForMinTime();
 		getTab_math_practice().click();
+		waitForMinTime();
 		getBtn_close().click();
-
 	}
 }

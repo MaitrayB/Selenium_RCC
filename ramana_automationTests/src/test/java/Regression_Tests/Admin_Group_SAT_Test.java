@@ -7,8 +7,10 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import Admin_Group_SAT_Pages.ManageClass_BatchDetailViewer;
+import Admin_Group_SAT_Pages.ManageClass_BatchMapping;
 import Admin_Group_SAT_Pages.ManageClass_ManageBatches;
 import Admin_Group_SAT_Pages.ManageClass_MangeVideo;
+import Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule;
 import Admin_Group_SAT_Pages.ManageClass_Student_Progress_Tracker;
 import coaching_center_base.FrameworkMethods;
 
@@ -55,11 +57,41 @@ public class Admin_Group_SAT_Test {
 	@Test(priority = 4)
 	public void verifyStudentProgressTracker() throws Exception {
 		ManageClass_Student_Progress_Tracker studentProgress = new ManageClass_Student_Progress_Tracker();
-		studentProgress.navigateToManageClassSAT();
+		studentProgress.verifyUserIsOnSATPage();
 		studentProgress.navigateToStudentProgressPage();
 		studentProgress.verifyStudentProgressTracker();
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyStudentProgressTracker");
-		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - Manage Student Progress Tracker Page", ExtentColor.GREEN));
+		FrameworkMethods.logger.log(Status.PASS, MarkupHelper
+				.createLabel("Test Case Passed is - Manage Student Progress Tracker Page", ExtentColor.GREEN));
 	}
+
+	@Test(priority = 5)
+	public void verifyAdminGroupSATTest() throws Exception {
+		ManageClass_SAT_Batch_Test_Schedule manageTest = new ManageClass_SAT_Batch_Test_Schedule();
+		manageTest.verifyUserIsOnSATPage();
+		manageTest.navigateToSatBatchTestSchedule();
+		manageTest.scheduleTest();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyAdminGroupSATTest");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - SAT Batch Test Schedule ", ExtentColor.GREEN));
+
+	}
+	
+	@Test(priority = 6)
+	public void verifyBatchAndStudentMapping() throws Exception {
+		ManageClass_BatchMapping batchMapping = new ManageClass_BatchMapping();
+		batchMapping.verifyUserIsOnSATPage();
+		batchMapping.navigateToBatchAndStudentMapping();
+		batchMapping.verifyBatchAndStudentMapping();
+		batchMapping.navigateToBatchAndTeacherMapping();
+		batchMapping.verifyBatchAndTeacherMapping();
+		batchMapping.navigateToBatchAndBookMapping();
+		batchMapping.verifyBatchAndTextMapping();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyAdminGroupSATTest");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - SAT Batch Test Schedule ", ExtentColor.GREEN));
+
+	}
+
+
 }
