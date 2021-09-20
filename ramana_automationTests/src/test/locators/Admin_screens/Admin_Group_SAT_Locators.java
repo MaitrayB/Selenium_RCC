@@ -46,7 +46,6 @@ public interface Admin_Group_SAT_Locators {
 
 	public interface Manage_Class_Video_Locators {
 		static String TAB_MANAGE1_BATCH_XPATH = "//div[@id='heading4']//h4/a[contains(.,'Manage Batches')]";
-
 		static String TAB_MANAGE_VIDEO_REQUEST = "//div[@id='headingOneTwo']//h4/a[contains(.,'Video')]";
 		static String DRP_WEEKEND_SAT_XPATH = "(//select[@id='subProgramId'])[2]";
 		static String DRP_BATCH_XPATH = "(//select[@id='batchId'])[2]";
@@ -100,17 +99,44 @@ public interface Admin_Group_SAT_Locators {
 		static String DRP_TEACHER_XPATH="//select[@id='teacherIds']";
 		static String BTN_SAVE_BATCH_TEACHER_XPATH="//button[@id='btnSaveBTAssign']";
 		static String BT_SUCCESS_MESSAGE_XPATH="//div[@id='successDiv3']";
-
-		
 		
 		//Batch and Textbook Mapping
 		static String DRP_SELECT_TEXTBOOK_BATCH__XPATH="//select[@id='textbookBatchId']";
 		static String DRP_TEXTBOOK_XPATH="//select[@id='teacherIds']";
 		static String BTN_SAVE_BOOK_XPATH="//button[@id='btnSaveBatchTextbook']";
 		static String TB_SUCCESS_MESSAGE_XPATH="//div[@id='successDiv5']";
-
-		
 		
 	}
+	
+	public interface Tetxbox_Form_Locators{
+		static String TAB_TEXTBOOK_XPATH="//div[@id='heading6']/h4/a";
+		static String SUCCESS_MSG_XPATH="//div[@id='successDiv6']";
+		static String TXT_BOOK_TITLE_XPATH="//input[@name='textBookTitle']";
+		static String TXT_BOOK_EDITION_XPATH="//input[@name='textBookEdition']";
+		static String TXT_BOOK_PUBLISHER_XPATH="//input[@name='textBookPublisher']";
+		static String TXT_BOOK_ISBN_XPATH="//input[@name='textBookIsbn']";
+		static String BTN_SAVE_XPATH="//button[@id='btnSaveSATTxtBook']"; 
+	}
+	
+	public interface SAT_Test_Details_Locators{
+		static String TAB_SAT_TEXT_DETAILS_XPATH="//div[@id='heading7']/h4/a";
+		static String DRP_TEXT_BOOK_XPATH="//select[@id='satTextBookId']";
+		static String TXT_TEXT_NUMBER_XPATH="//input[@id='testNumber']";
+		static String TXT_SEC1_PAGE_NUMBER_XPATH="//input[@id='sec01PageNum']";
+		static String TXT_SEC2_PAGE_XPATH="//input[@id='sec02PageNum']";
+		static String TXT_SEC3_PAGE_XPATH="//input[@id='sec03PageNum']";
+		static String TXT_SEC4_PAGE_XPATH="//input[@id='sec04PageNum']";
+		static String TXT_ESSAY_PAGE_XPATH="//input[@id='essayPageNum']";
+		static String BTN_SAVE_TEST_DETAIL_XPATH="//button[@id='btnSaveSATTestDetail']";
+		static String SUCCESS_MSG_XPATH="//div[@id='successDiv7']";
+	}
+	
+	public interface Broadcast_Message_Locators{
+		static String DRP_SELECT_BATCH_XPATH="//select[@id='batchId'][2]";
+		static String BROADCAST_MESSAGE_XPATH="//textarea[@id='broadcastMsg']";
+		static String BTN_SENT_MSG_XPATH="//button[@type='submit'][1]";
+		static String BTN_CLEAR_TEXT_XPATH="//button[contains(text(),'Clear')]";
+	}
+	
 	
 }

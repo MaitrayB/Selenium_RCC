@@ -17,7 +17,7 @@
 					 <include name="verifySudentVideoFunc" />
 					<include name="verifyStudentProgressTracker" />
 					<include name="verifyAdminGroupSATTest" /> -->
-					<include name="verifyBatchAndStudentMapping" />
+					<include name="verifySATTestDetails" />
 				</methods>
 			</class>
 		</classes>

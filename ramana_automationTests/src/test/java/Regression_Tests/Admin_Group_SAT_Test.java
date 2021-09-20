@@ -11,6 +11,8 @@ import Admin_Group_SAT_Pages.ManageClass_BatchMapping;
 import Admin_Group_SAT_Pages.ManageClass_ManageBatches;
 import Admin_Group_SAT_Pages.ManageClass_MangeVideo;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule;
+import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Book_form;
+import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Details;
 import Admin_Group_SAT_Pages.ManageClass_Student_Progress_Tracker;
 import coaching_center_base.FrameworkMethods;
 
@@ -76,7 +78,7 @@ public class Admin_Group_SAT_Test {
 				MarkupHelper.createLabel("Test Case Passed is - SAT Batch Test Schedule ", ExtentColor.GREEN));
 
 	}
-	
+
 	@Test(priority = 6)
 	public void verifyBatchAndStudentMapping() throws Exception {
 		ManageClass_BatchMapping batchMapping = new ManageClass_BatchMapping();
@@ -93,5 +95,28 @@ public class Admin_Group_SAT_Test {
 
 	}
 
+	@Test(priority = 7)
+	public void verifyTextBookForm() throws Exception {
+		ManageClass_SAT_Text_Book_form textbookForm = new ManageClass_SAT_Text_Book_form();
+		textbookForm.verifyUserIsOnSATPage();
+		textbookForm.naviagteToSATFormtextbook();
+		textbookForm.VerifyAddTextbookForm();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyTextBookForm");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifyTextBookForm ", ExtentColor.GREEN));
 
+	}
+
+	@Test(priority = 8)
+	public void verifySATTestDetails() throws Exception {
+		ManageClass_SAT_Text_Details textDetail= new ManageClass_SAT_Text_Details();
+		textDetail.verifyUserIsOnSATPage();
+		textDetail.navigateToSATTestDetailTab();
+		textDetail.verifySATTestDetails();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifySATTestDetails");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifySATTestDetails ", ExtentColor.GREEN));
+
+		
+	}
 }
