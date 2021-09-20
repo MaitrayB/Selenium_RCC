@@ -65,7 +65,6 @@ public interface Locators {
 			static String BTN_VIEW_SCHEDULE_XPATH="//button[@title='View Details']";
 			static String BTN_CONVERSATION_XPATH="//button[@title='Conversations']";
 			
-			
 		}
 		
 		public interface StudentProspectLocators{
