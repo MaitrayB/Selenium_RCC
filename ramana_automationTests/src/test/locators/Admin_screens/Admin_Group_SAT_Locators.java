@@ -7,6 +7,8 @@ public interface Admin_Group_SAT_Locators {
 		static String MENU_SAT = "//span[contains(.,'SAT')]";
 		static String MENU_MANAGE_CLASS_XPATH = "//span[contains(.,'Manage Class')]";
 		static String MENU_BRANCH_MANAGEMENT_XPATH = "//span[contains(.,'Branch Management')]";
+		static String MENU_PROCOTORING_XPATH="//span[contains(.,'Proctoring')]";
+		static String MENU_SCORE_TRACKER_XPATH="";
 	}
 
 	public interface Create_Batch_Page_Locators {
@@ -132,11 +134,47 @@ public interface Admin_Group_SAT_Locators {
 	}
 	
 	public interface Broadcast_Message_Locators{
-		static String DRP_SELECT_BATCH_XPATH="//select[@id='batchId'][2]";
+		static String DRP_SELECT_BATCH_XPATH="//select[@placeholder='Select Batch']";
 		static String BROADCAST_MESSAGE_XPATH="//textarea[@id='broadcastMsg']";
 		static String BTN_SENT_MSG_XPATH="//button[@type='submit'][1]";
 		static String BTN_CLEAR_TEXT_XPATH="//button[contains(text(),'Clear')]";
+		static String TAB_BROADCAST_MSG_XPATH="//div[@id='heading9']/h4/a";
+		static String SUCCESS_MSG_XPTH="//div[contains(text(),' Email sent!')]";
+	
 	}
 	
+	public interface Proctoring_Locators{
+		static String TAB_UPCOMMINGTEST_XPATH="//div[@id='heading1']/h4/a";
+		static String TAB_PRACTICE_TEST_XPATH="//div[@id='headingOne']/h4/a";
+		static String TAB_PROCTOR_TEST_DETAIL_XPATH="//div[@id='headingThree']/h4/a";
+		static String RDBTN_MATH_TEST_XPATH="//input[@value='MATH']";
+		static String RDBTN_READING_TEST_XPATH="//input[@value='READING']";
+		static String RDBTN_WRITING_TEST_XPATH="//input[@value='WRITING']";
+		static String RDBTN_FULL_LENGTH_XPATH="//input[@name='testType']";
+		static String ESSAY_CHECKBOX_XPATH="//input[@id='isEssay']";
+		static String DRP_BATCHID_XPATH="//select[@id='batchId']";
+		static String DRP_TEST_NUMBER_XPATH="//select[@id='testDetailId']";
+		static String DRP_TXTBOOK_XPATH="//select[@name='textBookId']";
+		static String BTN_TEST_PRACTICE_XPATH="//button[@id='submitBtn']";
+		static String TXT_START_TIME_XPATH="//input[@id='startTime']";
+		static String LBL_TEST_DATE_XPATH="//label[contains(.,'Test Date')]";
+		static String LBL_TEXT_BOOK_XPATH="(//label[contains(.,'Text Book')])[2]";
+		static String LBL_TEST_XPATH="(//label[contains(.,'Test')])[8]";
+		static String LBL_ESSAY_XPATH="(//label[contains(.,'Essay')])[3]";
+		static String LBL_ESSAY_PAGE_XPATH="(//label[contains(.,'Essay')])[4]";
+	}
+	
+	public interface SAT_Student_Progress_Check_Locators{
+		static String TAB_SAT_STUDENT_PROGRESS_CHECK_XPATH="//div[@id='headingOne']/h4/a";
+		static String TAB_SAT_SCRORE_MANAGEMENT_XPATH="//div[@id='headingTwo']/h4/a";
+		static String DRP_SELECT_BATCHFORPROGRESS_XPATH="//select[@id='batchIdForProgress']";
+		static String LINK_VIEW_DETAILS_XPATH="(//a[text()='View Scores'])[1]";
+		static String TAB_VOCABULARY_TEST_XPATH="//a[@id='btnvocHistory']";
+		static String TAB_QUIZ_HISTORY_XPATH="//a[@id='btnquizHistory']";
+		static String TAB_MATH_PRACTICE_HISTORY_XPATH="//a[@id='btnpractHistory']";
+		static String TITLE_XPATH="(//h4[@id='myModalLabel'])[3]";
+		static String BATCH_ID_XPATH="//select[@id='batchId']";
+		
+	}
 	
 }

@@ -10,7 +10,9 @@ import Admin_Group_SAT_Pages.ManageClass_BatchDetailViewer;
 import Admin_Group_SAT_Pages.ManageClass_BatchMapping;
 import Admin_Group_SAT_Pages.ManageClass_ManageBatches;
 import Admin_Group_SAT_Pages.ManageClass_MangeVideo;
+import Admin_Group_SAT_Pages.ManageClass_Proctoring;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule;
+import Admin_Group_SAT_Pages.ManageClass_SAT_BroadcastMessage;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Book_form;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Details;
 import Admin_Group_SAT_Pages.ManageClass_Student_Progress_Tracker;
@@ -115,8 +117,30 @@ public class Admin_Group_SAT_Test {
 		textDetail.verifySATTestDetails();
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifySATTestDetails");
 		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - verifySATTestDetails ", ExtentColor.GREEN));
-
-		
+				MarkupHelper.createLabel("Test Case Passed is - verifySATTestDetails ", ExtentColor.GREEN));	
 	}
+	
+	@Test(priority = 9)
+	public void verifyBroadCastMessage() throws Exception {
+		ManageClass_SAT_BroadcastMessage broadcastMessage = new ManageClass_SAT_BroadcastMessage();
+		broadcastMessage.verifyUserIsOnSATPage();
+		broadcastMessage.navigateToBroadcastMessagePage();
+		broadcastMessage.verifyBroadcastMessage();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyBroadCastMessage");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifyBroadCastMessage ", ExtentColor.GREEN));
+	}
+
+	@Test(priority = 10)
+	public void verifyProctoringFunctionality() throws Exception {
+		ManageClass_Proctoring  proctoting = new ManageClass_Proctoring();
+		proctoting.verifyUserIsOnSATPage();
+		proctoting.navigateToProcotoringPage();
+		proctoting.verifyPracticeTest();
+		proctoting.verifyProctorDetail();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyProctoringFunctionality");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifyProctoringFunctionality ", ExtentColor.GREEN));
+	}
+
 }

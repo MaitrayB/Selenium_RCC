@@ -5,7 +5,7 @@
     <classes>
       <class name="Regression_Tests.Admin_Group_SAT_Test">
         <methods>
-          <include name="verifySATTestDetails"/>
+          <include name="verifyAdminGroupSATTest"/>
         </methods>
       </class> <!-- Regression_Tests.Admin_Group_SAT_Test -->
     </classes>
