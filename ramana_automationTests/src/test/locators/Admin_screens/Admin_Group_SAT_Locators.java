@@ -8,7 +8,8 @@ public interface Admin_Group_SAT_Locators {
 		static String MENU_MANAGE_CLASS_XPATH = "//span[contains(.,'Manage Class')]";
 		static String MENU_BRANCH_MANAGEMENT_XPATH = "//span[contains(.,'Branch Management')]";
 		static String MENU_PROCOTORING_XPATH="//span[contains(.,'Proctoring')]";
-		static String MENU_SCORE_TRACKER_XPATH="";
+		static String MENU_SCORE_TRACKER_XPATH="//span[contains(.,'Score Tracker')]";
+		static String MENU_ATTANDANCE_TRACKER_XPATH="(//span[contains(.,'Attendance Tracker')])[1]";
 	}
 
 	public interface Create_Batch_Page_Locators {
@@ -161,7 +162,7 @@ public interface Admin_Group_SAT_Locators {
 		static String LBL_TEXT_BOOK_XPATH="(//label[contains(.,'Text Book')])[2]";
 		static String LBL_TEST_XPATH="(//label[contains(.,'Test')])[8]";
 		static String LBL_ESSAY_XPATH="(//label[contains(.,'Essay')])[3]";
-		static String LBL_ESSAY_PAGE_XPATH="(//label[contains(.,'Essay')])[4]";
+		static String LBL_ESSAY_PAGE_XPATH="(//laDRP_BATCH_ID_XPATHbel[contains(.,'Essay')])[4]";
 	}
 	
 	public interface SAT_Student_Progress_Check_Locators{
@@ -173,8 +174,21 @@ public interface Admin_Group_SAT_Locators {
 		static String TAB_QUIZ_HISTORY_XPATH="//a[@id='btnquizHistory']";
 		static String TAB_MATH_PRACTICE_HISTORY_XPATH="//a[@id='btnpractHistory']";
 		static String TITLE_XPATH="(//h4[@id='myModalLabel'])[3]";
-		static String BATCH_ID_XPATH="//select[@id='batchId']";
-		
+		static String DRP_BATCH_ID_XPATH="//select[@id='batchId']";
+		static String BTN_CLOSE_XPATH="//button[@id='btnClose']";
+		static String RDBTN_WRITETEST_XPATH="//input[@value='WRITING']";
+		static String RDBTN_READINGTEST_XPATH="//input[@value='READING']";
+		static String RDBTN_FULLLENGTH_XPATH="(//input[@name='testType'])[8]";	
+		static String LINK_VIEW_SCORE_XPATH="(//tr[1]//td//a)[1]";
+	}
+	
+	public interface SAT_Attandance_Tracker_Locators{
+		static String TAB_BATCH_ATTENDANCE_TRACKER_XPATH="//div[@id='headingOne']/h4/a";
+		static String TAB_STUDENT_ATTENDANCE_TRACKER_XPATH="//div[@id='heading2']/h4/a";
+		static String DRP_SELECTBATCH_XPATH="(//select[@id='batchId'])[1]";
+		static String TXT_DATE_XPATH="//input[@id='classDate']";
+		static String BTN_GET_ATTENDANCE_XPATH="(//button[contains(text(),'Get')])[1]";
+		static String DRP_STUDENT_NAME_XPATH="(//select)[3]";
 	}
 	
 }

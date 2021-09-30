@@ -6,15 +6,15 @@
 	<test name="sample">
 		<classes>
 			<class name="Regression_Tests.Admin_BranchManagement_Tests">
-				<!-- <methods>
-					<include name="verify_Login_Funtionality" />
-				</methods> -->
-			</class>
-		<!-- 	<class name="Regression_Tests.Admin_Group_SAT_Test">
 				<methods>
-					<include name="verifyAdminGroupSATTest" />
+					<include name="verify_Login_Funtionality" />
 				</methods>
-			</class>-->
+			</class>
+			<class name="Regression_Tests.Admin_Group_SAT_Test">
+				<methods>
+					<include name="verifyScoreTrackerFunctionality" />
+				</methods>
+			</class>
 		</classes> 
 	</test>
 </suite>

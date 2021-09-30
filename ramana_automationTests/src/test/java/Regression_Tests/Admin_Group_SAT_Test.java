@@ -13,6 +13,7 @@ import Admin_Group_SAT_Pages.ManageClass_MangeVideo;
 import Admin_Group_SAT_Pages.ManageClass_Proctoring;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule;
 import Admin_Group_SAT_Pages.ManageClass_SAT_BroadcastMessage;
+import Admin_Group_SAT_Pages.ManageClass_SAT_Scoretracker;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Book_form;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Details;
 import Admin_Group_SAT_Pages.ManageClass_Student_Progress_Tracker;
@@ -128,7 +129,7 @@ public class Admin_Group_SAT_Test {
 		broadcastMessage.verifyBroadcastMessage();
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyBroadCastMessage");
 		FrameworkMethods.logger.log(Status.PASS,
-				MarkupHelper.createLabel("Test Case Passed is - verifyBroadCastMessage ", ExtentColor.GREEN));
+MarkupHelper.createLabel("Test Case Passed is - verifyBroadCastMessage ", ExtentColor.GREEN));
 	}
 
 	@Test(priority = 10)
@@ -143,4 +144,13 @@ public class Admin_Group_SAT_Test {
 				MarkupHelper.createLabel("Test Case Passed is - verifyProctoringFunctionality ", ExtentColor.GREEN));
 	}
 
+	@Test(priority = 11)
+	public void verifyScoreTrackerFunctionality() throws Exception {
+		ManageClass_SAT_Scoretracker scoreTracker= new ManageClass_SAT_Scoretracker();
+		scoreTracker.verifyUserIsOnSATPage();
+		scoreTracker.navigateToScoreTracker();
+		scoreTracker.verifySATStudentProgressCheck();
+		scoreTracker.verifyScoreManagement();
+	}
+	
 }
