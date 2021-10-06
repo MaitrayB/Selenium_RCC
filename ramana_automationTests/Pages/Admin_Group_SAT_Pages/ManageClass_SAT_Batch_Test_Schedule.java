@@ -111,7 +111,7 @@ public class ManageClass_SAT_Batch_Test_Schedule extends SAT_TemplatePage implem
 		selectActivity.selectByIndex(3);
 		waitForMinTime();	
 		Select selectTextBook= new Select(getDrp_text_book());
-		selectTextBook.selectByIndex(3);
+		selectTextBook.selectByIndex(2);
 		waitForMinTime();	
 		Select selectTestNumber= new Select(getDrp_test());
 		selectTestNumber.selectByIndex(1);

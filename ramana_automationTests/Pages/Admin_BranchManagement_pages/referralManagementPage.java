@@ -38,6 +38,7 @@ public class referralManagementPage extends BaseClass implements ReferalManageme
 
 	@FindBy(how = How.XPATH, using = FIELD_REWARD_DATE_XPATH)
 	private WebElement reward_date;
+	
 
 	@FindBy(how = How.XPATH, using = FIELD_ACTION_STATUS_XPATH)
 	private WebElement action_status;

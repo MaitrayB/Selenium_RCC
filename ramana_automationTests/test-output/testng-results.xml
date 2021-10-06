@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="18" passed="2" failed="0" skipped="0">
+<testng-results ignored="10" total="21" passed="8" failed="3" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -20,28 +20,384 @@
       <![CDATA[[Pass]Welcome message label is Present on screen]]>
     </line>
     <line>
+      <![CDATA[[Pass]Student Popup is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Disable Link is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Student Popup is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Active Link is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Baby Progress Title is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Vocabulary Progress Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Student Progress Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Math Hostory Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Quize Hostory Tab is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Sucess Message is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Sucess Message is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Sucess Message is Present on screen]]>
+    </line>
+    <line>
       <![CDATA[[Pass]Success Message is Present on screen]]>
     </line>
+    <line>
+      <![CDATA[[Pass]Success Message is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Label Test Date is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Label Book Date is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Label Test is Present on screen]]>
+    </line>
+    <line>
+      <![CDATA[[Pass]Label Test Eassay is Present on screen]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-09-17T20:53:36 IST" name="RegressionTests" finished-at="2021-09-17T20:54:25 IST" duration-ms="49406">
+  <suite started-at="2021-10-05T21:00:18 IST" name="RegressionTests" finished-at="2021-10-05T21:06:21 IST" duration-ms="362666">
     <groups>
     </groups>
-    <test started-at="2021-09-17T20:53:36 IST" name="sample" finished-at="2021-09-17T20:54:25 IST" duration-ms="49406">
+    <test started-at="2021-10-05T21:00:18 IST" name="sample" finished-at="2021-10-05T21:06:21 IST" duration-ms="362666">
       <class name="Regression_Tests.Admin_Group_SAT_Test">
-        <test-method signature="verifySATTestDetails()[pri:8, instance:Regression_Tests.Admin_Group_SAT_Test@ffaa6af]" started-at="2021-09-17T20:54:00 IST" name="verifySATTestDetails" finished-at="2021-09-17T20:54:25 IST" duration-ms="24780" status="PASS">
+        <test-method signature="verifyManageClass()[pri:1, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:00:42 IST" name="verifyManageClass" finished-at="2021-10-05T21:01:32 IST" duration-ms="49541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageClass -->
+        <test-method signature="verifyActiveInactiveStudetFunc()[pri:2, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:01:32 IST" name="verifyActiveInactiveStudetFunc" finished-at="2021-10-05T21:03:13 IST" duration-ms="100785" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Student Popup is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Disable Link is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Student Popup is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Active Link is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyActiveInactiveStudetFunc -->
+        <test-method signature="verifyStudentProgressTracker()[pri:4, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:03:13 IST" name="verifyStudentProgressTracker" finished-at="2021-10-05T21:03:52 IST" duration-ms="39035" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Baby Progress Title is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Vocabulary Progress Tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Student Progress Tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Math Hostory Tab is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Quize Hostory Tab is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyStudentProgressTracker -->
+        <test-method signature="verifyAdminGroupSATTest()[pri:5, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:03:52 IST" name="verifyAdminGroupSATTest" finished-at="2021-10-05T21:04:20 IST" duration-ms="27939" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='succDiv11']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id='succDiv11']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='succDiv11']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id='succDiv11']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at coaching_center_base.FrameworkMethods.verifyElement(FrameworkMethods.java:95)
+at Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule.scheduleTest(ManageClass_SAT_Batch_Test_Schedule.java:127)
+at Regression_Tests.Admin_Group_SAT_Test.verifyAdminGroupSATTest(Admin_Group_SAT_Test.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminGroupSATTest -->
+        <test-method signature="verifyBatchAndStudentMapping()[pri:6, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:04:20 IST" name="verifyBatchAndStudentMapping" finished-at="2021-10-05T21:05:02 IST" duration-ms="42625" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='successDiv5']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id='successDiv5']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='successDiv5']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id='successDiv5']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at coaching_center_base.FrameworkMethods.verifyElement(FrameworkMethods.java:95)
+at Admin_Group_SAT_Pages.ManageClass_BatchMapping.verifyBatchAndTextMapping(ManageClass_BatchMapping.java:185)
+at Regression_Tests.Admin_Group_SAT_Test.verifyBatchAndStudentMapping(Admin_Group_SAT_Test.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Sucess Message is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Sucess Message is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBatchAndStudentMapping -->
+        <test-method signature="verifyTextBookForm()[pri:7, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:05:02 IST" name="verifyTextBookForm" finished-at="2021-10-05T21:05:20 IST" duration-ms="18006" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Sucess Message is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTextBookForm -->
+        <test-method signature="verifySATTestDetails()[pri:8, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:05:20 IST" name="verifySATTestDetails" finished-at="2021-10-05T21:05:36 IST" duration-ms="15979" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[[Pass]Success Message is Present on screen]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifySATTestDetails -->
+        <test-method signature="verifyBroadCastMessage()[pri:9, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:05:36 IST" name="verifyBroadCastMessage" finished-at="2021-10-05T21:05:50 IST" duration-ms="13347" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Success Message is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBroadCastMessage -->
+        <test-method signature="verifyProctoringFunctionality()[pri:10, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:05:50 IST" name="verifyProctoringFunctionality" finished-at="2021-10-05T21:06:12 IST" duration-ms="22524" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[Pass]Label Test Date is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Label Book Date is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Label Test is Present on screen]]>
+            </line>
+            <line>
+              <![CDATA[[Pass]Label Test Eassay is Present on screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProctoringFunctionality -->
+        <test-method signature="verifyScoreTrackerFunctionality()[pri:11, instance:Regression_Tests.Admin_Group_SAT_Test@6404f418]" started-at="2021-10-05T21:06:12 IST" name="verifyScoreTrackerFunctionality" finished-at="2021-10-05T21:06:19 IST" duration-ms="6627" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=94.0.4606.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=94.0.4606.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at Admin_Group_SAT_Pages.SAT_TemplatePage.navigateToManageClassSAT(SAT_TemplatePage.java:51)
+at Admin_Group_SAT_Pages.SAT_TemplatePage.verifyUserIsOnSATPage(SAT_TemplatePage.java:57)
+at Regression_Tests.Admin_Group_SAT_Test.verifyScoreTrackerFunctionality(Admin_Group_SAT_Test.java:151)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScoreTrackerFunctionality -->
       </class> <!-- Regression_Tests.Admin_Group_SAT_Test -->
       <class name="Regression_Tests.Admin_BranchManagement_Tests">
-        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@2805d709]" started-at="2021-09-17T20:53:33 IST" name="set_up_application" finished-at="2021-09-17T20:53:36 IST" duration-ms="3359" status="PASS">
+        <test-method is-config="true" signature="set_up_application()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@3a44431a]" started-at="2021-10-05T21:00:12 IST" name="set_up_application" finished-at="2021-10-05T21:00:18 IST" duration-ms="6120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up_application -->
-        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@2805d709]" started-at="2021-09-17T20:53:36 IST" name="verify_Login_Funtionality" finished-at="2021-09-17T20:54:00 IST" duration-ms="23715" status="PASS">
+        <test-method signature="verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@3a44431a]" started-at="2021-10-05T21:00:18 IST" name="verify_Login_Funtionality" finished-at="2021-10-05T21:00:42 IST" duration-ms="24269" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[[Pass]Username Textbox is Present on screen]]>
@@ -63,18 +419,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_Login_Funtionality -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@2805d709]" started-at="2021-09-17T20:54:00 IST" name="getResult" finished-at="2021-09-17T20:54:00 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@3a44431a]" started-at="2021-10-05T21:00:42 IST" name="getResult" finished-at="2021-10-05T21:00:42 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@2805d709] output=[Pass]Username Textbox is Present on screen]]]>
+                <![CDATA[[TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify_Login_Funtionality()[pri:1, instance:Regression_Tests.Admin_BranchManagement_Tests@3a44431a] output=[Pass]Username Textbox is Present on screen]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@2805d709]" started-at="2021-09-17T20:54:25 IST" name="writeToReport" finished-at="2021-09-17T20:54:25 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="writeToReport()[pri:0, instance:Regression_Tests.Admin_BranchManagement_Tests@3a44431a]" started-at="2021-10-05T21:06:19 IST" name="writeToReport" finished-at="2021-10-05T21:06:21 IST" duration-ms="1833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeToReport -->

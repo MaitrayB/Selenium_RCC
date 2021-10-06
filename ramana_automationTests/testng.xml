@@ -12,14 +12,9 @@
 			</class>
 			<class name="Regression_Tests.Admin_Group_SAT_Test">
 				<methods>
-					<!--<include name="verifyManageClass" />
-					<include name="verifyActiveInactiveStudetFunc" />
-					 <include name="verifySudentVideoFunc" />
-					<include name="verifyStudentProgressTracker" />
-					<include name="verifyAdminGroupSATTest" /> -->
-					<include name="verifySATTestDetails" />
+					<exclude name="verifySudentVideoFunc" />
 				</methods>
 			</class>
-		</classes>
+		</classes> 
 	</test>
 </suite>
