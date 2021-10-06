@@ -9,11 +9,93 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">RegressionTests</th></tr>
-<tr><td><a href="#t0">sample</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">63,543</td><td></td><td></td></tr>
+<tr><td><a href="#t0">sample</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">362,666</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">sample &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Regression_Tests.Admin_BranchManagement_Tests</td><td><a href="#m0">verify_Login_Funtionality</a></td><td rowspan="1">1632928752479</td><td rowspan="1">24319</td></tr><tr class="passedodd"><td rowspan="1">Regression_Tests.Admin_Group_SAT_Test</td><td><a href="#m1">verifyScoreTrackerFunctionality</a></td><td rowspan="1">1632928776821</td><td rowspan="1">38258</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">sample &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Regression_Tests.Admin_Group_SAT_Test</td><td><a href="#m0">verifyAdminGroupSATTest</a></td><td rowspan="1">1633448032125</td><td rowspan="1">27939</td></tr><tr class="failedeven"><td><a href="#m1">verifyBatchAndStudentMapping</a></td><td rowspan="1">1633448060071</td><td rowspan="1">42625</td></tr><tr class="failedeven"><td><a href="#m2">verifyScoreTrackerFunctionality</a></td><td rowspan="1">1633448172570</td><td rowspan="1">6627</td></tr><tr><th colspan="4">sample &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Regression_Tests.Admin_BranchManagement_Tests</td><td><a href="#m3">verify_Login_Funtionality</a></td><td rowspan="1">1633447818455</td><td rowspan="1">24269</td></tr><tr class="passedodd"><td rowspan="7">Regression_Tests.Admin_Group_SAT_Test</td><td><a href="#m4">verifyActiveInactiveStudetFunc</a></td><td rowspan="1">1633447892301</td><td rowspan="1">100785</td></tr><tr class="passedodd"><td><a href="#m5">verifyBroadCastMessage</a></td><td rowspan="1">1633448136694</td><td rowspan="1">13347</td></tr><tr class="passedodd"><td><a href="#m6">verifyManageClass</a></td><td rowspan="1">1633447842752</td><td rowspan="1">49541</td></tr><tr class="passedodd"><td><a href="#m7">verifyProctoringFunctionality</a></td><td rowspan="1">1633448150045</td><td rowspan="1">22524</td></tr><tr class="passedodd"><td><a href="#m8">verifySATTestDetails</a></td><td rowspan="1">1633448120711</td><td rowspan="1">15979</td></tr><tr class="passedodd"><td><a href="#m9">verifyStudentProgressTracker</a></td><td rowspan="1">1633447993088</td><td rowspan="1">39035</td></tr><tr class="passedodd"><td><a href="#m10">verifyTextBookForm</a></td><td rowspan="1">1633448102701</td><td rowspan="1">18006</td></tr></tbody>
 </table>
-<h2>sample</h2><h3 id="m0">Regression_Tests.Admin_BranchManagement_Tests#verify_Login_Funtionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Username Textbox is Present on screen<br/>[Pass]Password Textbox is Present on screen<br/>[Pass]Login Button is Present on screen<br/>[Pass]Forgot ID Link is Present on screen<br/>[Pass]Forgot Password Link is Present on screen<br/>[Pass]Welcome message label is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Regression_Tests.Admin_Group_SAT_Test#verifyScoreTrackerFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>sample</h2><h3 id="m0">Regression_Tests.Admin_Group_SAT_Test#verifyAdminGroupSATTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;succDiv11&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id=&apos;succDiv11&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at coaching_center_base.FrameworkMethods.verifyElement(FrameworkMethods.java:95)
+	at Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule.scheduleTest(ManageClass_SAT_Batch_Test_Schedule.java:127)
+	at Regression_Tests.Admin_Group_SAT_Test.verifyAdminGroupSATTest(Admin_Group_SAT_Test.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Regression_Tests.Admin_Group_SAT_Test#verifyBatchAndStudentMapping</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Sucess Message is Present on screen<br/>[Pass]Sucess Message is Present on screen</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;successDiv5&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id=&apos;successDiv5&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at coaching_center_base.FrameworkMethods.verifyElement(FrameworkMethods.java:95)
+	at Admin_Group_SAT_Pages.ManageClass_BatchMapping.verifyBatchAndTextMapping(ManageClass_BatchMapping.java:185)
+	at Regression_Tests.Admin_Group_SAT_Test.verifyBatchAndStudentMapping(Admin_Group_SAT_Test.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Regression_Tests.Admin_Group_SAT_Test#verifyScoreTrackerFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=94.0.4606.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at Admin_Group_SAT_Pages.SAT_TemplatePage.navigateToManageClassSAT(SAT_TemplatePage.java:51)
+	at Admin_Group_SAT_Pages.SAT_TemplatePage.verifyUserIsOnSATPage(SAT_TemplatePage.java:57)
+	at Regression_Tests.Admin_Group_SAT_Test.verifyScoreTrackerFunctionality(Admin_Group_SAT_Test.java:151)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Regression_Tests.Admin_BranchManagement_Tests#verify_Login_Funtionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Username Textbox is Present on screen<br/>[Pass]Password Textbox is Present on screen<br/>[Pass]Login Button is Present on screen<br/>[Pass]Forgot ID Link is Present on screen<br/>[Pass]Forgot Password Link is Present on screen<br/>[Pass]Welcome message label is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Regression_Tests.Admin_Group_SAT_Test#verifyActiveInactiveStudetFunc</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Student Popup is Present on screen<br/>[Pass]Disable Link is Present on screen<br/>[Pass]Student Popup is Present on screen<br/>[Pass]Active Link is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Regression_Tests.Admin_Group_SAT_Test#verifyBroadCastMessage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Success Message is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Regression_Tests.Admin_Group_SAT_Test#verifyManageClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Regression_Tests.Admin_Group_SAT_Test#verifyProctoringFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Label Test Date is Present on screen<br/>[Pass]Label Book Date is Present on screen<br/>[Pass]Label Test is Present on screen<br/>[Pass]Label Test Eassay is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Regression_Tests.Admin_Group_SAT_Test#verifySATTestDetails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Success Message is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Regression_Tests.Admin_Group_SAT_Test#verifyStudentProgressTracker</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Baby Progress Title is Present on screen<br/>[Pass]Vocabulary Progress Tab is Present on screen<br/>[Pass]Student Progress Tab is Present on screen<br/>[Pass]Math Hostory Tab is Present on screen<br/>[Pass]Quize Hostory Tab is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Regression_Tests.Admin_Group_SAT_Test#verifyTextBookForm</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Pass]Sucess Message is Present on screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

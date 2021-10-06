@@ -6,6 +6,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import Admin_Group_SAT_Pages.ManageClass_AttendanceTracker;
 import Admin_Group_SAT_Pages.ManageClass_BatchDetailViewer;
 import Admin_Group_SAT_Pages.ManageClass_BatchMapping;
 import Admin_Group_SAT_Pages.ManageClass_ManageBatches;
@@ -146,11 +147,13 @@ MarkupHelper.createLabel("Test Case Passed is - verifyBroadCastMessage ", Extent
 
 	@Test(priority = 11)
 	public void verifyScoreTrackerFunctionality() throws Exception {
-		ManageClass_SAT_Scoretracker scoreTracker= new ManageClass_SAT_Scoretracker();
-		scoreTracker.verifyUserIsOnSATPage();
-		scoreTracker.navigateToScoreTracker();
-		scoreTracker.verifySATStudentProgressCheck();
-		scoreTracker.verifyScoreManagement();
+		ManageClass_AttendanceTracker attendanceTracker= new ManageClass_AttendanceTracker();
+		attendanceTracker.verifyUserIsOnSATPage();
+		attendanceTracker.navigateToStudentAttendancePage();
+		attendanceTracker.verifyAttacndanceTracker();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyScoreTrackerFunctionality");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifyScoreTrackerFunctionality ", ExtentColor.GREEN));
 	}
 	
 }

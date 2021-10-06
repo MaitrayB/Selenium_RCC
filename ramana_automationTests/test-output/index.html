@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-RegressionTests" class="navigator-link">
-              <span class="suite-name border-passed">RegressionTests</span>
+              <span class="suite-name border-failed">RegressionTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionTests" class="hide-methods failed suite-RegressionTests"> (hide)</a> <!-- hide-methods failed suite-RegressionTests -->
+                      <a href="#" panel-name="suite-RegressionTests" class="show-methods failed suite-RegressionTests"> (show)</a> <!-- show-methods failed suite-RegressionTests -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionTests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyAdminGroupSATTest">verifyAdminGroupSATTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyBatchAndStudentMapping">verifyBatchAndStudentMapping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyScoreTrackerFunctionality">verifyScoreTrackerFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionTests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +128,37 @@
                     <div class="method-list-content passed suite-RegressionTests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyScoreTrackerFunctionality">verifyScoreTrackerFunctionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyActiveInactiveStudetFunc">verifyActiveInactiveStudetFunc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyBroadCastMessage">verifyBroadCastMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyManageClass">verifyManageClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyProctoringFunctionality">verifyProctoringFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifySATTestDetails">verifySATTestDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyStudentProgressTracker">verifyStudentProgressTracker</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyTextBookForm">verifyTextBookForm</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -124,6 +178,114 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionTests" class="panel RegressionTests">
+          <div class="suite-RegressionTests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Regression_Tests.Admin_Group_SAT_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminGroupSATTest">
+                  </a> <!-- verifyAdminGroupSATTest -->
+                  <span class="method-name">verifyAdminGroupSATTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;succDiv11&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id=&apos;succDiv11&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at coaching_center_base.FrameworkMethods.verifyElement(FrameworkMethods.java:95)
+	at Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule.scheduleTest(ManageClass_SAT_Batch_Test_Schedule.java:127)
+	at Regression_Tests.Admin_Group_SAT_Test.verifyAdminGroupSATTest(Admin_Group_SAT_Test.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBatchAndStudentMapping">
+                  </a> <!-- verifyBatchAndStudentMapping -->
+                  <span class="method-name">verifyBatchAndStudentMapping</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;successDiv5&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+*** Element info: {Using=xpath, value=//div[@id=&apos;successDiv5&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at coaching_center_base.FrameworkMethods.verifyElement(FrameworkMethods.java:95)
+	at Admin_Group_SAT_Pages.ManageClass_BatchMapping.verifyBatchAndTextMapping(ManageClass_BatchMapping.java:185)
+	at Regression_Tests.Admin_Group_SAT_Test.verifyBatchAndStudentMapping(Admin_Group_SAT_Test.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScoreTrackerFunctionality">
+                  </a> <!-- verifyScoreTrackerFunctionality -->
+                  <span class="method-name">verifyScoreTrackerFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=94.0.4606.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Bhatt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61204}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55318b7f639dcf02423d4e353e2db091
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at Admin_Group_SAT_Pages.SAT_TemplatePage.navigateToManageClassSAT(SAT_TemplatePage.java:51)
+	at Admin_Group_SAT_Pages.SAT_TemplatePage.verifyUserIsOnSATPage(SAT_TemplatePage.java:57)
+	at Regression_Tests.Admin_Group_SAT_Test.verifyScoreTrackerFunctionality(Admin_Group_SAT_Test.java:151)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTests-class-failed -->
           <div class="suite-RegressionTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,9 +294,51 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyScoreTrackerFunctionality">
-                  </a> <!-- verifyScoreTrackerFunctionality -->
-                  <span class="method-name">verifyScoreTrackerFunctionality</span>
+                  <a name="verifyActiveInactiveStudetFunc">
+                  </a> <!-- verifyActiveInactiveStudetFunc -->
+                  <span class="method-name">verifyActiveInactiveStudetFunc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBroadCastMessage">
+                  </a> <!-- verifyBroadCastMessage -->
+                  <span class="method-name">verifyBroadCastMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyManageClass">
+                  </a> <!-- verifyManageClass -->
+                  <span class="method-name">verifyManageClass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProctoringFunctionality">
+                  </a> <!-- verifyProctoringFunctionality -->
+                  <span class="method-name">verifyProctoringFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySATTestDetails">
+                  </a> <!-- verifySATTestDetails -->
+                  <span class="method-name">verifySATTestDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStudentProgressTracker">
+                  </a> <!-- verifyStudentProgressTracker -->
+                  <span class="method-name">verifyStudentProgressTracker</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTextBookForm">
+                  </a> <!-- verifyTextBookForm -->
+                  <span class="method-name">verifyTextBookForm</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,7 +377,7 @@
       &lt;/class&gt; &lt;!-- Regression_Tests.Admin_BranchManagement_Tests --&gt;
       &lt;class name=&quot;Regression_Tests.Admin_Group_SAT_Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyScoreTrackerFunctionality&quot;/&gt;
+          &lt;exclude name=&quot;verifySudentVideoFunc&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Regression_Tests.Admin_Group_SAT_Test --&gt;
     &lt;/classes&gt;
@@ -215,20 +419,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyScoreTrackerFunctionality')
+data.setCell(0, 1, 'verifyActiveInactiveStudetFunc')
 data.setCell(0, 2, 'Regression_Tests.Admin_Group_SAT_Test')
-data.setCell(0, 3, 38258);
+data.setCell(0, 3, 100785);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_Login_Funtionality')
-data.setCell(1, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
-data.setCell(1, 3, 24319);
+data.setCell(1, 1, 'verifyManageClass')
+data.setCell(1, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(1, 3, 49541);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyBatchAndStudentMapping')
+data.setCell(2, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(2, 3, 42625);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyStudentProgressTracker')
+data.setCell(3, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(3, 3, 39035);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAdminGroupSATTest')
+data.setCell(4, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(4, 3, 27939);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_Login_Funtionality')
+data.setCell(5, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(5, 3, 24269);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyProctoringFunctionality')
+data.setCell(6, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(6, 3, 22524);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyTextBookForm')
+data.setCell(7, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(7, 3, 18006);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifySATTestDetails')
+data.setCell(8, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(8, 3, 15979);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyBroadCastMessage')
+data.setCell(9, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(9, 3, 13347);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyScoreTrackerFunctionality')
+data.setCell(10, 2, 'Regression_Tests.Admin_Group_SAT_Test')
+data.setCell(10, 3, 6627);
 window.suiteTableData['RegressionTests']= { tableData: data, tableDiv: 'times-div-RegressionTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-RegressionTests">
               </div> <!-- times-div-RegressionTests -->
             </div> <!-- times-div -->
@@ -240,6 +480,43 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyActiveInactiveStudetFunc</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Student Popup is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Disable Link is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Student Popup is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Active Link is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyTextBookForm</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Sucess Message is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyStudentProgressTracker</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Baby Progress Title is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Vocabulary Progress Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Student Progress Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Math Hostory Tab is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Quize Hostory Tab is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySATTestDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Success Message is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyBroadCastMessage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Success Message is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">verify_Login_Funtionality</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
@@ -250,34 +527,32 @@ return data;
                 <span class="reporter-method-output">[Pass]Welcome message label is Present on screen</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProctoringFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Label Test Date is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Label Book Date is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Label Test is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Label Test Eassay is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyBatchAndStudentMapping</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Pass]Sucess Message is Present on screen</span>
+                <span class="reporter-method-output">[Pass]Sucess Message is Present on screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">19 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Regression_Tests.Admin_Group_SAT_Test</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyBatchAndStudentMapping</span>
-                <br/>
-                <span class="ignored-method-name">verifyActiveInactiveStudetFunc</span>
-                <br/>
-                <span class="ignored-method-name">verifyTextBookForm</span>
-                <br/>
-                <span class="ignored-method-name">verifyStudentProgressTracker</span>
-                <br/>
-                <span class="ignored-method-name">verifyBroadCastMessage</span>
-                <br/>
-                <span class="ignored-method-name">verifyAdminGroupSATTest</span>
-                <br/>
-                <span class="ignored-method-name">verifySATTestDetails</span>
-                <br/>
-                <span class="ignored-method-name">verifyManageClass</span>
-                <br/>
-                <span class="ignored-method-name">verifyProctoringFunctionality</span>
-                <br/>
                 <span class="ignored-method-name">verifySudentVideoFunc</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -295,9 +570,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">New_Registraton_Page_Verification</span>
                 <br/>
-                <span class="ignored-method-name">verify_Add_update_enquiry_page</span>
-                <br/>
                 <span class="ignored-method-name">verify_student_management_functionality</span>
+                <br/>
+                <span class="ignored-method-name">verify_Add_update_enquiry_page</span>
                 <br/>
                 <span class="ignored-method-name">verify_Search_Student_functionality</span>
                 <br/>
@@ -320,25 +595,67 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verify_Login_Funtionality</span>
-                <span class="method-start">4912 ms</span>
+                <span class="method-start">6207 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify...)</span>
-                <span class="method-start">29237 ms</span>
+                <span class="method-start">30479 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression_Tests.Admin_Group_SAT_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">verifyManageClass</span>
+                <span class="method-start">30504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyActiveInactiveStudetFunc</span>
+                <span class="method-start">80053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyStudentProgressTracker</span>
+                <span class="method-start">180840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAdminGroupSATTest</span>
+                <span class="method-start">219877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyBatchAndStudentMapping</span>
+                <span class="method-start">247823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTextBookForm</span>
+                <span class="method-start">290453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySATTestDetails</span>
+                <span class="method-start">308463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBroadCastMessage</span>
+                <span class="method-start">324446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProctoringFunctionality</span>
+                <span class="method-start">337797 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyScoreTrackerFunctionality</span>
-                <span class="method-start">29254 ms</span>
+                <span class="method-start">360322 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression_Tests.Admin_BranchManagement_Tests</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">writeToReport</span>
-                <span class="method-start">67518 ms</span>
+                <span class="method-start">366955 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

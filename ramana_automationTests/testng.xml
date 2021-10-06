@@ -12,7 +12,7 @@
 			</class>
 			<class name="Regression_Tests.Admin_Group_SAT_Test">
 				<methods>
-					<include name="verifyScoreTrackerFunctionality" />
+					<exclude name="verifySudentVideoFunc" />
 				</methods>
 			</class>
 		</classes> 
