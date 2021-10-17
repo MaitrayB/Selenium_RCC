@@ -11,7 +11,7 @@ public interface Admin_Group_SAT_Locators {
 		static String MENU_SCORE_TRACKER_XPATH="//span[contains(.,'Score Tracker')]";
 		static String MENU_ATTANDANCE_TRACKER_XPATH="(//span[contains(.,'Attendance Tracker')])[1]";
 		static String MENU_STUDENT_ANALYTICS_XPATH="//span[contains(.,'Student Analytics')]";
-
+		static String MENU_CUMULATIVE_ANALYTICS_XPATH="//span[contains(.,'Cumulative Analytics')]";
 	}
 
 	public interface Create_Batch_Page_Locators {
@@ -86,6 +86,7 @@ public interface Admin_Group_SAT_Locators {
 		static String BTN_TESTSCHEDULE_XPATH="//button[@id='submitBtn']";
 		static String MSG_SUCCESS_XPATH="//div[@id='succDiv11']";
 		static String BTN_REMOVE_XPATH="(//div[@class='table-responsive'])[1]//tr[1]//td[7]//a//span";
+		static String MSG_FAIL_XPATH="//div[@id='errorDiv12']";
 	}
 	
 	public interface Batch_Mapping_Locators{
@@ -202,7 +203,7 @@ public interface Admin_Group_SAT_Locators {
 		//Reading Tab
 		static String TAB_READING_XPATH="//a[@id='readingTab']";
 		static String TAB_READINGTAB1_XPATH="//div[@id='heading10']";
-		static String BTN_DELETE_XPATH="(//button[contains(.,'Delete Answers')])[1]";
+		static String BTN_READDELETE_XPATH="(//button[contains(.,'Delete Answers')])[1]";
 		static String BTN_REGRADE_XPATH="(//button[contains(.,'Re-Grade')])[1]";
 		static String BTN_DOWLOAD_XPATH="(//button[contains(.,'Download')])[1]";
 		static String TAB_READINGTAB2_XPATH="//div[@id='heading11']";
@@ -213,12 +214,36 @@ public interface Admin_Group_SAT_Locators {
 		//Writing Tab
 		static String TAB_WRITE_XPATH="//a[@id='writingTab']";
 		static String TAB_WRITING1_XPATH="//div[@id='heading20']";
-		static String TAB_MATHEMATICS_XPATH="//a[@id='CC']";
-		static String TAB_MATHEMATICS1_XPATH="//div[@id='heading20']";
+		static String TAB_MATHEMATICS_XPATH="(//a[@id='writingTab'])[2]";
+		static String TAB_MATHEMATICS1_XPATH="//div[@id='heading30']";
+		static String TAB_MATHEMATICS2_XPATH="//div[@id='heading31']";
 		static String BTN_DELETE2_XPATH="(//button[contains(.,'Delete Answers')])[5]";
 		static String BTN_REGRADE2_XPATH="(//button[contains(.,'Re-Grade')])[5]";
 		static String BTN_DOWLOAD2_XPATH="(//button[contains(.,'Download')])[5]";
-				
+		static String BTN_DELETE3_XPATH="(//button[contains(.,'Delete Answers')])[6]";
+		static String BTN_REGRADE3_XPATH="(//button[contains(.,'Re-Grade')])[6]";
+		static String BTN_DOWLOAD3_XPATH="(//button[contains(.,'Download')])[6]";
+	}
+	public interface SAT_Cumulative_Analystics{
+		static String DRP_SELECT_BATCH_XPATH="//select[@id='batchIdProgress']";
+		static String DRP_TEXTBOOK_XPATH="//select[@id='textBookId']";
+		static String DRP_TESTNUMBER_XPATH="//select[@id='testDetailId']";
+		static String DRP_SECTION_XPATH="//select[@id='testSection']";
+		static String LBL_MULTIBATCH_XPATH="//label[@for='isMultiBatchSelected']";
+		static String CHBOX_MULTIBATCH_SELECTION_XPATH="//input[@id='isMultiBatchSelected']"; 
 	}
 	
+	public interface SAT_Cumulative_ScoreCard_Locators{
+		static String DRP_SELECT_BATCH_XPATH="//select[@id='batchIdProgress']";
+		static String DRP_BOOK_XPATH="//select[@id='textBookId']";
+		static String DRP_TEST_NUMBER_XPATH="//select[@id='testDetailId']";
+		static String DRP_SECTION_XPATH="//select[@id='testSection']";
+		static String LBL_AUTO_REFERESH_XPATH="//label[@for='autoRefreshFlag']";
+	}
+	
+	public interface SAT_Learningphase_Locators{
+		static String DRP_BATCH_XPATH="//select[@id='batchId']";
+		static String DRP_SUBJECT_XPATH="//select[@id='subject']";
+		static String DRP_TEXTbOOK_XPATH="//select[@id='textBookId']";
+	}
 }

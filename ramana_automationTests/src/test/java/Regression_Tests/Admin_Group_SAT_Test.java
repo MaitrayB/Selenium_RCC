@@ -14,7 +14,9 @@ import Admin_Group_SAT_Pages.ManageClass_MangeVideo;
 import Admin_Group_SAT_Pages.ManageClass_Proctoring;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Batch_Test_Schedule;
 import Admin_Group_SAT_Pages.ManageClass_SAT_BroadcastMessage;
+import Admin_Group_SAT_Pages.ManageClass_SAT_CumulativeAnalytics;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Scoretracker;
+import Admin_Group_SAT_Pages.ManageClass_SAT_Student_Analytics;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Book_form;
 import Admin_Group_SAT_Pages.ManageClass_SAT_Text_Details;
 import Admin_Group_SAT_Pages.ManageClass_Student_Progress_Tracker;
@@ -93,7 +95,7 @@ public class Admin_Group_SAT_Test {
 		batchMapping.verifyBatchAndTeacherMapping();
 		batchMapping.navigateToBatchAndBookMapping();
 		batchMapping.verifyBatchAndTextMapping();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyAdminGroupSATTest");
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyBatchAndStudentMapping");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - SAT Batch Test Schedule ", ExtentColor.GREEN));
 
@@ -146,6 +148,7 @@ MarkupHelper.createLabel("Test Case Passed is - verifyBroadCastMessage ", Extent
 	}
 
 	@Test(priority = 11)
+	
 	public void verifyScoreTrackerFunctionality() throws Exception {
 		ManageClass_AttendanceTracker attendanceTracker= new ManageClass_AttendanceTracker();
 		attendanceTracker.verifyUserIsOnSATPage();
@@ -155,5 +158,30 @@ MarkupHelper.createLabel("Test Case Passed is - verifyBroadCastMessage ", Extent
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - verifyScoreTrackerFunctionality ", ExtentColor.GREEN));
 	}
+
+	@Test(priority = 12)
+	public void StudentAnalyticsPage() throws Exception {
+		ManageClass_SAT_Student_Analytics studentAnalytics= new ManageClass_SAT_Student_Analytics();
+		studentAnalytics.verifyUserIsOnSATPage();
+		studentAnalytics.navigateToStudentAnalytics();
+		studentAnalytics.verifyStudentAnalystics();
+		studentAnalytics.verifyWritingTab();
+		studentAnalytics.verifyMathematics();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyScoreTrackerFunctionality");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifyScoreTrackerFunctionality ", ExtentColor.GREEN));
+	}
+	
+	@Test(priority = 13)
+	public void verifyCumulativeAnalytics() throws Exception {
+		ManageClass_SAT_CumulativeAnalytics cumulativeAnalytics= new ManageClass_SAT_CumulativeAnalytics();
+		cumulativeAnalytics.verifyUserIsOnSATPage();
+		cumulativeAnalytics.navigateToCumulativeAnalyticsPage();
+		cumulativeAnalytics.verifyCumulativeAnalyticsPage();
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verifyScoreTrackerFunctionality");
+		FrameworkMethods.logger.log(Status.PASS,
+				MarkupHelper.createLabel("Test Case Passed is - verifyScoreTrackerFunctionality ", ExtentColor.GREEN));
+	}
+	
 	
 }

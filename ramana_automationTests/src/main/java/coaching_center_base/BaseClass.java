@@ -51,4 +51,8 @@ public class BaseClass extends FrameworkMethods{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,250)", "");
 	}
+	public static void scrollUp() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-100)", "");
+	}
 }
