@@ -67,14 +67,17 @@ public class ManageClass_SAT_CumulativeAnalytics extends SAT_TemplatePage implem
 
 	public void navigateToCumulativeAnalyticsPage() {
 		getMenu_cumulative_analytics().click();
-		navigateToCumulativeAnalyticsPage();
 	}
 	
 	public void verifyCumulativeAnalyticsPage() throws Exception {
+		scrollUp();
+		scrollUp();
+		waitForMinTime();
 		verifyElement(getLbl_multibatch(), "Enable Multi Batch Selection Label");
 		verifyElement(getMenu_branch_manage_class(),"Select Batch Dropdown");
 		verifyElement(getSelect_textbook(),"Select Textbook");
 		verifyElement(getSelect_testnumber(),"Select TestNumber");
 		verifyElement(getSelect_section(), "Select Section");
+		refreshPage();
 	}
 }

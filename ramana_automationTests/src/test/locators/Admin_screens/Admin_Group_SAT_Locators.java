@@ -12,6 +12,9 @@ public interface Admin_Group_SAT_Locators {
 		static String MENU_ATTANDANCE_TRACKER_XPATH="(//span[contains(.,'Attendance Tracker')])[1]";
 		static String MENU_STUDENT_ANALYTICS_XPATH="//span[contains(.,'Student Analytics')]";
 		static String MENU_CUMULATIVE_ANALYTICS_XPATH="//span[contains(.,'Cumulative Analytics')]";
+		static String MENU_CUMULATIVE_SCORE_CARD_XPATH="//span[contains(.,'Cumulative Score Card')]";
+		static String MENU_LEARNING_PHASE_TRACKER_XPATH="//span[contains(.,'Learning Phase Tracker')]";
+		
 	}
 
 	public interface Create_Batch_Page_Locators {
@@ -242,8 +245,8 @@ public interface Admin_Group_SAT_Locators {
 	}
 	
 	public interface SAT_Learningphase_Locators{
-		static String DRP_BATCH_XPATH="//select[@id='batchId']";
+		static String DRP_BATCH1_XPATH="//select[@id='batchId']";
 		static String DRP_SUBJECT_XPATH="//select[@id='subject']";
-		static String DRP_TEXTbOOK_XPATH="//select[@id='textBookId']";
+		static String DRP_TEXTBOOK_XPATH="//select[@id='textBookId']";
 	}
 }

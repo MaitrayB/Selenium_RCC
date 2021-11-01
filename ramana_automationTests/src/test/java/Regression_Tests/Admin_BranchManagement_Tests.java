@@ -41,27 +41,32 @@ public class Admin_BranchManagement_Tests {
 	@Test(priority = 1)
 	public void verify_Login_Funtionality() throws Exception {
 		loginPage login = new loginPage();
-		homePage home = new homePage();
-		BaseClass.LaunchApplication();
-		login.verifyLoginpage_Login();
-		login.doLogin();
-		home.verifyHomepage();
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("verify_Login_Funtionality",
 				"This test is to verify login page elements and then login to site as admin");
+		FrameworkMethods.logger.info("Launching an application");
+		BaseClass.LaunchApplication();
+		FrameworkMethods.logger.info("Verifying Login Page");
+		login.verifyLoginpage_Login();
+		login.doLogin();
+		homePage home = new homePage();
+		home.verifyHomepage();
+		FrameworkMethods.logger.info("Login success");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - verify Login Funtionality", ExtentColor.GREEN));
 	}
 
 	@Test(priority = 2)
 	public void verify_Search_Student_functionality() throws Exception {
-
+		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Search_Student_Functionality");
 		searchStudentPage branchPage = new searchStudentPage();
+		FrameworkMethods.logger.info("Navigating on Search Page");
 		branchPage.navigateToSearchPage();
+		FrameworkMethods.logger.info("Searching Student with First Name ");
 		branchPage.searchStudentwithFirstName();
 		branchPage.ResetSearch();
+		FrameworkMethods.logger.info("Searching Student with Last Name ");
 		branchPage.searchStudentwithLastName();
 		branchPage.verifyViewDetails();
-		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Search_Student_Functionality");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - Branch_Management_Search_Student", ExtentColor.GREEN));
 
@@ -69,11 +74,12 @@ public class Admin_BranchManagement_Tests {
 
 	@Test(priority = 3)
 	public void New_Registraton_Page_Verification() throws Exception {
-
-		registrationPage register = new registrationPage();
-		register.navigateToRegistrationPage();
-		register.verifyNewRegistrationPage();
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_New_Registrations_Page");
+		registrationPage register = new registrationPage();
+		FrameworkMethods.logger.info("Navigating on Registration Page");
+		register.navigateToRegistrationPage();
+		FrameworkMethods.logger.info("Verifying new Registration Page");
+		register.verifyNewRegistrationPage();
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - Registration Page", ExtentColor.GREEN));
 		homePage homePage = new homePage();
@@ -167,8 +173,6 @@ public class Admin_BranchManagement_Tests {
 		studentPhotoApproval.verifyPhotoAprrovalMessage();
 		homepage.doLogout();
 		loginpage.doLogin();
-
-
 		FrameworkMethods.logger = FrameworkMethods.extent.createTest("Verify_Enquiry_Page");
 		FrameworkMethods.logger.log(Status.PASS,
 				MarkupHelper.createLabel("Test Case Passed is - Enqiury Page", ExtentColor.GREEN));

@@ -3,11 +3,11 @@
 <suite name="Failed suite [RegressionTests]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="sample(failed)">
     <classes>
-      <class name="Regression_Tests.Admin_Group_SAT_Test">
+      <class name="Regression_Tests.OneOnOne_ClassManagement_Test">
         <methods>
-          <include name="verifyCumulativeAnalytics"/>
+          <include name="verifyManageClass"/>
         </methods>
-      </class> <!-- Regression_Tests.Admin_Group_SAT_Test -->
+      </class> <!-- Regression_Tests.OneOnOne_ClassManagement_Test -->
     </classes>
   </test> <!-- sample(failed) -->
 </suite> <!-- Failed suite [RegressionTests] -->

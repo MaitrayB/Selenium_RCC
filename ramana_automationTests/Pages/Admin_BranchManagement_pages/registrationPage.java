@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
+
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.NewRegistrationLocators;
 import coaching_center_base.BaseClass;
@@ -56,11 +58,13 @@ public class registrationPage extends BaseClass implements NewRegistrationLocato
 	}
 	
 	public void navigateToRegistrationPage() throws Exception {
+		Reporter.log("Navigating on student registration page");
 		verifyElement(getNew_registrationmenu(), "Student registartion menu");
 		getNew_registrationmenu().click();
 	}
 	
 	public void verifyNewRegistrationPage() throws Exception {
+		Reporter.log("Verifying elements on student registration page");
 		waitForPageLoad();
 		verifyElement(getStudent_registration_tab(), "Student registartion tab");
 		getArrow().click();
