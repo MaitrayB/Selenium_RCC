@@ -34,6 +34,7 @@ public class ManageClass_SAT_Student_Analytics extends SAT_TemplatePage implemen
 
 	@FindBy(how = How.XPATH, using = BTN_READDELETE_XPATH)
 	private WebElement btn_delete;
+	
 	@FindBy(how = How.XPATH, using = BTN_REGRADE1_XPATH)
 	private WebElement btn_regrade1;
 	
@@ -221,6 +222,7 @@ public class ManageClass_SAT_Student_Analytics extends SAT_TemplatePage implemen
 		verifyElement(getBtn_delete3(), "Delete Button");
 		verifyElement(getBtn_regrade3(), "Re-Grade Button");
 		verifyElement(getBtn_download3(), "Download Button");	
+		refreshPage();
 		
 	}
 }

@@ -182,7 +182,8 @@ public class ManageClass_Proctoring extends SAT_TemplatePage implements Admin_Gr
 		verifyElement(getLbl_test_date(),"Label Test Date");
 		verifyElement(getLbl_book_date(),"Label Book Date");
 		verifyElement(getLbl_test(),"Label Test");
-		verifyElement(getLbl_essay_page(),"Label Test Eassay");              
+		verifyElement(getLbl_essay_page(),"Label Test Eassay");    
+		refreshPage();
 	}	
 
 }

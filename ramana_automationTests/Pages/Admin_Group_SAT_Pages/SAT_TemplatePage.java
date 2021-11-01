@@ -70,4 +70,8 @@ public class SAT_TemplatePage extends BaseClass implements Admin_Group_SAT_Menu,
 		}	
 	}
 	
+	public void refreshPage() {
+		driver.navigate().refresh();
+	}
+	
 }
