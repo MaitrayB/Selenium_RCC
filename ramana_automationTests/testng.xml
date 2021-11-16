@@ -8,13 +8,13 @@
 			<class name="Regression_Tests.Admin_BranchManagement_Tests">
 				<methods>
 					<include name="verify_Login_Funtionality" />
-					 <include name="verify_Search_Student_functionality" />
-					<include name="New_Registraton_Page_Verification" />
+					<!-- <include name="verify_Search_Student_functionality" />
+					<include name="New_Registraton_Page_Verification" /> -->
 				</methods>
 			</class>
-			<class name="Regression_Tests.Admin_Group_SAT_Test">
+			<class name="Regression_Tests.Admin_StaffManagenent_Test">
 				<methods>
-					<include name="verifyManageClass" />
+					<include name="verifySearchStaff" />
 				</methods>
 			</class>
 		</classes>
