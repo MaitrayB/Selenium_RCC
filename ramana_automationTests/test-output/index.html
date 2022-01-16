@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-RegressionTests" class="navigator-link ">
-                    <span>D:\Up\Novatesoft Ramana\Selenium_RCC\ramana_automationTests\testng.xml</span>
+                    <span>D:\RamanScript\myportal-QA\Selenium_Tests\ramana_automationTests\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-RegressionTests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyBatchAndStudentMapping">verifyBatchAndStudentMapping</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_BranchManagement_Tests" class="method navigator-link" hash-for-method="New_Registraton_Page_Verification">New_Registraton_Page_Verification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTests" title="Regression_Tests.Admin_Group_SAT_Test" class="method navigator-link" hash-for-method="verifyActiveInactiveStudetFunc">verifyActiveInactiveStudetFunc</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,9 +137,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyBatchAndStudentMapping">
-                  </a> <!-- verifyBatchAndStudentMapping -->
-                  <span class="method-name">verifyBatchAndStudentMapping</span>
+                  <a name="verifyActiveInactiveStudetFunc">
+                  </a> <!-- verifyActiveInactiveStudetFunc -->
+                  <span class="method-name">verifyActiveInactiveStudetFunc</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,6 +152,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="New_Registraton_Page_Verification">
+                  </a> <!-- New_Registraton_Page_Verification -->
+                  <span class="method-name">New_Registraton_Page_Verification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verify_Login_Funtionality">
                   </a> <!-- verify_Login_Funtionality -->
                   <span class="method-name">verify_Login_Funtionality</span>
@@ -157,7 +169,7 @@
         </div> <!-- panel RegressionTests -->
         <div panel-name="test-xml-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Up\Novatesoft Ramana\Selenium_RCC\ramana_automationTests\testng.xml</span>
+            <span class="header-content">D:\RamanScript\myportal-QA\Selenium_Tests\ramana_automationTests\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,11 +181,12 @@
       &lt;class name=&quot;Regression_Tests.Admin_BranchManagement_Tests&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;verify_Login_Funtionality&quot;/&gt;
+          &lt;include name=&quot;New_Registraton_Page_Verification&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Regression_Tests.Admin_BranchManagement_Tests --&gt;
       &lt;class name=&quot;Regression_Tests.Admin_Group_SAT_Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyBatchAndStudentMapping&quot;/&gt;
+          &lt;include name=&quot;verifyActiveInactiveStudetFunc&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Regression_Tests.Admin_Group_SAT_Test --&gt;
     &lt;/classes&gt;
@@ -215,20 +228,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyBatchAndStudentMapping')
+data.setCell(0, 1, 'verifyActiveInactiveStudetFunc')
 data.setCell(0, 2, 'Regression_Tests.Admin_Group_SAT_Test')
-data.setCell(0, 3, 53357);
+data.setCell(0, 3, 113864);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verify_Login_Funtionality')
 data.setCell(1, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
-data.setCell(1, 3, 23846);
+data.setCell(1, 3, 25091);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'New_Registraton_Page_Verification')
+data.setCell(2, 2, 'Regression_Tests.Admin_BranchManagement_Tests')
+data.setCell(2, 3, 8910);
 window.suiteTableData['RegressionTests']= { tableData: data, tableDiv: 'times-div-RegressionTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-RegressionTests">
               </div> <!-- times-div-RegressionTests -->
             </div> <!-- times-div -->
@@ -242,39 +259,52 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">verify_Login_Funtionality</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[Pass]Username Textbox is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Password Textbox is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Login Button is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Forgot ID Link is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Forgot Password Link is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Welcome message label is Present on screen</span>
+                <span class="reporter-method-output">Entering User Name:keith@yahoo.com</span>
+                <span class="reporter-method-output">Entering Password:melbourne</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyBatchAndStudentMapping</span>
+              <span class="reporter-method-name">New_Registraton_Page_Verification</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[Pass]Sucess Message is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Sucess Message is Present on screen</span>
-                <span class="reporter-method-output">[Pass]Sucess Message is Present on screen</span>
+                <span class="reporter-method-output">Navigating on student registration page</span>
+                <span class="reporter-method-output">Verifying elements on student registration page</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">14 ignored methods</span>
+            <span class="header-content">22 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Regression_Tests.Admin_Group_SAT_Test</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyActiveInactiveStudetFunc</span>
+                <span class="ignored-method-name">verifyBatchAndStudentMapping</span>
+                <br/>
+                <span class="ignored-method-name">StudentAnalyticsPage</span>
+                <br/>
+                <span class="ignored-method-name">verifyCumulativeScore</span>
+                <br/>
+                <span class="ignored-method-name">verifyScoreTrackerFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">verifyBroadCastMessage</span>
+                <br/>
+                <span class="ignored-method-name">verifyLearningPhaseTracker</span>
+                <br/>
+                <span class="ignored-method-name">verifyTextBookForm</span>
                 <br/>
                 <span class="ignored-method-name">verifyStudentProgressTracker</span>
                 <br/>
                 <span class="ignored-method-name">verifyAdminGroupSATTest</span>
                 <br/>
+                <span class="ignored-method-name">verifySATTestDetails</span>
+                <br/>
+                <span class="ignored-method-name">verifyCumulativeAnalytics</span>
+                <br/>
                 <span class="ignored-method-name">verifyManageClass</span>
+                <br/>
+                <span class="ignored-method-name">verifyProctoringFunctionality</span>
                 <br/>
                 <span class="ignored-method-name">verifySudentVideoFunc</span>
                 <br/>
@@ -290,8 +320,6 @@ return data;
                 <span class="ignored-method-name">verify_referral_activity_page</span>
                 <br/>
                 <span class="ignored-method-name">verify_student_teacher_mapping_page</span>
-                <br/>
-                <span class="ignored-method-name">New_Registraton_Page_Verification</span>
                 <br/>
                 <span class="ignored-method-name">verify_Add_update_enquiry_page</span>
                 <br/>
@@ -318,25 +346,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verify_Login_Funtionality</span>
-                <span class="method-start">3556 ms</span>
+                <span class="method-start">7073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=verify_Login_Funtionality status=SUCCESS method=Admin_BranchManagement_Tests.verify...)</span>
-                <span class="method-start">27406 ms</span>
+                <span class="method-start">32169 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">New_Registraton_Page_Verification</span>
+                <span class="method-start">32187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=New_Registraton_Page_Verification status=SUCCESS method=Admin_BranchManagement_Test...)</span>
+                <span class="method-start">41102 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression_Tests.Admin_Group_SAT_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyBatchAndStudentMapping</span>
-                <span class="method-start">27414 ms</span>
+                <span class="method-name">verifyActiveInactiveStudetFunc</span>
+                <span class="method-start">41105 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression_Tests.Admin_BranchManagement_Tests</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">writeToReport</span>
-                <span class="method-start">80775 ms</span>
+                <span class="method-start">154973 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

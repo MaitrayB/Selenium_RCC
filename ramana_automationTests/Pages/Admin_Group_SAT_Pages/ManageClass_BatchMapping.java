@@ -65,7 +65,6 @@ public class ManageClass_BatchMapping extends SAT_TemplatePage implements Admin_
 	private WebElement tb_success_message;
 	
 
-	
 	public WebElement getBt_sucess_msg() {
 		return bt_sucess_msg;
 	}
@@ -151,6 +150,8 @@ public class ManageClass_BatchMapping extends SAT_TemplatePage implements Admin_
 	}
 
 	public void verifyBatchAndStudentMapping() throws Exception {
+		scrollUp();
+		waitForMinTime();
 		Select student=new Select(getDrp_select_student());
 		student.selectByIndex(1);
 		Select batch=new Select(getDrp_select_batch());
@@ -185,6 +186,6 @@ public class ManageClass_BatchMapping extends SAT_TemplatePage implements Admin_
 		waitForMinTime();
 		verifyElement(getTb_success_message(),"Sucess Message");
 		waitForMinTime();
-
 	}
+	
 }

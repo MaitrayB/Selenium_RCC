@@ -140,17 +140,25 @@ public class equiriesPage extends BaseClass implements Menus, EnquiriesPageLocat
 	}
 
 	public void addEnquiry() throws IOException, InterruptedException {
+		FrameworkMethods.logger.info("Entering parent's first name" + FrameworkMethods.getCustomProperty("parent_first_name"));
 		getParent_firstname().sendKeys(FrameworkMethods.getCustomProperty("parent_first_name"));
+		FrameworkMethods.logger.info("Entering parent's last name" + FrameworkMethods.getCustomProperty("parent_last_name"));
 		getParent_lastname().sendKeys(FrameworkMethods.getCustomProperty("parent_last_name"));
+		FrameworkMethods.logger.info("Entering parent's mobile" + FrameworkMethods.getCustomProperty("parent_mobile_number"));
 		getMobilenumber().sendKeys(FrameworkMethods.getCustomProperty("parent_mobile_number"));
+		FrameworkMethods.logger.info("Entering parent's email" + FrameworkMethods.getCustomProperty("parent_email"));
 		getParentEmail().sendKeys(FrameworkMethods.getCustomProperty("parent_email"));
+		FrameworkMethods.logger.info("Entering student's first name" + FrameworkMethods.getCustomProperty("student_first_name"));
 		getStudentfirstName().sendKeys(FrameworkMethods.getCustomProperty("student_first_name"));
+		FrameworkMethods.logger.info("Entering student's last name" + FrameworkMethods.getCustomProperty("student_last_name"));
 		getStudentLastName().sendKeys(FrameworkMethods.getCustomProperty("student_last_name"));
+		FrameworkMethods.logger.info("Entering custom message" + FrameworkMethods.getCustomProperty("message"));
 		getMessage().sendKeys(FrameworkMethods.getCustomProperty("message"));
 		Select studentName = new Select(getInterestedProgram());
 		waitForMinTime();
 		studentName.selectByIndex(1);
 		getBtn_addupdates().click();
+		FrameworkMethods.logger.info("Enquiry Added");
 	}
 	
 	public void searchEnquiry() throws IOException, InterruptedException {
@@ -164,7 +172,5 @@ public class equiriesPage extends BaseClass implements Menus, EnquiriesPageLocat
 		System.out.println(getLast_name().getText());
 		getLast_name().getText().equals(FrameworkMethods.getCustomProperty("parent_last_name"));
 	}
-	
-	 
 
 }

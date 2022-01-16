@@ -7,6 +7,7 @@ public interface Locators {
 			static String LOGIN_FORGOT_PASSWORD_XPATH="//a[text()='Forgot Password ?']";
 			static String LOGIN_FORGOTID_XPATH="//a[text()='Forgot Login Id ?']";
 			static String LOGIN_BUTTON_XPATH="//button[@id='loginbtn']";
+			static String LOGIN_CAPTCHA_XPATH="//span[@role='checkbox']";
 		}
 		public interface HomePageLocators{
 			static String HOME_WELCOME_XPATH = "//li[contains(.,'Welcome')]";
@@ -64,7 +65,6 @@ public interface Locators {
 			static String BTN_HOLDCLASS_XPATH="(//button[contains(text(),'Hold Class')])[1]";
 			static String BTN_VIEW_SCHEDULE_XPATH="//button[@title='View Details']";
 			static String BTN_CONVERSATION_XPATH="//button[@title='Conversations']";
-			
 			
 		}
 		
@@ -158,5 +158,5 @@ public interface Locators {
 		}
 		
 		
-
+		
 }

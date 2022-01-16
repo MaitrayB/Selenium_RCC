@@ -11,6 +11,7 @@ import Student_screens.Student_Locators;
 import Student_screens.Student_Locators.Student_Menu;
 import Student_screens.Student_Locators.Upload_Profile_Photo_Menu;
 import coaching_center_base.BaseClass;
+import coaching_center_base.FrameworkMethods;
 
 public class studentPhotoApprovalPage extends BaseClass implements Menus,Student_Menu,StudentPhotoApprovalLocators,Upload_Profile_Photo_Menu {
 	
@@ -115,6 +116,8 @@ public class studentPhotoApprovalPage extends BaseClass implements Menus,Student
 		waitForPageLoad();
 	}
 	public void sendPhotoApprovalRequest() throws Exception {
+		FrameworkMethods.logger.info("Uploading the photo");
+
 		getStudent_upload_profile_field().sendKeys("D:\\Up\\Novatesoft Ramana\\Selenium_RCC\\ramana_automationTests\\resource\\Images\\1.jpg");
 		getStudent_btn_update().click();
 		waitForMaxTime();

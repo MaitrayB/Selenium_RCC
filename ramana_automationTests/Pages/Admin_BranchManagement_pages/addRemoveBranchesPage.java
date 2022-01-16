@@ -125,23 +125,25 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 	
 	public void editBranchDetail() throws Exception {
 		waitForMaxTime();
-
 		getBtn_edit_detail().click();
 		waitForMaxTime();
 		verifyElement(getTitle_east_branch(),"East Branch Title");
 		getBranch_name().clear();
+		FrameworkMethods.logger.info("Entering branch name");
 		getBranch_name().sendKeys(FrameworkMethods.getCustomProperty("updated_branch_name"));
 		getBtn_save_branch_detail().click();
 		waitForMinTime();
 		verifyElement(getBtn_msg_save(), "Success Message");
 		getBtn_close_save().click();
 		waitForMaxTime();
+		FrameworkMethods.logger.info("Verified updated branch name");
 		getUpdated_name().getText().equals(FrameworkMethods.getCustomProperty("updated_branch_name"));
 	}
 	
 	
 	public void resetBranchDetails()throws Exception  {
 		waitForMaxTime();
+		FrameworkMethods.logger.info("Clicked on edit details");
 		getBtn_edit_detail().click();
 		waitForMaxTime();
 		getBranch_name().clear();
@@ -152,6 +154,7 @@ public class addRemoveBranchesPage extends BaseClass implements Menus, AddRemove
 		waitForMaxTime();
 		getBtn_close_save().click();
 		waitForMaxTime();
+		FrameworkMethods.logger.info("Verified updated branch name");
 		getUpdated_name().getText().equals(FrameworkMethods.getCustomProperty("branch_name"));
 	}
 

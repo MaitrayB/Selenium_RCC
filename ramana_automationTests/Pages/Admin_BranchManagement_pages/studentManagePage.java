@@ -129,7 +129,7 @@ public class studentManagePage extends BaseClass implements StudentManagementLoc
 		
 	public void verifyStudentLabel() throws Exception {
 		waitForPageLoad();
-		getSearch_student_name().sendKeys("Devang");
+		getSearch_student_name().sendKeys("Dev");
 		verifyElement(getSearch_result(), "Search Result");
 		getSearch_result().click();
 		verifyElement(getBtn_discontinued_result(), "Button Disconnection");

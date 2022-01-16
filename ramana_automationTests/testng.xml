@@ -8,18 +8,17 @@
 			<class name="Regression_Tests.Admin_BranchManagement_Tests">
 				<methods>
 					<include name="verify_Login_Funtionality" />
+					<include name="New_Registraton_Page_Verification" />
 				</methods>
 			</class>
 			<class name="Regression_Tests.Admin_Group_SAT_Test">
 				<methods>
-					<!--<include name="verifyManageClass" />
 					<include name="verifyActiveInactiveStudetFunc" />
-					 <include name="verifySudentVideoFunc" />
-					<include name="verifyStudentProgressTracker" />
-					<include name="verifyAdminGroupSATTest" /> -->
-					<include name="verifyBatchAndStudentMapping" />
 				</methods>
 			</class>
+			<!-- <class name="Regression_Tests.Student_Tests"> <methods> <include 
+				name="verify_Login_Funtionality" /> <include name="verifyHomePage" /> </methods> 
+				</class> -->
 		</classes>
 	</test>
 </suite>

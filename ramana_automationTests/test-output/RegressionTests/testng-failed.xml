@@ -3,11 +3,12 @@
 <suite name="Failed suite [RegressionTests]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="sample(failed)">
     <classes>
-      <class name="Regression_Tests.Admin_Group_SAT_Test">
+      <class name="Regression_Tests.Student_Tests">
         <methods>
-          <include name="verifyBatchAndStudentMapping"/>
+          <include name="verifyHomePage"/>
+          <include name="set_up_application"/>
         </methods>
-      </class> <!-- Regression_Tests.Admin_Group_SAT_Test -->
+      </class> <!-- Regression_Tests.Student_Tests -->
     </classes>
   </test> <!-- sample(failed) -->
 </suite> <!-- Failed suite [RegressionTests] -->

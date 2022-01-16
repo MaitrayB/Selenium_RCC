@@ -13,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -92,19 +94,23 @@ public class FrameworkMethods {
 
 	// Method to verify element on screen
 	public static boolean verifyElement(WebElement webElement, String elementName) throws Exception {
+		
 		if (webElement.isDisplayed()) {
-			Reporter.log("[Pass]" + elementName + " is Present on screen");
+			//Reporter.log("[Pass]" + elementName + " is Present on screen");
+			logger.pass(elementName + " is Present on screen");
 			return true;
 		} else {
-			Reporter.log("[fail]" + elementName + " is not Present on screen");
+			//Reporter.log("[fail]" + elementName + " is not Present on screen");
+			logger.fail(elementName + "  is not Present on screen");
 			return false;
 			
 		}
 	}
 	// Method to take screenshot
 
-	public static void takeSnapShot(WebDriver webdriver, String fileWithPath) throws Exception {
+	public static void takeSnapShot(WebDriver webdriver) throws Exception {
 		// Convert web driver object to TakeScreenshot
+		String fileWithPath="";
 		TakesScreenshot scrShot = ((TakesScreenshot) webdriver);
 		// Call getScreenshotAs method to create image file
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);

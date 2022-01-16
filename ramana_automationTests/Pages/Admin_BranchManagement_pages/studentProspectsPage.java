@@ -142,7 +142,9 @@ public class studentProspectsPage extends BaseClass implements StudentProspectLo
 	public void verifyConversationFunctionality() throws InterruptedException, IOException
 	{		
 		getBtn_conversation().click();
+		FrameworkMethods.logger.info("Clicked on conversation button");
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Enter text message"+FrameworkMethods.getCustomProperty("message"));
 		getTxt_enter_msg().sendKeys(FrameworkMethods.getCustomProperty("message"));
 		getBtn_submit().click();
 		getRead_msg().getText().equals(FrameworkMethods.getCustomProperty("message"));

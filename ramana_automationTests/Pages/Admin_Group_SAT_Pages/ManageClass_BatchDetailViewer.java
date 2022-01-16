@@ -157,27 +157,35 @@ public class ManageClass_BatchDetailViewer extends SAT_TemplatePage
 	}
 
 	public void navigateToBatchDeatils() throws InterruptedException {
-
+		FrameworkMethods.logger.info("Clicked on ManageClass Page");
 		getMenu_manage_class().click();
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Clicked on Manage Tab Page");
 		getTab_manage_batch().click();
 		waitForMinTime();
+		FrameworkMethods.logger.info("Clicked on detail Tab Page");
 		getTab_detail_viewer().click();
 		waitForMinTime();
 	}
 
 	public void inactiveStudent() throws Exception {
+		FrameworkMethods.logger.info("Selecting the subprogram");
 		Select studentName = new Select(getSelect_subprograme());
 		studentName.selectByIndex(6);
 		waitForMinTime();
+		FrameworkMethods.logger.info("Selecting the batch");
 		Select selectBatch = new Select(getDrp_select_batch());
 		selectBatch.selectByIndex(1);
 		waitForMinTime();
 		getEdit_button().click();
+		FrameworkMethods.logger.info("Selecting the access past date");
 		getAccess_end_date().sendKeys(FrameworkMethods.getCustomProperty("past_date"));
 		getBtn_save().click();
+		FrameworkMethods.logger.info("Details saved");
+		FrameworkMethods.logger.info("Clicking on view button");
 		getView_button().click();
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Verifying elements on students pop up");
 		verifyElement(getStudent_detail_popup(), "Student Popup");
 		getBtn_Loginas_student().click();
 		waitForPageLoad();
@@ -189,21 +197,28 @@ public class ManageClass_BatchDetailViewer extends SAT_TemplatePage
 
 	public void activeStudent() throws Exception {
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Selecting the student name ");
 		Select studentName = new Select(getSelect_subprograme());
 		studentName.selectByIndex(6);
 		waitForMinTime();
+		FrameworkMethods.logger.info("Selecting the batch");
 		Select selectBatch = new Select(getDrp_select_batch());
 		selectBatch.selectByIndex(1);
 		waitForMinTime();
 		getEdit_button().click();
+		FrameworkMethods.logger.info("Selecting future date");
 		getAccess_end_date().sendKeys(FrameworkMethods.getCustomProperty("future_date"));
+		FrameworkMethods.logger.info("Clicking on future date");
 		getBtn_save().click();
 		getView_button().click();
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Verifying stufent popup");
 		verifyElement(getStudent_detail_popup(), "Student Popup");
 		getBtn_Loginas_student().click();
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Clicking on student tab");
 		getTab_student().click();
+		FrameworkMethods.logger.info("Verifying active link");
 		verifyElement(getLink_programe(), "Active Link");
 		getDrp_switch_roll().click();
 		getOption_previous_admin().click();

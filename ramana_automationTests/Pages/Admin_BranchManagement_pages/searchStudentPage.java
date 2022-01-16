@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import Admin_screens.Locators.Menus;
 import Admin_screens.Locators.SearchStudentPageLocator;
@@ -138,12 +139,15 @@ public class searchStudentPage extends BaseClass implements SearchStudentPageLoc
 		return btn_reset;
 	}
 	public void navigateToSearchPage() throws InterruptedException {
+		Reporter.log("Navigating on search student page");
 		getMenu_search_student().click();
 		waitForPageLoad();
 	}
 	
 	public void searchStudentwithFirstName() throws Exception {
 		verifyElement(getMenu_search_student(), "Username Textbox");
+		Reporter.log("Searching by Student First Name");
+
 		getStudent_first_name().sendKeys(FrameworkMethods.getCustomProperty("student_name"));
 		getBtn_search_student().click();
 	}
@@ -154,12 +158,15 @@ public class searchStudentPage extends BaseClass implements SearchStudentPageLoc
 	}
 			
 	public void searchStudentwithLastName() throws Exception {
+		Reporter.log("Verifying Search Result");
+		Reporter.log("Searching by Student First Name");
 		getStudent_last_name().sendKeys(FrameworkMethods.getCustomProperty("student_Last__name"));
 		getBtn_search_student().click();
 		waitForPageLoad();
 	}
 	
 	public void verifySearchResult() throws Exception {
+		Reporter.log("Verifying Search Result");
 		waitForElementToAppear(getStudent_name());
 		verifyElement(getStudent_name(), "Username Textbox");
 		Assert.assertEquals(getStudent_name().getText(),FrameworkMethods.getCustomProperty("student"));

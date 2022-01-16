@@ -38,6 +38,7 @@ public class referralManagementPage extends BaseClass implements ReferalManageme
 
 	@FindBy(how = How.XPATH, using = FIELD_REWARD_DATE_XPATH)
 	private WebElement reward_date;
+	
 
 	@FindBy(how = How.XPATH, using = FIELD_ACTION_STATUS_XPATH)
 	private WebElement action_status;
@@ -154,7 +155,7 @@ public class referralManagementPage extends BaseClass implements ReferalManageme
 		verifyElement(getCustomer_email(), "Customer Email");
 		verifyElement(getApprove_date(), "Approval Date");
 		verifyElement(getReward_date(), "Reward Date");
-		verifyElement(getAction_status(), "Action status");
+		//verifyElement(getAction_status(), "Action status");
 	}
 
 	public void verifyReferralManagement()throws Exception {

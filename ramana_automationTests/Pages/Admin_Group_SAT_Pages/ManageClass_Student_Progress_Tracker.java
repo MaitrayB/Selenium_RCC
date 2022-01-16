@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import Admin_screens.Admin_Group_SAT_Locators.Admin_Group_SAT_Menu;
 import Admin_screens.Admin_Group_SAT_Locators.Student_Progess_Tracker_Locators;
 import coaching_center_base.BaseClass;
+import coaching_center_base.FrameworkMethods;
 
 public class ManageClass_Student_Progress_Tracker extends SAT_TemplatePage
 		implements Admin_Group_SAT_Menu, Student_Progess_Tracker_Locators {
@@ -95,11 +96,15 @@ public class ManageClass_Student_Progress_Tracker extends SAT_TemplatePage
 	}
 
 	public void navigateToStudentProgressPage() throws InterruptedException {
+		FrameworkMethods.logger.info("Clicking on student progress page");
 		waitForMinTime();
+		FrameworkMethods.logger.info("Clicking on manage class menu");
 		getMenu_manage_class().click();
 		waitForPageLoad();
+		FrameworkMethods.logger.info("Clicking Manage batch tab");
 		getTab_manage_batch().click();
 		waitForMinTime();
+		FrameworkMethods.logger.info("Clicking student progress tab");
 		getTab_student_progress().click();
 	}
 
